@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import Link from 'next/link';
+import Navbar from './Navbar/Navbar';
+import HeroSection from './HeroSection/HeroSection';
 
 
 const AppLayout = ({ children }) => {
     
     return (
-        <div>
-            {children}
-        </div>
+        <>
+            <Navbar />
+            <HeroSection />
+        </>
 
         
     )
