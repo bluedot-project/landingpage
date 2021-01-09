@@ -12,6 +12,7 @@ object-fit: contain;
 
 const Slogan = styled.div`
 // padding: 250.7px 0px 604px 247.8px;
+width: 100%;
 
 
 `

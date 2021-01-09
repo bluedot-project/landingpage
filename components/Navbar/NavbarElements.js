@@ -20,7 +20,7 @@ export const NavbarContainer = styled.div`
     display: flex;
 `
 
-export const Logo = styled.a`
+export const Logo = styled.img`
     background: #000;
     width: 62px;
     height: 60px;

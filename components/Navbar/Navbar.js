@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Nav, Logo, NavbarContainer, LeftMenu, RightMenu,
     HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import { Button } from 'antd';
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo@2x.png';
 
 
 const Navbar = () => {
@@ -13,8 +13,8 @@ const Navbar = () => {
             <NavbarContainer>
                         
                     <Link href="/">
-                        <Logo>
-                            <img src={logo} alt=""/>
+                        <Logo src={logo} alt="">
+                            {/* <img src={logo} alt=""/> */}
                         </Logo>
                         {/* <Logo/> */}
                     </Link>
