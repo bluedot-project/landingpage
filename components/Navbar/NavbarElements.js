@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
     background: #000;
-    width: 100%;
+    width: 1920px;
     height: 78.7px;
     padding: 13px 258px 5.7px 235.5px;
     object-fit: contain;

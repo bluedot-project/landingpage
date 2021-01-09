@@ -16,15 +16,15 @@ const Navbar = () => {
                         {/* <Logo/> */}
                     </Link>
                 <LeftMenu>
-                    <Link href="/">
+                    <Link href="/home">
                         <HomeLink>홈</HomeLink>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/dotvideo">
                         <DotVideoLink>닷비디오</DotVideoLink>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/follow">
                         <FollowLink>팔로우</FollowLink>
                     </Link>
                 </LeftMenu>     
