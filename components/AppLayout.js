@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Navbar from './Navbar/Navbar';
 import HeroSection from './HeroSection/HeroSection';
+import AboutSection from './AboutSection/AboutSection';
+import ServiceSection from './ServiceSection/ServiceSection';
 
 
 const AppLayout = ({ children }) => {
@@ -10,6 +12,9 @@ const AppLayout = ({ children }) => {
         <>
             <Navbar />
             <HeroSection />
+            <AboutSection/>
+            <ServiceSection />
+            
         </>
 
         

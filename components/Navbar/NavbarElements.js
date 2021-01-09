@@ -21,7 +21,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const Logo = styled.a`
-    background-image: url('https://i.pinimg.com/236x/05/52/37/055237cde9e33fc7b4e4146289731648.jpg');
+    background: #000;
     width: 62px;
     height: 60px;
     margin: 0 19.25px 0 0;
@@ -45,6 +45,7 @@ object-fit: contain;
 `
 
 export const DotVideoLink = styled.a`
+font-color: #565656;
 width: 72px;
 height: 22px;
 margin: 16px 25px 22px;

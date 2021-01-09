@@ -11,7 +11,7 @@ object-fit: contain;
 `
 
 const Slogan = styled.div`
-padding: 250.7px 0px 604px 247.8px;
+// padding: 250.7px 0px 604px 247.8px;
 
 
 `
@@ -40,19 +40,21 @@ width: 680px;
   text-align: left;
   color: var(--black);
 `
+import main from '../../images/video.png'
 
 const HeroSection = () => {
     return (
         <>
             <HeroContainer>
                 <Slogan>
-                    <SloganH1_1>
+                    <img src={main} alt=""/>
+                    {/* <SloganH1_1>
                         Paint        
                     </SloganH1_1>
                     <SloganH1_2>
                         Your Own Dot
                         On The World
-                    </SloganH1_2>
+                    </SloganH1_2> */}
                 </Slogan>
             </HeroContainer>
         </>

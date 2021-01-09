@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'next/link';
 import { Nav, Logo, NavbarContainer, LeftMenu, RightMenu,
-    HomeLink, DotVideoLink, FollowLink, SearchLink, LoginBtn } from './NavbarElements'
+    HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import { Button } from 'antd';
+import logo from '../../images/logo.svg';
 
 
 const Navbar = () => {
@@ -11,8 +12,10 @@ const Navbar = () => {
             <Nav>
             <NavbarContainer>
                         
-                    <Link href="/" src="https://i.pinimg.com/236x/05/52/37/055237cde9e33fc7b4e4146289731648.jpg">
-                        <Logo>로고</Logo>
+                    <Link href="/">
+                        <Logo>
+                            <img src={logo} alt=""/>
+                        </Logo>
                         {/* <Logo/> */}
                     </Link>
                 <LeftMenu>
@@ -38,25 +41,13 @@ const Navbar = () => {
                         style={{ borderRight: 'none', borderLeft: 'none', borderBottom: 'none',
                         borderTop: 'none' , padding: '0 0 0 0', width: '159px', height: '40px'
                         ,margin: '6px 0 14px 12.55px'}}>
-                        로그인 회원가입
+                       <Link href="/signin">로그인 회원가입</Link> 
                     </Button>
 
                     
 
                 </RightMenu>         
-                    {/* <NavMenu>
-                        <NavItem>
-                            <Link href="/"><a>홈</a></Link>
-                        </NavItem>
-
-                        <NavItem>
-                            <Link href="/dotvideo"><a>닷비디오</a></Link>
-                        </NavItem>
-
-                        <NavItem>
-                            <Link href="/follow"><a>팔로우</a></Link>
-                        </NavItem>
-                    </NavMenu> */}
+        
                 </NavbarContainer>
             </Nav>
         </>
