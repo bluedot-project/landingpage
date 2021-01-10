@@ -4,9 +4,10 @@ import { Nav, Logo, NavbarContainer, LeftMenu, RightMenu,
     HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import { Button } from 'antd';
 import logo from '../../images/logo@2x.png';
+import { Router } from 'next/router';
 
 
-const Navbar = () => {
+const Navbar = ({ props }) => {
     return (
         <>
             <Nav>
@@ -37,12 +38,17 @@ const Navbar = () => {
                         <SearchLink>검색</SearchLink>
                     </Link>
 
+                <nav
+                    style={{ borderRight: 'none', borderLeft: 'none', borderBottom: 'none',
+                    borderTop: 'none' , padding: '0 0 0 0', width: '159px', height: '40px'
+                    ,margin: '6px 0 14px 12.55px', borderRadius: '4px', backgroundColor: '#4052fe'}}>
                     <Button
-                        style={{ borderRight: 'none', borderLeft: 'none', borderBottom: 'none',
-                        borderTop: 'none' , padding: '0 0 0 0', width: '159px', height: '40px'
-                        ,margin: '6px 0 14px 12.55px'}}>
-                       <Link href="/signin">로그인 회원가입</Link> 
+                        style={{backgroundColor: '#4052fe', borderColor:'#4052fe',outline: 'none'
+                        ,border: 'none', color: '#fff', textAlign: 'center'}}
+                        onClick={() => Router.push('/signin')}>
+                       로그인 회원가입
                     </Button>
+                </nav>
 
                     
 
