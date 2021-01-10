@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import ServiceSection from './ServiceSection'
-import { HomeObjOne, HomeObjTwo, HomeObjThree } from '../components/ServiceSection/Data'
+import { HomeObjOne, HomeObjTwo, HomeObjThree } from './ServiceSection/ServiceCard/Data'
 
 import img1 from '../images/service-img-1.png'
 import img2 from '../images/service-img-2.png'
@@ -17,7 +17,7 @@ const AppLayout = ({ children }) => {
             <Navbar />
             <HeroSection />
             <AboutSection/>
-            <ServiceSection {...HomeObjOne} />
+            <ServiceSection  />
             
         </>
 

@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    width: 1920px;
-    height: 800px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background: #e2e2e2;
 
@@ -17,15 +15,72 @@ export const AboutContainer = styled.div`
         height: 1300px;
     }
 `
-
-export const AboutWrapper = styled.div`
-    max-width: 1200px;
+export const AboutInfoWrapper = styled.div`
+    
+    display: grid;
+    word-break: keep-all;
     margin: 0 auto;
+    margin-top: 173.9px; 
+    margin-left: 13.4%; 
+    textAlign: left;
+    max-width: 1200px;
+
+    @media screen and (max-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+`
+
+export const AboutH1 = styled.h1`
+    color: #000;
+    margin-bottom: 42.5px;
+    
+    width: 202px;
+    height: 67px;
+    object-fit: contain;
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -3.6px;
+    text-align: left;
+    color: #000;
+
+    @media screen and(max-width: 480px){
+        font-size: 2rem;
+    }
+`
+export const AboutH3 = styled.h3`
+width: 532px;
+height: 50px;
+object-fit: contain;
+font-family: NanumSquareOTFR;
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.67;
+letter-spacing: -0.72px;
+text-align: left;
+color: #8d8d8d;
+
+`
+export const AboutCardWrapper = styled.div`
+
+    margin: 0 auto;
+    margin-top: 173.6px;
+    margin-left: 12.8%; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+    max-width: 1200px;
+
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -40,51 +95,7 @@ export const AboutWrapper = styled.div`
 export const AboutCard = styled.img`
 width: 457px;
 height: 359.6px;
-padding: 74.4px 90.7px 84.4px 74.3px;
+margin-right : 28px;
 object-fit: contain;
 `
 
-// export const ServicesCard = styled.div`
-//     background: #fff;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     border-radius: 10px;
-//     max-height: 340px;
-//     padding: 30px;
-//     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-//     transition: all 0.2s ease-in-out;
-
-//     &:hover {
-//         transform: scale(1.02);
-//         transition: all 0.2s ease-in-out;
-//         cursor: pointer;
-//     }
-// `
-
-export const AboutIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
-`
-
-export const AboutH1 = styled.h1`
-    font-size : 2.5rem;
-    color: #000;
-    margin-bottom: 64px;
-
-    @media screen and(max-width: 480px){
-        font-size: 2rem;
-    }
-`
-
-export const AboutH2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
-`
-
-export const AboutP = styled.p`
-    font-size: 1rem;
-    text-align: center;
-`
