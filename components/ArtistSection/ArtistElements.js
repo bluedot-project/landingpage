@@ -19,10 +19,9 @@ export const ArtistInfoWrapper = styled.div`
     display: grid;
     word-break: keep-all;
     margin: 0 auto;
-    margin-top: 92px; 
-    margin-left: 13.4%; 
+    margin-top: 4.8%; 
+    margin-left: 13.3%; 
     text-align: left;
-    max-width: 1200px;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -70,30 +69,76 @@ export const ArtistH3 = styled.h3`
 `
 export const Column = styled.div`
     margin-top: 48px;
+    word-break: keep-all;
 `
 
 export const Column2 = styled.div`
     margin: 0 auto;
     margin-top: 8%;
-    margin-bottom: 5%;
+    margin-bottom: 8.75%;
     display: flex;
     
 
 `
 
 export const ArtistCardRow1 = styled.div`
+  display: flex;
+`
+
+export const ArtistInfoCard = styled.div`
+    background: #fff;
+    display: flex;
     width: 495px;
     height: 204px;
-    display: flex;
-
-`
-
-export const ArtistInfoCard1 = styled.div`
-    margin-right: 32px;
+    margin-right : 2.4%;
+    word-break: keep-all;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 340px;
+    transition: all 0.2s ease-in-out;
     
 `
-export const ArtistInfoCard2 = styled.div`
+export const InfoIcon = styled.img`
+    width: 494.5px;
+    height: 204px;
+    vertical-align: middle;
 `
+export const InfoNum = styled.h1`
+    position: absolute;
+    font-size: 54.3px;
+    font-family: NanumSquareOTFEB;
+    margin: 0 0 1.3% 3.9%;
+    letter-spacing: -0.8px;
+    color: #1127fe;
+` 
+export const InfoH2 = styled.h2`
+    position: absolute;
+    width: 110px;
+    height: 22px;
+    margin: 0 0 2% 8.4%;
+    object-fit: contain;
+    font-family: NanumSquareOTFEB;
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #1127fe;
+`
+export const InfoH3 = styled.h3`
+    position: absolute;
+    width: 350px;
+    height: 18px;
+    margin: 3% 0 0 9%;
+    object-fit: contain;
+    font-family: NanumSquareOTFR;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: -0.32px;
+    text-align: left;
+    color: #1127fe;
+`
+
 
 export const ArtistCardRow2 = styled.div`
     margin-left: 279.5px;
@@ -101,22 +146,55 @@ export const ArtistCardRow2 = styled.div`
     display: flex;
 
 `
-export const ArtistInfoCard3 = styled.div`
-    margin-right: 32px;
-    
-`
-
-export const ArtistInfoCard4 = styled.div`
-
-`
-
-
-export const ArtistRequired1 = styled.div`
+export const WhoIcon = styled.img`
+width: 475.5px;
+height: 302.5px;
+// margin-left: -2%;
+vertical-align: middle;
 
 `
 
-export const ArtistRequired2 = styled.div`
+
+export const ArtistRequired = styled.div`
+    background: #fff;
+    display: flex;
+    width: 454.5px;
+    height: 302.5px;
+    margin-right : 1%;
+    word-break: keep-all;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 340px;
+    transition: all 0.2s ease-in-out;
 `
 
-export const ArtistRequired3 = styled.div`
+export const RequiredH2 = styled.h2`
+position: absolute;
+width: 262px;
+height: 33px;
+margin: 0 5% 7.6% 5%;
+font-family: NanumSquareOTFEB;
+font-size: 24px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: -0.96px;
+text-align: center;
+color: #474747;
+`
+
+export const RequiredH3 = styled.h3`
+position: absolute;
+width: 350px;
+height: 70px;
+margin: 2% 3% 0 3%;
+font-family: S-CoreDream-4;
+font-size: 21px;
+line-height: 1.95;
+letter-spacing: -0.84px;
+text-align: left;
+color: #6d6d6d;
+text-align: center;
+
 `

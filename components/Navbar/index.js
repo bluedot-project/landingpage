@@ -15,10 +15,11 @@ const Navbar = () => {
                         
                     
                 <NavMenu>
-                    <LeftMenu>
-                    <Link href="/">
+                <Link href="/">
                         <Logo src={logo} alt="" />
                     </Link>
+                    <LeftMenu>
+                        
 
                     <Link href="/home">
                         <HomeLink>홈</HomeLink>
@@ -42,7 +43,8 @@ const Navbar = () => {
                             </SearchLink>
                         </Link> */}
                         <nav
-                        style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'}}>
+                        style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'
+                                }}>
                              <img src={loginBtn} alt="button_login" />
          
                         </nav>
