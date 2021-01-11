@@ -6,7 +6,7 @@ const Card = ({ id, imgStart, topLine, description1,
                 description2, img, alt}) => {
     return (
         <>
-         <ServiceCardContainer id={id}>
+         {/* <ServiceCardContainer id={id}> */}
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
@@ -27,7 +27,7 @@ const Card = ({ id, imgStart, topLine, description1,
                  
                 </InfoRow>
             </InfoWrapper>
-            </ServiceCardContainer>
+            {/* </ServiceCardContainer> */}
 
         
               

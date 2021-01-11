@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 
 export const ServiceContainer = styled.div`
-    height: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +16,12 @@ export const ServiceContainer = styled.div`
     }
 `
 export const ServiceInfoWrapper = styled.div`
-    
     display: grid;
     word-break: keep-all;
     margin: 0 auto;
     margin-top: 173.9px; 
     margin-left: 13.4%; 
-    textAlign: left;
+    text-align: left;
     max-width: 1200px;
 
     @media screen and (max-width: 1000px){
@@ -73,7 +71,7 @@ export const ServiceH3 = styled.h3`
 
 export const ServiceCardContainer = styled.div`
 
-
+    
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -84,10 +82,11 @@ export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
 max-width: 1100px;
+margin: auto;
 margin-top: 162.8px;
-margin-left: 93px;
-margin-right: 302px;
-margin-bottom: 168.9px;
+// margin-left: 153px;
+// margin-right: 302px;
+margin-bottom: 240.9px;
 justify-content: center;
     
 `

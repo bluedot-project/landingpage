@@ -22,7 +22,7 @@ export const AboutInfoWrapper = styled.div`
     margin: 0 auto;
     margin-top: 173.9px; 
     margin-left: 13.4%; 
-    textAlign: left;
+    text-align: left;
     max-width: 1200px;
 
     @media screen and (max-width: 1000px){
