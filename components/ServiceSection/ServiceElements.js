@@ -21,6 +21,7 @@ export const ServiceInfoWrapper = styled.div`
     margin: 0 auto;
     margin-top: 173.9px; 
     margin-left: 13.4%; 
+    margin-bottom: 8.3%;
     text-align: left;
     max-width: 1200px;
     
@@ -41,12 +42,8 @@ export const ServiceH1 = styled.h1`
     margin-bottom: 42.5px;
     width: 202px;
     height: 67px;
-    object-fit: contain;
     font-family: Ubuntu;
     font-size: 60px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     letter-spacing: -3.6px;
     text-align: left;
     color: #000;
@@ -61,9 +58,6 @@ export const ServiceH3 = styled.h3`
     object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
@@ -71,8 +65,8 @@ export const ServiceH3 = styled.h3`
 `
 
 export const ServiceCardContainer = styled.div`
-
-    
+    width: 100%;
+    margin: 0 auto;
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -80,15 +74,14 @@ export const ServiceCardContainer = styled.div`
 
 
 export const InfoWrapper = styled.div`
-display: grid;
+display: flex;
 z-index: 1;
-max-width: 1100px;
-margin: auto;
-margin-top: 162.8px;
-// margin-left: 153px;
-// margin-right: 302px;
-margin-bottom: 240.9px;
+margin: 0 auto;
+margin-left: ${({imgStart}) => (imgStart ? `-2%` : `10%`)};
+margin-bottom: 12.7%;
+
 justify-content: center;
+align-items: center;
     
 `
 
@@ -102,6 +95,7 @@ export const InfoRow = styled.div`
         grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `
+
 
 export const Column1 = styled.div`
     margin-right: 117px;
@@ -128,9 +122,9 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper = styled.div`
-    padding-bottom: 246px;
+    // padding-bottom: 246px;
     height: 100%;
-    max-width: 560px;
+    max-width: 500px;
 `
 
 export const TopLine = styled.h1`
@@ -140,9 +134,6 @@ export const TopLine = styled.h1`
     font-family: NanumSquareOTFEB;
     margin-bottom: 49.3px;
     font-size: 78px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     letter-spacing: -3.12px;
     text-align: left;
     color: #000;
@@ -150,15 +141,11 @@ export const TopLine = styled.h1`
 `
 
 export const Subtitle = styled.h3`
-    width: 348px;
-    // max-width: 560px;
+    width: 560px;
+    max-width: 560px;
     margin-bottom: 0;
-    object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;

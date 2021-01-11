@@ -59,7 +59,7 @@ const Footer = () => {
 
                         <EmailInput 
                         id="email"
-                        placeholder="Enter your Email"
+                        placeholder="이메일"
                         style= {{    
                         fontFamily: 'NanumSquareOTFR',
                         fontSize: '24px' }}

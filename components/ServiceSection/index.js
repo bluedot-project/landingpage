@@ -1,7 +1,7 @@
 import React from 'react';
 import {ServiceContainer, ServiceInfoWrapper,
         ServiceH1, ServiceH3 } from './ServiceElements';
-        import { ServiceCardContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap,
+import { ServiceCardContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap,
             Img, TextWrapper, TopLine, Subtitle} from './ServiceElements'
 import TitleUnderline from '../../images/shape-titleunderline.png';
 import ServiceCard from './ServiceCard/index.js';
@@ -25,12 +25,13 @@ import img3 from '../../images/service-img-2.png'
                 <ServiceH3>활용가치가 무궁무진합니다.</ServiceH3>
                 
             </ServiceInfoWrapper>
-        </ServiceContainer>
+        
 
-        <ServiceCard {...HomeObjOne} img={img1}/>
-        <ServiceCard {...HomeObjTwo} img={img2}/>
-        <ServiceCard {...HomeObjThree} img={img3}/>
-            
+                <ServiceCard {...HomeObjOne} img={img1}/>
+                <ServiceCard {...HomeObjTwo} img={img2}/>
+                <ServiceCard {...HomeObjThree} img={img3}/>
+
+        </ServiceContainer>
     </div>
     </>
     )

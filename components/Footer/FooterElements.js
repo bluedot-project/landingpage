@@ -96,7 +96,7 @@ export const FooterEmail = styled.div`
    
 `
 export const EmailInput = styled(Input)`
-    background: #e2e2e2;
+    background: #fff;
     outline: none;
     width: 380px;
     height: 50px;

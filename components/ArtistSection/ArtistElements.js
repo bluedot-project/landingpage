@@ -5,7 +5,7 @@ export const ArtistContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #e2e2e2;
+    background: #fff;
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -59,9 +59,6 @@ export const ArtistH3 = styled.h3`
     object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
@@ -77,8 +74,6 @@ export const Column2 = styled.div`
     margin-top: 8%;
     margin-bottom: 8.75%;
     display: flex;
-    
-
 `
 
 export const ArtistCardRow1 = styled.div`

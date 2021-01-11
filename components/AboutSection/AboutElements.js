@@ -5,8 +5,8 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #e2e2e2;
-    // background: #fff;
+    // background: #e2e2e2;
+    background: #fff;
 
     @media screen and (max-width: 768px){
         height: 1100px;
