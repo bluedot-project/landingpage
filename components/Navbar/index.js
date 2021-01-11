@@ -11,47 +11,42 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-            <NavbarContainer>
+                <NavbarContainer>
+                    <NavMenu>
+                        <Link href="/">
+                            <Logo src={logo} alt="" />
+                        </Link>
+
+                        <LeftMenu>
+                            <Link href="/home">
+                                <HomeLink>홈</HomeLink>
+                            </Link>
+
+                            <Link href="/dotvideo">
+                                <DotVideoLink>닷비디오</DotVideoLink>
+                            </Link>
+
+                            <Link href="/follow">
+                                <FollowLink>팔로우</FollowLink>
+                            </Link>
+                        </LeftMenu>
+
                         
-                    
-                <NavMenu>
-                <Link href="/">
-                        <Logo src={logo} alt="" />
-                    </Link>
-                    <LeftMenu>
-                        
 
-                    <Link href="/home">
-                        <HomeLink>홈</HomeLink>
-                    </Link>
-
-                    <Link href="/dotvideo">
-                        <DotVideoLink>닷비디오</DotVideoLink>
-                    </Link>
-
-                    <Link href="/follow">
-                        <FollowLink>팔로우</FollowLink>
-                    </Link>
-                    </LeftMenu>
-
-                    
-
-                    <RightMenu>
-                        {/* <Link href="/search">
-                            <SearchLink>
-                                <img src={search} alt="search" />
-                            </SearchLink>
-                        </Link> */}
-                        <nav
-                        style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'
-                                }}>
-                             <img src={loginBtn} alt="button_login" />
-         
-                        </nav>
-                    </RightMenu>
-                </NavMenu>     
-
-             
+                        <RightMenu>
+                            {/* <Link href="/search">
+                                <SearchLink>
+                                    <img src={search} alt="search" />
+                                </SearchLink>
+                            </Link> */}
+                            <nav
+                            style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'
+                                    }}>
+                                <img src={loginBtn} alt="button_login" />
+            
+                            </nav>
+                        </RightMenu>
+                    </NavMenu>     
                 </NavbarContainer>
             </Nav>
         </>

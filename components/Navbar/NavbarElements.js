@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
     background: #000;
-
     height: 78.7px;
     padding: 13px 0 5.7px 0;
     justify-content: center;
@@ -19,11 +18,8 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    z-index: 1;
-    justify-content: space-between;
-    padding-left: 12.3%;
-    padding-right: 13.4%;
-    width: 100%
+    margin-left: 12.265%;
+    margin-right: 13.427%;
     max-width: 1920px;
 
 `
@@ -31,31 +27,22 @@ export const NavbarContainer = styled.div`
 export const Logo = styled.img`
     height: 60px;
     margin: 0 3% 0 0;
-
-    @media screen and (max-width: 768px){
-        height: 60px;
-        margin: 0 3% 0 0;
-    } 
-  
+    
 `
 export const NavMenu = styled.div`
-    display: flex;
-    align-items: center;
-    list-style: none;
-    list-style: none;
-    text-align: center;
-    width: 100%;
-    
-      
+display: flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+list-style: none;
+text-align: center;
+width: 100%
 `
 
 
 export const LeftMenu = styled.div`
     display : flex;
     width:100%;
-    @media screen and (max-width: 768px){
-        display: none;
-    } 
 `
 
 export const HomeLink = styled.a`
@@ -65,10 +52,6 @@ export const HomeLink = styled.a`
     font-size: 18px;
     margin: 14px 3.95% 22px 0;
     object-fit: contain;
-
-    &.active {
-        border-bottom: 3px solid #285DF5;
-    }
 
 `
 

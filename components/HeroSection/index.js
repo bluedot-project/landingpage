@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
 background: #2f2d2e;
 display: flex;
-width: 1920px;
+width: 100%;
 height: 1080px;
 
 object-fit: contain;
@@ -48,7 +48,8 @@ const HeroSection = () => {
         <>
             <HeroContainer>
                 <Slogan>
-                    <img src={main} alt=""/>
+                    <img src={main} alt=""
+                        style={{ width: '100%'}}/>
                     {/* <SloganH1_1>
                         Paint        
                     </SloganH1_1>

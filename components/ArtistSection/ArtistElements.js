@@ -149,7 +149,6 @@ export const ArtistCardRow2 = styled.div`
 export const WhoIcon = styled.img`
 width: 475.5px;
 height: 302.5px;
-// margin-left: -2%;
 vertical-align: middle;
 
 `

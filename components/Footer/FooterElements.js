@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Input} from 'antd';
 
 export const FooterContainer = styled.div`
     display: flex;
@@ -23,6 +23,7 @@ export const FooterInfoWrapper = styled.div`
     text-align: left;
     max-width: 1200px;
 
+    
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
     }
@@ -35,13 +36,12 @@ export const FooterInfoWrapper = styled.div`
 `
 
 export const FooterContactWrapper = styled.div`
-    display: flex;
-    // width:100%;
-    margin-top: 200px; 
-    margin-right: 15.1%;
     
-    text-align: left;
-    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 13.4%; 
+    margin-top: 10.6%;
+    margin-bottom: 8.75%;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -85,64 +85,92 @@ export const FooterH3 = styled.h3`
 
 export const FooterEmail = styled.div`
     margin-left: -18px;
-    margin-top: 8%
+    margin-top: 3%;
+    padding-top: 11%;
+    background: #fff;
+    display: flex;
+    width: 450px;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
    
 `
-export const Contact1 = styled.div`
-display: flex;
-width: 100%;
-margin-right: 40%;
-
+export const EmailInput = styled(Input)`
+    background: #e2e2e2;
+    outline: none;
+    width: 380px;
+    height: 50px;
+    border: none;
+    position: absolute; 
+    margin: 0 0 2px 2%;
+    padding: 0 auto;
 `
 
+
+export const EmailBtn = styled.div`
+    background: #fff;
+    outline: none;
+    border: none;
+    position: absolute; 
+    margin: 0 0 0.2% 21%;
+`
+
+
+export const Contact1 = styled.div`
+    display: flex;
+    width: 650px;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 340px;
+   
+`
 export const Contact2 = styled.div`
     display: flex;
-    
+    width: 650px;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 340px;
 `
+
 export const ShareH2 = styled.h2`
-width: 92px;
-  height: 45px;
-  object-fit: contain;
-  font-family: Ubuntu;
-  font-size: 40px;
-  letter-spacing: -1.6px;
-  text-align: center;
-  color: #686868;
+    width: 100px;
+    height: 45px;
+    font-family: Ubuntu;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    text-align: center;
+    color: #686868;
 `
 
 export const VisitH2 = styled.h2`
-width: 68px;
-height: 45px;
-object-fit: contain;
-font-family: Ubuntu;
-font-size: 40px;
-letter-spacing: -1.6px;
-text-align: center;
-color: #686868;
+    width: 100px;
+    height: 45px;
+    font-family: Ubuntu;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    text-align: center;
+    color: #686868;
 `
 export const ShareH3 = styled.h2`
-width: 262px;
-height: 23px;
-font-size: 16px;
-margin-left: 0.8%;
-margin-top: 5%;
-margin-right: 1%;
-object-fit: contain;
-font-family: S-CoreDream-4;
-font-size: 16px;
-letter-spacing: -0.64px;
-text-align: center;
-color: #999999;
+    width: 270px;
+    height: 23px;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    font-family: S-CoreDream-4;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    text-align: center;
+    color: #999999;
 
 `
 
 export const VisitH3 = styled.h2`
-    width: 214px;
+    width: 270px;
     height: 23px;
     font-size: 16px;
-    margin-left:12px;
-    margin-top: 23px;
-    object-fit: contain;
+    margin-top: 2.5%;
     font-family: S-CoreDream-4;
     font-size: 16px;
     letter-spacing: -0.64px;
