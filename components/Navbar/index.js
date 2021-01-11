@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link';
-import { Nav, Logo, NavbarContainer, LeftMenu, RightMenu,
+import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu,
     HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import { Button } from 'antd';
 import logo from '../../images/logo@2x.png';
-
+import search from '../../images/search.png';
+import loginBtn from '../../images/login.png';
 
 const Navbar = () => {
     return (
@@ -12,13 +13,13 @@ const Navbar = () => {
             <Nav>
             <NavbarContainer>
                         
+                    
+                <NavMenu>
+                    <LeftMenu>
                     <Link href="/">
-                        <Logo src={logo} alt="">
-                            {/* <img src={logo} alt=""/> */}
-                        </Logo>
-                        {/* <Logo/> */}
+                        <Logo src={logo} alt="" />
                     </Link>
-                <LeftMenu>
+
                     <Link href="/home">
                         <HomeLink>홈</HomeLink>
                     </Link>
@@ -30,29 +31,25 @@ const Navbar = () => {
                     <Link href="/follow">
                         <FollowLink>팔로우</FollowLink>
                     </Link>
-                </LeftMenu>     
-
-                <RightMenu>
-                    <Link href="/search">
-                        <SearchLink>검색</SearchLink>
-                    </Link>
-
-                    <nav
-                    style={{ borderRight: 'none', borderLeft: 'none', borderBottom: 'none',
-                    borderTop: 'none' , padding: '0 0 0 0', width: '159px', height: '40px'
-                    ,margin: '6px 0 14px 12.55px', borderRadius: '4px', backgroundColor: '#4052fe'}}>
-                        <Button
-                            style={{backgroundColor: '#4052fe', borderColor:'#4052fe',outline: 'none'
-                            ,border: 'none', color: '#fff', textAlign: 'center'}}
-                            onClick={() => Router.push('/signin')}>
-                            로그인 회원가입
-                        </Button>
-                    </nav>
+                    </LeftMenu>
 
                     
 
-                </RightMenu>         
-        
+                    <RightMenu>
+                        {/* <Link href="/search">
+                            <SearchLink>
+                                <img src={search} alt="search" />
+                            </SearchLink>
+                        </Link> */}
+                        <nav
+                        style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'}}>
+                             <img src={loginBtn} alt="button_login" />
+         
+                        </nav>
+                    </RightMenu>
+                </NavMenu>     
+
+             
                 </NavbarContainer>
             </Nav>
         </>

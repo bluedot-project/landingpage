@@ -7,10 +7,10 @@ export const Nav = styled.nav`
     object-fit: contain;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
+    
     
 `
 
@@ -18,29 +18,38 @@ export const NavbarContainer = styled.div`
     display: flex;
     padding-left: 12.3%;
     padding-right: 13.4%;
+
 `
 
 export const Logo = styled.img`
-    background: #000;
-    width: 62px;
     height: 60px;
-    margin: 0 19.25px 0 0;
+    margin: 0 3% 0 0;
     object-fit: contain;
     
 `
+export const NavMenu = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+list-style: none;
+text-align: center;
+width: 100%
+`
+
 
 export const LeftMenu = styled.div`
     display : flex;
-    width: 643.25px;
-
+    width:100%;
 `
 
 export const HomeLink = styled.a`
-width: 18px;
-height: 22px;
-color: #fff;
-margin: 16px 25px 22px 19.25px;
-object-fit: contain;
+    width: 18px;
+    height: 22px;
+    color: #fff;
+    font-size: 18px;
+    margin: 14px 3.95% 22px 0;
+    object-fit: contain;
 
 `
 
@@ -48,18 +57,18 @@ export const DotVideoLink = styled.a`
 font-color: #565656;
 width: 72px;
 height: 22px;
-margin: 16px 25px 22px;
+font-size: 18px;
 color: #fff;
-margin: 16px 2.6% 22px;
+margin: 14px 3.95% 22px 0;
 object-fit: contain;
 `
 
 export const FollowLink = styled.a`
 width: 54px;
 height: 22px;
-margin: 16px 398px 22px 25px;
+font-size: 18px;
+margin: 14px 45.3% 22px 0;
 color: #fff;
-margin: 16px 398px 22px 2.6%;
 object-fit: contain;
 `
 export const RightMenu = styled.div`
@@ -69,8 +78,8 @@ export const RightMenu = styled.div`
 
 export const SearchLink = styled.a`
     width: 30px;
-  height: 30px;
-  color: #fff;
-  margin: 12px 12.55px 18px 472px;
-  object-fit: contain;
+    height: 30px;
+    color: #fff;
+     margin: 12px 0 18px 0;
+    object-fit: contain;
 `
