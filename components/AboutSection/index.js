@@ -1,6 +1,6 @@
 import React from 'react'
 import { AboutContainer, AboutH1, AboutH3, AboutInfoWrapper, AboutCardWrapper, AboutCard, 
-    ServicesIcon, ServicesH2, ServicesP} from './AboutElements';
+    CardIcon, CardH2, CardH3} from './AboutElements';
 import Textbox from '../../images/about-textbox@2x.png'
 import TitleUnderline from '../../images/shape-titleunderline.png';
 
@@ -20,20 +20,28 @@ const AboutSection = () => {
             </AboutInfoWrapper>
 
             <AboutCardWrapper>
-                <AboutCard src={Textbox}>
-                    {/* <ServicesIcon />
-                    <ServicesH2>Reduce expenses</ServicesH2>
-                    <ServicesP>We Help reduce your fees and increase your overall revenue.</ServicesP> */}
+                <AboutCard>
+                    <CardIcon src={Textbox} />
+                    <CardH2> Communication</CardH2>
+                    <CardH3>블루닷은 팬과 아티스트간의 간편하고 다양한 상호 소통을 지원합니다.  팬들을 만들고 소통을 통해 그들의 별이 되어 주세요.</CardH3>
+                    
+                        
                 </AboutCard>
-                <AboutCard src={Textbox}>
+
+                <AboutCard>
+                    <CardIcon src={Textbox} />
+                    <CardH2>Freedom</CardH2>
+                    <CardH3>블루닷이 제공하는 서비스를 통해 이윤을 창출할 수 있습니다.  이를 통해 자유로운 창작활동을 하고 팬을 모아보세요.</CardH3>
                     {/* <ServicesIcon />
                     <ServicesH2>Virtual Profile</ServicesH2>
                     <ServicesP>You can build your brand with our platform online.</ServicesP> */}
                 </AboutCard>
-                <AboutCard src={Textbox}>
-                    {/* <ServicesIcon />
-                    <ServicesH2>Premiun Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership card that returns 5% cash back.</ServicesP> */}
+
+                <AboutCard>    
+                    <CardIcon src={Textbox} />
+                    <CardH2>Challenge</CardH2>
+                    <CardH3>블루닷에서는 새로운 도전을 응원합니다. 다양한 소통과 협업을 통해 새로운 창작기회에 도전해보세요.</CardH3>
+                    {/* <Servicenlock our special membership card that returns 5% cash back.</ServicesP> */}
                 </AboutCard>
 
             </AboutCardWrapper>

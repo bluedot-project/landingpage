@@ -23,6 +23,7 @@ export const ServiceInfoWrapper = styled.div`
     margin-left: 13.4%; 
     text-align: left;
     max-width: 1200px;
+    
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
