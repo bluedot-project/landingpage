@@ -14,7 +14,7 @@ import img3 from '../../assets/images/service-img-3.png';
     const ServiceSection = () => {
     return (
         <>     
-        <div style={{ height: '3226px'}}>
+        {/* <div style={{ height: '3226px'}}> */}
         <ServiceContainer id="service"> 
             <ServiceInfoWrapper>
                 <ServiceH1>Service</ServiceH1>
@@ -32,7 +32,7 @@ import img3 from '../../assets/images/service-img-3.png';
                 <ServiceCard {...HomeObjThree} img={img3}/>
 
         </ServiceContainer>
-    </div>
+    {/* </div> */}
     </>
     )
 }

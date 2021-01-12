@@ -8,7 +8,7 @@ import ArtistSection from './ArtistSection'
 import Footer from './Footer'
 
 const AppLayout = ({ children }) => {
-    
+
     return (
         <>
             <Navbar />

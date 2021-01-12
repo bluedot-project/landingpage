@@ -6,30 +6,40 @@ export const ServiceContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background: #fff;
+    height: 3226px;
+    width:100%;
     background-image: url(${bg});
 
+    @media screen and (max-width: 1680px){
+     height: 2600px;
+    }
+
+    @media screen and (max-width: 1400px){
+        height: 2200px;
+    }
+    @media screen and (max-width: 1080px){
+        height: 1800px;
+    }
     @media screen and (max-width: 768px){
-        height: 1100px;
+        height: 3100px;
+        max-width:700px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        height: 2900px;
     }
 `
 export const ServiceInfoWrapper = styled.div`
     display: grid;
     word-break: keep-all;
     margin: 0 auto;
-    margin-top: 173.9px; 
-    margin-left: 13.4%; 
+    margin-top: 101px; 
+    margin-left: 13.25%;
     margin-bottom: 8.3%;
     text-align: left;
     max-width: 1200px;
     
 
-    @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
-    }
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
@@ -68,21 +78,34 @@ export const ServiceH3 = styled.h3`
 export const ServiceCardContainer = styled.div`
     width: 100%;
     margin: 0 auto;
+    
     @media screen and (max-width: 768px){
+        max-width: 500px;
         padding: 100px 0;
+        margin-left: 13.25%;
     }
 `
 
 
 export const InfoWrapper = styled.div`
-display: flex;
+display: grid;
 z-index: 1;
 margin: 0 auto;
-margin-left: ${({imgStart}) => (imgStart ? `-2%` : `10%`)};
-margin-bottom: 12.7%;
-
+margin-left: ${({imgStart}) => (imgStart ? `7%` : `13%`)};
+margin-bottom: 12.3%;
+grid-template-columns: 1fr;
 justify-content: center;
 align-items: center;
+
+@media screen and (max-width: 1000px){
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 768px){
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin: 0 auto;
+}
     
 `
 
@@ -92,6 +115,8 @@ export const InfoRow = styled.div`
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
+    
+
     @media screen and (max-width: 768px){
         grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
@@ -99,33 +124,79 @@ export const InfoRow = styled.div`
 
 
 export const Column1 = styled.div`
-    margin-right: 117px;
-    padding: 0 15px;
     grid-area: col2;
-    
+   
 `
 
 export const ImgWrap = styled.div`
-    max-width: 1000px;
-    height: 100%;
+    width:100%;
+    margin-right: -120px;
+    @media screen and (max-width: 1680px){
+        margin-right: -80px;
+    }
+
+    @media screen and (max-width: 1400px){
+        margin-right: -20px;
+    }
+    @media screen and (max-width: 768px){
+        margin-top: -100px;
+        max-width: 500px;
+    }
 `
 
 export const Img = styled.img`
-    width: 920.5px;
-    height: 649.1px;
+    width: 933.5px;
+    height: 690.1px;
     object-fit: contain;
+
+    @media screen and (max-width: 1680px){
+        width: 800.5px;
+        height: 500.1px;
+    }
+    @media screen and (max-width: 1400px){
+        width: 600.5px;
+        height: 400.1px;
+    }
+
+    @media screen and (max-width: 1080px){
+        width: 450.5px;
+        height: 300.1px;
+    }
+    @media screen and (max-width: 768px){
+        width: 500.5px;
+        height: 400.1px;
+    }
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: ${ ({ num }) => (num===1 ? `250px` :
+        (num===2 ? `-110px` : 
+        (num===3 ? `-350px` : `0`)))};
+    margin-right:  ${ ({ num }) => (num===2 ? `-250px`: `0px` )};
     grid-area: col1;
+    width:100%;
     word-break: keep-all;
+
+    @media screen and (max-width: 1080px){
+        
+        margin-bottom: ${ ({ num }) => (num===1 ? `180px` :
+        (num===2 ? `-50px` : 
+        (num===3 ? `-120px` : `0`)))};
+    margin-right:  ${ ({ num }) => (num===2 ? `-250px`: `0px` )};
+    }
+
+    @media screen and (max-width: 768px){
+        margin-bottom: 180px;
+    }
 `
 
 export const TextWrapper = styled.div`
-    // padding-bottom: 246px;
     height: 100%;
     max-width: 500px;
+    
+    @media screen and (max-width: 1080px){
+        max-width: 300px;
+    }
 `
 
 export const TopLine = styled.h1`
@@ -138,6 +209,28 @@ export const TopLine = styled.h1`
     letter-spacing: -3.12px;
     text-align: left;
     color: #000;
+
+    @media screen and (max-width: 1680px){
+        font-size : 62px;
+        margin-bottom: 30px;
+
+    }
+
+    @media screen and (max-width: 1400px){
+        width: 280px;
+        font-size: 48px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 1080px){
+        font-size: 36px;
+        margin-bottom: 2px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
     
 `
 
@@ -152,9 +245,25 @@ export const Subtitle = styled.h3`
     text-align: left;
     color: #8d8d8d;
     
+    @media screen and (max-width: 1680px){
+        font-size : 16px
+    }
     
+    @media screen and (max-width: 1400px){
+        font-size: 14px;
+        width: 440px;
+    }
 
+    @media screen and (max-width: 1080px){
+        font-size: 10px;
+        width: 200px;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 14px;
+        width: 560px;
+    }
     @media screen and (max-width: 480px){
-        font-size: 12px;
+        font-size: 8px;
     }
 `

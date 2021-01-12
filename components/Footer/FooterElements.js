@@ -6,13 +6,14 @@ export const FooterContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background: #fff;
+    height: 925px;
 
     @media screen and (max-width: 768px){
-        height: 1100px;
+        height: 800px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        height: 600px;
     }
 `
 export const FooterInfoWrapper = styled.div`
@@ -24,9 +25,6 @@ export const FooterInfoWrapper = styled.div`
     max-width: 1200px;
 
     
-    @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
-    }
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
@@ -44,11 +42,15 @@ export const FooterContactWrapper = styled.div`
     margin-bottom: 8.75%;
     grid-template-columns: 1fr 1fr;
     
+    
     @media screen and (max-width: 1620px){
         grid-template-columns:  1fr;
     }
-
-  
+    @media screen and (max-width: 1080px){
+        max-width: 500px;
+        margin-top: 20.6%;
+    }
+    
     
 `
 
@@ -92,11 +94,11 @@ export const FooterEmail = styled.div`
 `
 export const EmailInput = styled(Input)`
     outline: none;
-    width: 380px;
+    width: 360px;
     height: 50px;
     border: none;
-    position: absolute; 
-    margin: 0 0 2px 2%;
+    position: absolute;
+    margin: 0 0 5px 38px;
     padding: 0 auto;
 `
 
@@ -106,6 +108,7 @@ export const EmailBtn = styled.div`
     border: none;
     position: relative; 
     margin: 0 auto;
+    cursor: pointer;
     margin-left: -17.5%;
     margin-bottom: 3px;
 `
@@ -123,6 +126,11 @@ export const Contact1 = styled.div`
         margin-left: 20%;
         margin-bottom: 2%;
     }
+
+    @media screen and (max-width: 1080px){
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
    
 `
 export const Contact2 = styled.div`
@@ -135,6 +143,10 @@ export const Contact2 = styled.div`
     @media screen and (max-width: 1620px){
         margin-left: 20%;
         justify-content: flex-start;
+    }
+    @media screen and (max-width: 1080px){
+        margin-left: 0;
+        margin-bottom: 2%;
     }
 `
 
@@ -183,4 +195,17 @@ export const VisitH3 = styled.h2`
     text-align: center;
     color: #999999;
 
+`
+
+export const YoutubeBtn = styled.div`
+    width: 150px;
+    height: 55px;
+    marginTop: 5px;
+    cursor: pointer;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #000;
+        color: #010606;
+    }
 `

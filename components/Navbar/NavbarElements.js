@@ -4,7 +4,6 @@ import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
     background: #000;
     height: 78.7px;
-    // padding: 13px 0 5.7px 0;
     justify-content: center;
     align-items: center;
     position: sticky;
@@ -16,6 +15,42 @@ export const Nav = styled.nav`
     
     
 `
+
+export const MobileIcon = styled(LinkS)`
+    border-radius: 9px;
+    background: #275AEE;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    display: none;
+    margin: -18px 38px 0 0;
+    padding: 4px 16px;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+    @media screen and (max-width: 768px){
+        display: block;
+        position: absolute;
+        // padding: 0 8px;
+
+
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      
+    }
+`
+
 export const NavLinks = styled(LinkS)`
     color: #fff;
     display: flex;
@@ -47,6 +82,9 @@ export const NavbarContainer = styled.div`
 export const Logo = styled.img`
     height: 60px;
     margin: 3px 3% 0 0;
+    @media screen and (max-width: 768px){
+        margin: 15px 3% 0 0;
+    }
     
 `
 export const NavMenu = styled.div`
@@ -64,10 +102,17 @@ export const LeftMenu = styled.div`
     display : flex;
     height: 78.7px;
     width:100%;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 
 export const RightMenu = styled.div`
     display : flex;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 
 `
 export const NavContact = styled(LinkS)`

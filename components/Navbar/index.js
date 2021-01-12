@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
+import { FaBars } from 'react-icons/fa'
 import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
-    NavContact, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
+    NavContact, MobileIcon, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import logo from '../../assets/images/logo@2x.png';
+import { animateScroll as scroll } from 'react-scroll';
 import search from '../../assets/images/search.png';
 import loginBtn from '../../assets/images/login.png';
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -22,7 +24,9 @@ const Navbar = () => {
         window.addEventListener('scroll', changeNav);
     })
 
- 
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
 
 
     return (
@@ -33,6 +37,14 @@ const Navbar = () => {
                         <Link href="/">
                             <Logo src={logo} alt="" />
                         </Link>
+                        <MobileIcon to="contact"
+                        smooth={true} 
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80} >
+                            C
+                        </MobileIcon>
 
                         <LeftMenu>
                             <NavLinks to="about" 

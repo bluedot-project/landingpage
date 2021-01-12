@@ -47,7 +47,7 @@ const Footer = () => {
     return (
         
         <>
-            <div id="contact" style={{ height: '925px'}}>
+            <div id="contact" >
             <FooterContainer > 
                 <FooterInfoWrapper>
                     <FooterH1>Contact</FooterH1>
@@ -64,7 +64,7 @@ const Footer = () => {
                         placeholder="이메일"
                         style= {{    
                         fontFamily: 'NanumSquareOTFR',
-                        fontSize: '24px' }}
+                        fontSize: '24px'}}
                         type="email"
                         value={email}
                         onChange={onChangeEmail}
@@ -93,7 +93,8 @@ const Footer = () => {
                         <ShareH2>share</ShareH2>
                         <ShareH3>블루닷의 소식을 친구에게 공유해보세요</ShareH3>
 
-                        <div style={{  width:'150px', height:'44px', marginTop:'10px'}}>
+                        <div style={{  width:'150px', height:'44px', marginTop:'10px'
+                                        ,cursor: 'pointer'}}>
                             <Link href="/" class="kakao">
                                 <img src={kakao} 
                                     style={{ marginRight:'6px'}}/>
@@ -114,7 +115,7 @@ const Footer = () => {
                         <VisitH2>visit</VisitH2>
                         <VisitH3>블루닷의 유튜브를 방문해보세요</VisitH3>
 
-                        <div style={{  width:'150px', height:'55px', marginTop:'5px'}}>
+                        <div style={{  width:'150px', height:'55px', marginTop:'5px',cursor: 'pointer'}}>
                             <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} />
                             </Link>

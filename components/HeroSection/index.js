@@ -16,6 +16,7 @@ background: #0c0c0c;
     align-items: center;
     padding: 0 30px 0 320px;
     height: 1080px;
+    
     position: relative;
     z-index: 1;
 

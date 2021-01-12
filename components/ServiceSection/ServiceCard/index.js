@@ -3,11 +3,11 @@ import { ServiceCardContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap,
     Img, TextWrapper, TopLine, Subtitle} from '../ServiceElements'
 
 const Card = ({ id, imgStart, topLine, description1, 
-                description2,description3, img, alt}) => {
+                description2,description3, num, img, alt}) => {
     return (
         <>
          <ServiceCardContainer id={id}>
-            <InfoWrapper imgStart={imgStart}>
+            <InfoWrapper  imgStart={imgStart}>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                         <ImgWrap>
@@ -15,7 +15,7 @@ const Card = ({ id, imgStart, topLine, description1,
                         </ImgWrap>
                     </Column1>
                     
-                    <Column2>
+                    <Column2 num={num}>
                     <TextWrapper>
                         <TopLine>{topLine}</TopLine>
                         <Subtitle>{description1}</Subtitle>
