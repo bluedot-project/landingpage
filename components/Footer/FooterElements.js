@@ -37,20 +37,18 @@ export const FooterInfoWrapper = styled.div`
 
 export const FooterContactWrapper = styled.div`
     
-    display: flex;
+    display: grid;
     margin: 0 auto;
     margin-left: 13.4%; 
     margin-top: 10.6%;
     margin-bottom: 8.75%;
-
-    @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    @media screen and (max-width: 1620px){
+        grid-template-columns:  1fr;
     }
 
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
+  
     
 `
 
@@ -59,10 +57,8 @@ export const FooterH1 = styled.h1`
     margin-bottom: 42.5px;
     width: 202px;
     height: 67px;
-    object-fit: contain;
     font-family: Ubuntu;
     font-size: 60px;
-   
     letter-spacing: -3.6px;
     text-align: left;
     color: #000;
@@ -74,7 +70,6 @@ export const FooterH1 = styled.h1`
 export const FooterH3 = styled.h3`
     width: 532px;
     margin-bottom: 0;
-    object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
     letter-spacing: -0.72px;
@@ -96,7 +91,6 @@ export const FooterEmail = styled.div`
    
 `
 export const EmailInput = styled(Input)`
-    background: #fff;
     outline: none;
     width: 380px;
     height: 50px;
@@ -108,11 +102,12 @@ export const EmailInput = styled(Input)`
 
 
 export const EmailBtn = styled.div`
-    background: #fff;
     outline: none;
     border: none;
-    position: absolute; 
-    margin: 0 0 0.2% 21%;
+    position: relative; 
+    margin: 0 auto;
+    margin-left: -17.5%;
+    margin-bottom: 3px;
 `
 
 
@@ -122,6 +117,12 @@ export const Contact1 = styled.div`
     justify-content: flex-start;
     align-items: center;
     max-height: 340px;
+
+
+    @media screen and (max-width: 1620px){
+        margin-left: 20%;
+        margin-bottom: 2%;
+    }
    
 `
 export const Contact2 = styled.div`
@@ -130,6 +131,11 @@ export const Contact2 = styled.div`
     justify-content: flex-end;
     align-items: center;
     max-height: 340px;
+
+    @media screen and (max-width: 1620px){
+        margin-left: 20%;
+        justify-content: flex-start;
+    }
 `
 
 export const ShareH2 = styled.h2`

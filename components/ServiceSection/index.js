@@ -1,14 +1,14 @@
 import React, { useCallback } from 'react';
 import {ServiceContainer, ServiceInfoWrapper,
         ServiceH1, ServiceH3 } from './ServiceElements';
-import TitleUnderline from '../../images/shape-titleunderline.png';
+import TitleUnderline from '../../assets/images/shape-titleunderline.png';
 
 
 import ServiceCard from './ServiceCard/index.js';
 import { HomeObjOne, HomeObjTwo, HomeObjThree } from './ServiceCard/Data'
-import img1 from '../../images/service-img-1.png';
-import img2 from '../../images/service-img-2.png';
-import img3 from '../../images/service-img-2.png';
+import img1 from '../../assets/images/service-img-1.png';
+import img2 from '../../assets/images/service-img-2.png';
+import img3 from '../../assets/images/service-img-3.png';
 
 
     const ServiceSection = () => {

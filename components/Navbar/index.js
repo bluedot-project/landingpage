@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
     NavContact, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
-import logo from '../../images/logo@2x.png';
-import search from '../../images/search.png';
-import loginBtn from '../../images/login.png';
+import logo from '../../assets/images/logo@2x.png';
+import search from '../../assets/images/search.png';
+import loginBtn from '../../assets/images/login.png';
 
 
 const Navbar = () => {

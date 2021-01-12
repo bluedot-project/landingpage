@@ -3,14 +3,19 @@ import { ArtistContainer, ArtistInfoWrapper, ArtistH1, ArtistH3, ArtistCardRow1,
         ArtistInfoCard,  Column, Column2,
         ArtistRequired, RequiredH2, RequiredH3, InfoIcon, InfoNum,
         InfoH2, InfoH3, WhoIcon} from './ArtistElements';
-import TitleUnderline from '../../images/shape-titleunderline.png';
-import artistField from '..//../images/shape-artist-textfield.png';
-import artistWho from '../../images/textfield-artist-who.png'
+import TitleUnderline from '../../assets/images/shape-titleunderline.png';
+import artistField from '..//../assets/images/shape-artist-textfield.png';
+import artistWho from '../../assets/images/textfield-artist-who.png'
+
+import one from '../../assets/images/number-01.png';
+import two from '../../assets/images/number-02.png';
+import three from '../../assets/images/number-03.png';
+import four from '../../assets/images/number-04.png';
 
 const ArtistSection = () => {
     return (
         <>
-        <div style={{    height: '1300px',
+        <div style={{  
             background: '#fff',
         }}>
         <ArtistContainer id="artist"> 
@@ -24,14 +29,14 @@ const ArtistSection = () => {
                     <ArtistCardRow1>
                         <ArtistInfoCard>
                             <InfoIcon src={artistField} alt="artistInfo" />
-                            <InfoNum>01</InfoNum>
+                            <InfoNum src={one} />
                             <InfoH2>아티스트 인증</InfoH2>
                             <InfoH3>자신을 소개하기 위한 프로필을 만들어보세요</InfoH3>
                         </ArtistInfoCard>
 
                         <ArtistInfoCard>
                             <InfoIcon src={artistField} alt="artistInfo" />
-                            <InfoNum>02</InfoNum>
+                            <InfoNum src={two} />
                             <InfoH2 style={{margin: '0 0 3% 8.4%'}}>작업물 인증</InfoH2>
                             <InfoH3 style={{margin: '2% 0 0 9%'}}>자신의 작업물이나 닷비디오를 제작하고 프로필페이지에 업로드 하세요</InfoH3>
                         </ArtistInfoCard>
@@ -40,14 +45,14 @@ const ArtistSection = () => {
                     <ArtistCardRow2>
                         <ArtistInfoCard>
                             <InfoIcon src={artistField} alt="artistInfo" />
-                            <InfoNum>03</InfoNum>
+                            <InfoNum src={three} />
                             <InfoH2>계좌 인증</InfoH2>
                             <InfoH3>수익을 정산 받을 계좌를 등록해주세요</InfoH3>
                         </ArtistInfoCard>
 
                         <ArtistInfoCard>
                             <InfoIcon src={artistField} alt="artistInfo" />
-                            <InfoNum>04</InfoNum>
+                            <InfoNum src={four} />
                             <InfoH2>팔로워 초대</InfoH2>
                             <InfoH3>다른 SNS의 자신의 팬이나 친구들을 초대하세요</InfoH3>
                         </ArtistInfoCard>

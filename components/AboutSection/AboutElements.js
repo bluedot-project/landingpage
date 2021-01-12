@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '../../images/section-1-about.png';
+import bg from '../../assets/images/section-1-about.png';
 
 export const AboutContainer = styled.div`
     height: 1122px;
@@ -23,7 +23,7 @@ export const AboutInfoWrapper = styled.div`
     display: grid;
     word-break: keep-all;
     margin: 0 auto;
-    margin-top: 7.8%; 
+    margin-top: 7.56%; 
     margin-left: 13.3%; 
     text-align: left;
 
@@ -69,17 +69,13 @@ color: #8d8d8d;
 export const AboutCardWrapper = styled.div`
 
     margin: 0 auto;
-    margin-top: 9.2%;
+    margin-top: 7%;
     margin-bottom: 13%;
-    margin-left: 13%;
-    
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
-
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1400px){
         grid-template-columns: 1fr 1fr;
     }
 
@@ -87,15 +83,15 @@ export const AboutCardWrapper = styled.div`
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
+
     
 `
 
 export const AboutCard = styled.div`
-    background: #fff;
     display: flex;
-    width: 457px;
-    height: 359.6px;
-    margin-right : 7%;
+    width: 488px;
+    height: 353.6px;
+    margin-right : 0;
     word-break: keep-all;
     flex-direction: column;
     justify-content: flex-start;
@@ -106,11 +102,7 @@ export const AboutCard = styled.div`
     transition: all 0.2s ease-in-out;
     
 
-    // &:hover {
-    //     transform: scale(1.02);
-    //     transition: all 0.2s ease-in-out;
-    //     cursor: pointer;
-    // }
+    
 `
 
 export const CardIcon = styled.img`

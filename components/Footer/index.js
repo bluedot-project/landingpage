@@ -2,13 +2,13 @@ import React, { useCallback, useState } from 'react'
 import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3,
         FooterEmail, FooterContactWrapper, Contact1, Contact, EmailInput,
         Contact2, ShareH2, VisitH2, ShareH3, VisitH3, EmailBtn} from './FooterElements'
-import TitleUnderline from '../../images/shape-titleunderline.png';
-import emailTextfield from '../../images/textfield-email.png'
-import kakao from '../../images/img-kakao.png'
-import facebook from '../../images/img-facebook.png'
-import url from '../../images/img-url.png'
-import youtube from '../../images/img-youtube.png'
-import emailBtn from '../../images/btn-next.png'
+import TitleUnderline from '../../assets/images/shape-titleunderline.png';
+import emailTextfield from '../../assets/images/textfield-email.png'
+import kakao from '../../assets/images/img-kakao.png'
+import facebook from '../../assets/images/img-facebook.png'
+import url from '../../assets/images/img-url.png'
+import youtube from '../../assets/images/img-youtube.png'
+import emailBtn from '../../assets/images/btn-next.png'
 import Link from 'next/link';
 
 const Footer = () => {
@@ -30,6 +30,7 @@ const Footer = () => {
     }
     const onChangeEmail = (e) =>{
         setEmail(e.target.value);
+        setErr("");
     }
 
     const onSubmit = (e) => {
@@ -39,6 +40,7 @@ const Footer = () => {
         }else{
             console.log(email);
         }
+        
         setEmail("");
     }
 
@@ -71,8 +73,9 @@ const Footer = () => {
                         {err && <div 
                                 style={{ color:'#1127fe',  
                                     fontFamily: 'NanumSquareOTFR', 
+                                    fontSize: '20px',
                                     position: 'absolute', 
-                                    margin:'0 0 0 27%',
+                                    margin:'150px 0 0 8%',
                                     lineHeight: '1.71',
                                     letterSpacing: '-0.96px'}}>{err}</div>}
                         
@@ -112,7 +115,7 @@ const Footer = () => {
                         <VisitH3>블루닷의 유튜브를 방문해보세요</VisitH3>
 
                         <div style={{  width:'150px', height:'55px', marginTop:'5px'}}>
-                            <Link href="/" class="youtube">
+                            <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} />
                             </Link>
                         </div>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bg from '../../images/section-2-service.png';
+import bg from '../../assets/images/section-2-service.png';
 
 export const ServiceContainer = styled.div`
     display: flex;
