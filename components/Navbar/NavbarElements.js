@@ -39,7 +39,6 @@ export const MobileIcon = styled(LinkS)`
     @media screen and (max-width: 768px){
         display: block;
         position: absolute;
-        // padding: 0 8px;
 
 
         top: 0;

@@ -4,13 +4,7 @@ import bg from '../../assets/images/video.png'
 import Video from '../../assets/video/hero-video.mp4';
 
 export const HeroContainer = styled.div`
-// background: #000;
-// background-image: url(${bg});
-// width: 100%;
-// height: 1080px;
-// object-fit: contain;
 
-background: #0c0c0c;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -20,18 +14,31 @@ background: #0c0c0c;
     position: relative;
     z-index: 1;
 
+
+    @media screen and (max-width: 1400px){
+        height: 760px;
+    
+    }
+    
+    @media screen and (max-width: 1080px){
+        height: 600px;
+    
+    }
+
+    @media screen and (max-width: 768px){
+        height: 430px;
+    
+    }
 `
 
 const HeroBg = styled.div`
-    // padding: 12.3% 0px 0 12.9%;
-    // width: 100%;
 
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     overflow: hidden;
 `
 

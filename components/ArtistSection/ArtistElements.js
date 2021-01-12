@@ -45,11 +45,12 @@ export const ArtistCardWrapper = styled.div`
         
     }
     @media screen and (max-width: 1400px){
-        margin-left: -120px;
-        max-width: 800px;
-        
+        max-width: 1200px;
     }
 
+    @media screen and (max-width: 1080px){
+        margin-left: -7%;
+    }
 
     @media screen and (max-width: 768px){
         margin-left: 200px;
@@ -72,7 +73,11 @@ export const ArtistWhoWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-
+    @media screen and (max-width: 1920px){
+        margin-left: 12.55%;
+        margin-right:0;
+        
+    }
     @media screen and (max-width: 1400px){
         max-width:1200px;
         margin-left: 12%;
@@ -82,11 +87,10 @@ export const ArtistWhoWrapper = styled.div`
     @media screen and (max-width: 1080px){
         grid-template-columns: 1fr;
         width: 500px;
-        margin-left: 22%;
+        margin-left: 0;
     }
 
     @media screen and (max-width: 768px){
-        margin-left: 14%;
         padding: 0 20px;
     }
 `
@@ -193,6 +197,11 @@ export const ArtistInfoCard = styled.div`
         
     }
 
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
+
     
 `
 
@@ -258,6 +267,11 @@ export const ArtistRequiredCard = styled.div`
     }
     @media screen and (max-width: 1400px){
         margin-top: 5%;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
     }
 
 `
