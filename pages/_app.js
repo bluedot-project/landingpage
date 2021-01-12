@@ -1,7 +1,6 @@
 // 페이지 공통부분 처리
 import React from 'react'
 import PropTypes from 'prop-types';
-import 'antd/dist/antd.css'
 import Head from 'next/head'
 
 
