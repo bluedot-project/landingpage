@@ -13,7 +13,7 @@ const ArtistSection = () => {
         <div style={{    height: '1300px',
             background: '#fff',
         }}>
-        <ArtistContainer id="Artists"> 
+        <ArtistContainer id="artist"> 
             <ArtistInfoWrapper>
                 <ArtistH1>Artist</ArtistH1>
                 <img src={TitleUnderline} class="shape_titleunderline"

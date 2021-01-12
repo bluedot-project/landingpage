@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu,
-    HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
-import { Button } from 'antd';
+import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
+    NavContact, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import logo from '../../images/logo@2x.png';
 import search from '../../images/search.png';
 import loginBtn from '../../images/login.png';
 
+
 const Navbar = () => {
+    const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = () => {
+        if(window.scrollY >= 800){
+            setScrollNav(true)
+        }else{
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+    })
+
+ 
+
+
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavMenu>
                         <Link href="/">
@@ -18,7 +35,35 @@ const Navbar = () => {
                         </Link>
 
                         <LeftMenu>
-                            <Link href="/home">
+                            <NavLinks to="about" 
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                                About
+                            </NavLinks>
+                            <NavLinks to="service"
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                                Service
+                            </NavLinks>
+                            <NavLinks to="artist"
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                                Artist
+                            </NavLinks>
+                           
+
+
+                           
+                            {/* <Link href="/home">
                                 <HomeLink>홈</HomeLink>
                             </Link>
 
@@ -28,7 +73,7 @@ const Navbar = () => {
 
                             <Link href="/follow">
                                 <FollowLink>팔로우</FollowLink>
-                            </Link>
+                            </Link> */}
                         </LeftMenu>
 
                         
@@ -39,12 +84,20 @@ const Navbar = () => {
                                     <img src={search} alt="search" />
                                 </SearchLink>
                             </Link> */}
-                            <nav
-                            style={{  width: '159px', height: '40px', margin: '6px 0 14px 0'
+                             <NavContact to="contact"
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                                Contact
+                            </NavContact>
+                            {/* <nav
+                            style={{  width: '159px', height: '40px', margin: '6px 0 14px 0', cursor: 'pointer'
                                     }}>
                                 <img src={loginBtn} alt="button_login" />
             
-                            </nav>
+                            </nav> */}
                         </RightMenu>
                     </NavMenu>     
                 </NavbarContainer>

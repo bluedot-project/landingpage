@@ -9,7 +9,7 @@ import TitleUnderline from '../../images/shape-titleunderline.png';
 
 const AboutSection = () => {
     return (
-        <AboutContainer id="services">
+        <AboutContainer id="about">
 
             <AboutInfoWrapper>
             <AboutH1>Bluedot</AboutH1>

@@ -1,12 +1,14 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import bg from '../../images/section-1-about.png';
 
 export const AboutContainer = styled.div`
     height: 1122px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background: #e2e2e2;
     background: #fff;
+    background-image: url(${bg});
+
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -71,6 +73,7 @@ export const AboutCardWrapper = styled.div`
     margin-bottom: 13%;
     margin-left: 13%;
     
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -101,12 +104,13 @@ export const AboutCard = styled.div`
     max-height: 340px;
     padding: 30px;
     transition: all 0.2s ease-in-out;
+    
 
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-    }
+    // &:hover {
+    //     transform: scale(1.02);
+    //     transition: all 0.2s ease-in-out;
+    //     cursor: pointer;
+    // }
 `
 
 export const CardIcon = styled.img`

@@ -1,21 +1,21 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import {ServiceContainer, ServiceInfoWrapper,
         ServiceH1, ServiceH3 } from './ServiceElements';
-import { ServiceCardContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap,
-            Img, TextWrapper, TopLine, Subtitle} from './ServiceElements'
 import TitleUnderline from '../../images/shape-titleunderline.png';
+
+
 import ServiceCard from './ServiceCard/index.js';
 import { HomeObjOne, HomeObjTwo, HomeObjThree } from './ServiceCard/Data'
-import img1 from '../../images/service-img-1.png'
-import img2 from '../../images/service-img-2.png'
-import img3 from '../../images/service-img-2.png'
+import img1 from '../../images/service-img-1.png';
+import img2 from '../../images/service-img-2.png';
+import img3 from '../../images/service-img-2.png';
 
-    const ServiceSection = ({ id, imgStart, topLine, description1, 
-        description2, img, alt}) => {
+
+    const ServiceSection = () => {
     return (
-        <> 
-        <div style={{ height: '3226px' }}>
-        <ServiceContainer id="services"> 
+        <>     
+        <div style={{ height: '3226px'}}>
+        <ServiceContainer id="service"> 
             <ServiceInfoWrapper>
                 <ServiceH1>Service</ServiceH1>
                 <img src={TitleUnderline} class="shape_titleunderline"

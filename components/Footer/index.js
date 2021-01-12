@@ -45,8 +45,8 @@ const Footer = () => {
     return (
         
         <>
-            <div style={{ height: '925px'}}>
-            <FooterContainer id="Footers"> 
+            <div id="contact" style={{ height: '925px'}}>
+            <FooterContainer > 
                 <FooterInfoWrapper>
                     <FooterH1>Contact</FooterH1>
                     <img src={TitleUnderline} class="shape_titleunderline"

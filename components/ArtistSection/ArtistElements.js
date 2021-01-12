@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import bg from '../../images/section-3-artist.png';
 
 
 export const ArtistContainer = styled.div`
@@ -6,6 +7,7 @@ export const ArtistContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background: #fff;
+    background-image: url(${bg});
 
     @media screen and (max-width: 768px){
         height: 1100px;

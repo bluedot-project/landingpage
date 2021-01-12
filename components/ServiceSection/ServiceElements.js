@@ -1,11 +1,12 @@
 import styled from 'styled-components'
-
+import bg from '../../images/section-2-service.png';
 
 export const ServiceContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #fff;
+    background-image: url(${bg});
 
     @media screen and (max-width: 768px){
         height: 1100px;
