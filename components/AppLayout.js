@@ -14,13 +14,19 @@ const Global = createGlobalStyle`
     body{
         margin: 0px;
         
-        @import url('../fonts/nanumSquare');
-        @import url('../fonts/escore');
-        @import url('../fonts/ubuntu');
-        font-family: "NanumSquareOTFEB","NanumSquareOTFR","Ubuntu-Light",
-                    "Ubuntu-Medium", "Ubuntu-Regular", sans-serif;
+        // @import url('../fonts/nanumSquare/NanumSquareOTFEB.otf');
+        // @import url('../fonts/escore');
+        // @import url('../fonts/ubuntu');
+        // font-family: "NanumSquareOTFEB";
+        // font-family:"NanumSquareOTFR";
+        // ,"Ubuntu-Light","Ubuntu-Medium", "Ubuntu-Regular", sans-serif;
         
 
+    }
+    @font-face{
+        font-family: "NanumSquareOTFEB";
+        font-weight: normal;
+        src: url('/fonts/nanumSquare/NanumSquareOTFEB.otf') format("truetype");
     }
 
 `
