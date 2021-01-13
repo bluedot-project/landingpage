@@ -37,7 +37,7 @@ const AboutSection = () => {
 
                 <AboutCard num='3'>    
                     <CardH2>Challenge</CardH2>
-                    <CardH3>블루닷에서는 새로운 도전을 응원합니다.</CardH3>
+                    <CardH3 num='3'>블루닷에서는 새로운 도전을 응원합니다.</CardH3>
                     <Card2H3>다양한 소통과 협업을 통해 새로운 창작기회에 도전해보세요.</Card2H3>
                 </AboutCard>
 

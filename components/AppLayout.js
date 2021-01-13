@@ -17,9 +17,8 @@ const Global = createGlobalStyle`
         @import url('../fonts/nanumSquare');
         @import url('../fonts/escore');
         @import url('../fonts/ubuntu');
-        // font-family: "NanumSquareOTFEB", sans-serif;
-        font-family: "NanumSquareOTFR", sans-serif;
-        // font-family: "Ubuntu-Light", sans-serif;
+        font-family: "NanumSquareOTFEB","NanumSquareOTFR","Ubuntu-Light",
+                    "Ubuntu-Medium", "Ubuntu-Regular", sans-serif;
         
 
     }

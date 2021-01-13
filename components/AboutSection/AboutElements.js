@@ -170,7 +170,7 @@ export const CardH2 = styled.h2`
 `
 
 export const CardH3 = styled.h3`
-    padding: 3% 11% 0 11%;
+    padding : ${({num}) => (num ==='3' ?`3% 5% 0 5%` : `3% 8% 0 8%`)};
     word-break: keep-all;
     font-family: NanumSquareOTFR;
     font-size: 20px;
