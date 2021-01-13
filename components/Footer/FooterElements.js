@@ -189,8 +189,7 @@ export const VisitH2 = styled.h2`
     color: #686868;
 `
 export const ShareH3 = styled.h2`
-    width: 270px;
-    height: 23px;
+    height: 280px;
     font-size: 16px;
     margin: 2% 1% 0 1%;
     font-family: S-CoreDream-4;
