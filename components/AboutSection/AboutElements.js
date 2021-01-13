@@ -121,7 +121,7 @@ export const AboutCard = styled.div`
     padding: 30px;
     transition: all 0.2s ease-in-out;
     background-image: url(${Textbox});
-
+    background-repeat: no-repeat;
     @media screen and (max-width: 1920px){
         margin-right: 3%;
     }
