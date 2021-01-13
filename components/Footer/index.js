@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3,
-        FooterEmail, FooterContactWrapper, Contact1, Contact, EmailInput,
+        FooterEmail, FooterContactWrapper, Contact1, YoutubeBtn, EmailInput,
         Contact2, ShareH2, VisitH2, ShareH3, VisitH3, EmailBtn} from './FooterElements'
 import TitleUnderline from '../../assets/images/shape-titleunderline.png';
 import emailTextfield from '../../assets/images/textfield-email.png'
@@ -115,11 +115,11 @@ const Footer = () => {
                         <VisitH2>visit</VisitH2>
                         <VisitH3>블루닷의 유튜브를 방문해보세요</VisitH3>
 
-                        <div style={{  width:'150px', height:'55px', marginTop:'5px',cursor: 'pointer'}}>
+                        <YoutubeBtn >
                             <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} />
                             </Link>
-                        </div>
+                        </YoutubeBtn>
                     </Contact2>
 
                 </FooterContactWrapper>

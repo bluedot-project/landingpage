@@ -1,13 +1,14 @@
 import React from 'react'
 import { AboutContainer, AboutH1, AboutH3, AboutInfoWrapper, AboutCardWrapper, AboutCard, 
-    CardIcon, CardH2,Card2H3, CardH3} from './AboutElements';
+     CardH2,Card2H3, CardH3,Bg} from './AboutElements';
 import Textbox from '../../assets/images/about-textbox@2x.png'
 import TitleUnderline from '../../assets/images/shape-titleunderline.png';
-
+import bg from '../../assets/images/section-1-about.png';
 
 const AboutSection = () => {
     return (
-        <> 
+        < > 
+        <Bg>
         <AboutContainer id="about">
 
             <AboutInfoWrapper>
@@ -42,6 +43,7 @@ const AboutSection = () => {
 
             </AboutCardWrapper>
         </AboutContainer>
+        </Bg>
         </>
     )
 }

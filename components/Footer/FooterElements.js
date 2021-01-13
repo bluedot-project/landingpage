@@ -3,10 +3,15 @@ import { Input} from 'antd';
 
 export const FooterContainer = styled.div`
     display: flex;
+    height: 1000px;
+    margin :  0 13.427% 0 13.23%;
+    margin-bottom: 10.6%;
+    max-width: 1920px;
     flex-direction: column;
-    align-items: center;
-    background: #fff;
-    height: 925px;
+
+    @media screen and (max-width: 1920px){
+        height: 925px;
+    }
 
     @media screen and (max-width: 768px){
         height: 800px;
@@ -17,14 +22,11 @@ export const FooterContainer = styled.div`
     }
 `
 export const FooterInfoWrapper = styled.div`
+    max-width: 1920px;
     display: grid;
-    margin: 0 auto;
-    margin-top: 10.6%; 
-    margin-left: 13.4%; 
+    word-break: keep-all;
     text-align: left;
-    max-width: 1200px;
-
-    
+    margin-top: 16.69%;
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
@@ -34,12 +36,10 @@ export const FooterInfoWrapper = styled.div`
 `
 
 export const FooterContactWrapper = styled.div`
-    
+    max-width: 1920px;
     display: grid;
-    margin: 0 auto;
-    margin-left: 13.4%; 
     margin-top: 10.6%;
-    margin-bottom: 8.75%;
+    
     grid-template-columns: 1fr 1fr;
     
     
@@ -56,14 +56,24 @@ export const FooterContactWrapper = styled.div`
 
 export const FooterH1 = styled.h1`
     color: #000;
-    margin-bottom: 42.5px;
     width: 202px;
     height: 67px;
+    object-fit: contain;
     font-family: Ubuntu;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
     font-size: 60px;
     letter-spacing: -3.6px;
     text-align: left;
     color: #000;
+
+    margin-block-start: 0;
+    margin-block-end: 4.31%;
+    margin-inline: 0;
+    
+
+
 
     @media screen and(max-width: 480px){
         font-size: 2rem;
@@ -74,6 +84,9 @@ export const FooterH3 = styled.h3`
     margin-bottom: 0;
     font-family: NanumSquareOTFR;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     letter-spacing: -0.72px;
     text-align: left;
     color: #8d8d8d;
@@ -82,8 +95,7 @@ export const FooterH3 = styled.h3`
 
 export const FooterEmail = styled.div`
     margin-left: -18px;
-    margin-top: 3%;
-    padding-top: 11%;
+    margin-top: 3.45%;
     background: #fff;
     display: flex;
     width: 450px;
@@ -137,6 +149,7 @@ export const Contact2 = styled.div`
     display: flex;
     width: 650px;
     justify-content: flex-end;
+    padding-right: 50px;
     align-items: center;
     max-height: 340px;
 
@@ -155,6 +168,9 @@ export const ShareH2 = styled.h2`
     height: 45px;
     font-family: Ubuntu;
     font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     letter-spacing: -1.6px;
     text-align: center;
     color: #686868;
@@ -165,6 +181,9 @@ export const VisitH2 = styled.h2`
     height: 45px;
     font-family: Ubuntu;
     font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     letter-spacing: -1.6px;
     text-align: center;
     color: #686868;
@@ -173,11 +192,12 @@ export const ShareH3 = styled.h2`
     width: 270px;
     height: 23px;
     font-size: 16px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2.5%;
+    margin: 2% 1% 0 1%;
     font-family: S-CoreDream-4;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     letter-spacing: -0.64px;
     text-align: center;
     color: #999999;
@@ -188,9 +208,12 @@ export const VisitH3 = styled.h2`
     width: 270px;
     height: 23px;
     font-size: 16px;
-    margin-top: 2.5%;
+    margin: 2% -3% 0 -3%;
     font-family: S-CoreDream-4;
     font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     letter-spacing: -0.64px;
     text-align: center;
     color: #999999;

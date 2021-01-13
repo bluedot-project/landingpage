@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArtistContainer, ArtistInfoWrapper, ArtistH1, ArtistH3, ArtistCardRow1, ArtistCardRow2,
+import { ArtistContainer, ArtistInfoWrapper, ArtistH1, ArtistH3, ArtistCardRow1, ArtistCardRow2, Bg,
         ArtistInfoCard, ArtistCardWrapper, ArtistWhoWrapper,
         ArtistRequiredCard, RequiredH2, RequiredH3, InfoNum,
         InfoH2, InfoH3} from './ArtistElements';
@@ -12,9 +12,7 @@ import four from '../../assets/images/number-04.png';
 const ArtistSection = () => {
     return (
         <>
-        <div style={{  
-            background: '#fff',
-        }}>
+        <Bg>
         <ArtistContainer id="artist"> 
             <ArtistInfoWrapper>
                 <ArtistH1>Artist</ArtistH1>
@@ -81,8 +79,7 @@ const ArtistSection = () => {
         </ArtistContainer>
 
 
-
-        </div>
+        </Bg>
 
         </>
     )

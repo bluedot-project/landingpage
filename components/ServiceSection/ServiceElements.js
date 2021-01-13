@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 import bg from '../../assets/images/section-2-service.png';
 
+export const Bg = styled.div`
+    background-image: url(${bg});
+    backgooun-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+`
+
 export const ServiceContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
     height: 3226px;
-    width:100%;
-    background-image: url(${bg});
+    margin :  0 13.427% 0 13.23%;
+    max-width: 1920px;
+    flex-direction: column;
 
     @media screen and (max-width: 1680px){
      height: 2600px;
@@ -34,12 +40,11 @@ export const ServiceInfoWrapper = styled.div`
     word-break: keep-all;
     margin: 0 auto;
     margin-top: 101px; 
-    margin-left: 13.25%;
-    margin-bottom: 8.3%;
+    margin-left: 0;
+    margin-bottom: 11.364%;
     text-align: left;
-    max-width: 1200px;
+    max-width: 1400px;
     
-
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
@@ -50,48 +55,64 @@ export const ServiceInfoWrapper = styled.div`
 
 export const ServiceH1 = styled.h1`
     color: #000;
-    margin-bottom: 42.5px;
     width: 202px;
     height: 67px;
+    object-fit: contain;
     font-family: Ubuntu;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
     font-size: 60px;
     letter-spacing: -3.6px;
     text-align: left;
     color: #000;
+
+    margin-block-start: 0;
+    margin-block-end: 8.1%;
+    margin-inline: 0;
+
+
 
     @media screen and(max-width: 480px){
         font-size: 2rem;
     }
 `
 export const ServiceH3 = styled.h3`
+
     width: 532px;
-    margin-bottom: 0;
     object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
     color: #8d8d8d;
+
+    margin-block: 0;
+    margin-inline: 0;
+    
 `
 
 export const ServiceCardContainer = styled.div`
+    position: relative;
     width: 100%;
     margin: 0 auto;
+    max-width: 1920px;
     
     @media screen and (max-width: 768px){
-        max-width: 500px;
+        max-width: 580px;
         padding: 100px 0;
-        margin-left: 13.25%;
     }
 `
 
 
 export const InfoWrapper = styled.div`
 display: grid;
-z-index: 1;
 margin: 0 auto;
-margin-left: ${({imgStart}) => (imgStart ? `7%` : `13%`)};
+margin-left: ${({imgStart}) => (imgStart ? `-6%` : `0`)};
 margin-bottom: 12.3%;
 grid-template-columns: 1fr;
 justify-content: center;
@@ -130,7 +151,7 @@ export const Column1 = styled.div`
 
 export const ImgWrap = styled.div`
     width:100%;
-    margin-right: -120px;
+
     @media screen and (max-width: 1680px){
         margin-right: -80px;
     }
@@ -172,7 +193,6 @@ export const Column2 = styled.div`
     margin-bottom: ${ ({ num }) => (num===1 ? `250px` :
         (num===2 ? `-110px` : 
         (num===3 ? `-350px` : `0`)))};
-    margin-right:  ${ ({ num }) => (num===2 ? `-250px`: `0px` )};
     grid-area: col1;
     width:100%;
     word-break: keep-all;
@@ -192,23 +212,31 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     height: 100%;
-    max-width: 500px;
+    max-width: 520px;
+    padding-left: ${ ({ num }) => (num===2 ? `0px` : `90px`)};
     
     @media screen and (max-width: 1080px){
         max-width: 300px;
     }
+    @media screen and (max-width: 768px){
+        padding-left: 90px;
+    }
 `
 
 export const TopLine = styled.h1`
-    width: 427px;
-    height: 86px;
     object-fit: contain;
     font-family: NanumSquareOTFEB;
-    margin-bottom: 49.3px;
     font-size: 78px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
     letter-spacing: -3.12px;
     text-align: left;
     color: #000;
+
+    margin-block-start: 0;
+    margin-block-end: 5.163%;
 
     @media screen and (max-width: 1680px){
         font-size : 62px;
@@ -240,10 +268,14 @@ export const Subtitle = styled.h3`
     margin-bottom: 0;
     font-family: NanumSquareOTFR;
     font-size: 18px;
+    font-weight: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
     color: #8d8d8d;
+
+    margin-block: 0;
+    margin-inline:0;
     
     @media screen and (max-width: 1680px){
         font-size : 16px

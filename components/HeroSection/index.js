@@ -8,13 +8,14 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 30px 0 320px;
-    height: 1080px;
-    
+    height: 1300px;
     position: relative;
     z-index: 1;
 
-
+    @media screen and (max-width: 1400px){
+        height: 1080px;
+    
+    }
     @media screen and (max-width: 1400px){
         height: 760px;
     
@@ -38,18 +39,18 @@ const HeroBg = styled.div`
     right: 0;
     left: 0;
     width: 100%;
-    // height: 100%;
+    height: 100%;
     overflow: hidden;
 `
 
 
-const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
-`
+// const VideoBg = styled.video`
+//     width: 100%;
+//     height: 100%;
+//     -o-object-fit: cover;
+//     object-fit: cover;
+//     background: #fff;
+// `
 
 
 const HeroContent = styled.div`
@@ -63,13 +64,20 @@ const HeroContent = styled.div`
 `
 const SloganH1 = styled.h1`
     width: 680px;
-    margin-bottom: 0px;
     font-family: Ubuntu;
     font-size: 110px;
     font-weight: bold;
     line-height: 1.36;
     letter-spacing: -4.4px;
     text-align: left;
+
+    position: relative;
+    max-width: 1920px;
+
+    // margin-block-start: 0;
+    // margin-block-end: 0;
+    // margin-inline-start: 13.23%;
+    // margin-inline-end:  13.427%;
 `
 
 
@@ -79,9 +87,9 @@ const HeroSection = () => {
         <>
             <HeroContainer>
                 <HeroBg>
-                    <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-                    {/* <img src={main} alt=""
-                        style={{ width: '100%'}}/> */}
+                    {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+                    <img src={bg} alt=""
+                        style={{ width: '100%'}}/>
                 </HeroBg>
 
                 <HeroContent>

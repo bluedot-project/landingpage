@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import {ServiceContainer, ServiceInfoWrapper,
+import React  from 'react';
+import {ServiceContainer, ServiceInfoWrapper, Bg,
         ServiceH1, ServiceH3 } from './ServiceElements';
 import TitleUnderline from '../../assets/images/shape-titleunderline.png';
 
@@ -14,6 +14,7 @@ import img3 from '../../assets/images/service-img-3.png';
     const ServiceSection = () => {
     return (
         <>     
+        <Bg>
         <ServiceContainer id="service"> 
             <ServiceInfoWrapper>
                 <ServiceH1>Service</ServiceH1>
@@ -31,6 +32,7 @@ import img3 from '../../assets/images/service-img-3.png';
                 <ServiceCard {...HomeObjThree} img={img3}/>
 
         </ServiceContainer>
+        </Bg>
     </>
     )
 }

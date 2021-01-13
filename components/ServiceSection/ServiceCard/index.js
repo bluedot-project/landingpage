@@ -16,7 +16,7 @@ const Card = ({ id, imgStart, topLine, description1,
                     </Column1>
                     
                     <Column2 num={num}>
-                    <TextWrapper>
+                    <TextWrapper num={num}>
                         <TopLine>{topLine}</TopLine>
                         <Subtitle>{description1}</Subtitle>
                         <Subtitle>{description2}</Subtitle>
