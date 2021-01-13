@@ -225,6 +225,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.h1`
     object-fit: contain;
+    width: 480px;
     font-family: NanumSquareOTFEB;
     font-size: 78px;
     font-weight: normal;
