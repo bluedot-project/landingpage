@@ -25,7 +25,25 @@ body {
 @font-face {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300, 400, 500, 700;
-  src: url("/fonts/ubuntu/") format("turetype");
+  src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300, 400, 500, 700;
+  src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
+}
+
+@font-face {
+  font-family: "NanumSquare", sans-serif !important;
+  font-weight: bold;
+  src: url("/fonts/nanumSquare/NanumSquareOTFEB.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NanumSquare", sans-serif !important;
+  font-weight: regular;
+  src: url("/fonts/nanumSquare/NanumSquareOTFR.otf") format("opentype");
 }
 /* font-family: 
 가능 굵기 (font-weight) :  */
