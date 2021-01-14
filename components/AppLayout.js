@@ -6,7 +6,6 @@ import AboutSection from './Landing/AboutSection';
 import ServiceSection from './Landing/ServiceSection'
 import ArtistSection from './Landing/ArtistSection'
 import Footer from './Landing/Footer'
-// import asd from '../fonts/nanumSquare'
 import {createGlobalStyle} from 'styled-components';
 
 const Global = createGlobalStyle`
@@ -14,20 +13,20 @@ const Global = createGlobalStyle`
     body{
         margin: 0px;
         
-        // @import url('../fonts/nanumSquare/NanumSquareOTFEB.otf');
-        // @import url('../fonts/escore');
-        // @import url('../fonts/ubuntu');
-        // font-family: "NanumSquareOTFEB";
-        // font-family:"NanumSquareOTFR";
-        // ,"Ubuntu-Light","Ubuntu-Medium", "Ubuntu-Regular", sans-serif;
-        
+    }
 
+    @font-face {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300, 400, 500, 700;
+        src: url("/fonts/ubuntu/Ubuntu-Light.ttf") format("turetype");
     }
-    @font-face{
-        font-family: "NanumSquareOTFEB";
-        font-weight: normal;
-        src: url('/fonts/nanumSquare/NanumSquareOTFEB.otf') format("truetype");
+
+    @font-face {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300, 400, 500, 700;
+        src: url("/fonts/ubuntu/") format("turetype");
     }
+   
 
 `
 

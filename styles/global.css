@@ -16,3 +16,16 @@
     --font-small: 12px;
     --font-micro: 10px; */
 }
+
+body {
+  padding: 0;
+  margin: 10px;
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300, 400, 500, 700;
+  src: url("/fonts/ubuntu/") format("turetype");
+}
+/* font-family: 
+가능 굵기 (font-weight) :  */
