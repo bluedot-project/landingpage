@@ -120,7 +120,6 @@ const SloganH1 = styled.h1`
     width: 720px;
     margin: 0 0 69px;
     font-family: Ubuntu;
-    // font-family: InkLipquid;
     font-size: 86px;
     font-weight: bold;
     font-stretch: normal;

@@ -17,7 +17,7 @@ const App = ({ Component }) => {
 
 
         <Component />
-
+{/* 
         <style global jsx>{
             `
             body {
@@ -26,7 +26,7 @@ const App = ({ Component }) => {
             `
         }
 
-        </style>
+        </style> */}
         </>
     )
 };
