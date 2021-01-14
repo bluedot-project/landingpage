@@ -18,6 +18,15 @@ const App = ({ Component }) => {
 
         <Component />
 
+        <style global jsx>{
+            `
+            body {
+                font-family: InkLipquid, Ubuntu, NanumSquareOTFEB, NanumSquareOTFR;
+            }
+            `
+        }
+
+        </style>
         </>
     )
 };
