@@ -1,30 +1,62 @@
 import styled from 'styled-components';
-import bg from '../../assets/images/section-1-about.png';
-import Textbox from '../../assets/images/about-textbox.png'
+import bg from '../../../assets/images/section-1-about.png';
+import Textbox from '../../../assets/images/img-textfield.png';
+import mTextbox from '../../../assets/images/mobile-img-textfield.png';
+import mBg from '../../../assets/images/mobile-section-1-about.png';
 
 export const Bg = styled.div`
     background-image: url(${bg});
     backgooun-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #f6f6f6;
+
+    @media screen and (max-width: 480px){
+        background-image: url(${mBg});
+    }
 
 `
 
+export const Line = styled.div`
+
+        width: 45px;
+        height: 2px;
+        object-fit: contain;
+        border-radius: 0.5px;
+        background-color: #3d3d3d;
+        
+        margin: 10px 0 21px 0;
+
+    @media screen and (max-width: 480px){
+        width: 30px;
+        height: 2.5px;
+        
+    }
+
+`
 export const AboutContainer = styled.div`
     position: relative;
-    height: 1122px;
-    margin :  0 13.427% 0 13.23%;
+    height: 1074px;
+    margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     display:flex;
     flex-direction: column;
     
+    @media screen and (max-width: 1920px){
+        height: 1074px;
+    }
+
+    @media screen and (max-width: 1920px){
+        height: 1200px;
+    }
 
     @media screen and (max-width: 1080px){
         height: 1400px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        margin :  0 8.2159% 0 8.2159%;
+        height: 963px;
     }
 `
 export const AboutInfoWrapper = styled.div`
@@ -32,20 +64,20 @@ export const AboutInfoWrapper = styled.div`
     display: grid;
     word-break: keep-all;
     text-align: left;
-    margin-top: 7.55%;
+    margin-top: 14.335%;
     
     
 `
 export const AboutCardWrapper = styled.div`
     max-width: 1920px;
-    margin-top: 12.2%;
+    margin-top: 6%;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
     @media screen and (max-width: 1920px){
-        margin-top: 12.2%;
+        margin-top: 6.809%;
     }
     @media screen and (max-width: 1680px){
         grid-template-columns: 1fr 1fr;
@@ -65,30 +97,35 @@ export const AboutCardWrapper = styled.div`
 `
 
 export const AboutH1 = styled.h1`
-    color: #000;
-    width: 202px;
-    height: 67px;
+    width: 164px;
+    height: 56px;
     object-fit: contain;
     font-family: Ubuntu;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    font-size: 60px;
-    letter-spacing: -3.6px;
+    line-height: 2.18;
+    letter-spacing: -2px;
     text-align: left;
     color: #000;
 
+    margin: 0;
     margin-block-start: 0;
-    margin-block-end: 2.75%;
+    margin-block-end: 3.35%;
     margin-inline: 0;
-
-    @media screen and(max-width: 480px){
-        font-size: 2rem;
+   
+    @media screen and (max-width: 480px){
+        width: 104px;
+        height: 34px;
+        font-size: 30px;
+        line-height: 2.53;
+        letter-spacing: -1.8px;
+        margin-block-end: 10.35%;
     }
 `
 export const AboutH3 = styled.h3`
     width: 532px;
-    height: 50px;
     object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
@@ -98,11 +135,48 @@ export const AboutH3 = styled.h3`
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
-    color: #8d8d8d;
+    color: #000;
+    margin-block: 0;
+    margin-inline: 0;
+
+    margin-block: 0;
+    margin-inline: 0;
+
+    @media screen and (max-width: 480px){
+        width: 330px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+        
+    }
+
+`
+
+export const About2H3 = styled.h3`
+    width: 532px;
+    object-fit: contain;
+    font-family: NanumSquareOTFR;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.72px;
+    text-align: left;
+    color: #000;
+    margin-block: 0;
+    margin-inline: 0;
 
     margin-block-start: 0;
-    margin-block-end: 2.75%;
+    margin-block-end: 0;
     margin-inline: 0;
+
+    @media screen and (max-width: 480px){
+        width: 330px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+    }
 
 `
 
@@ -117,11 +191,12 @@ export const AboutCard = styled.div`
     max-height: 340px;
     margin-right: 3%;
     width: 460.8px;
-    height: 353.4px;
+    height: 370.4px;
     padding: 30px;
     transition: all 0.2s ease-in-out;
     background-image: url(${Textbox});
     background-repeat: no-repeat;
+
     @media screen and (max-width: 1920px){
         margin-right: 3%;
     }
@@ -136,6 +211,9 @@ export const AboutCard = styled.div`
         margin-left: 0;
     }
     
+    @media screen and (max-width: 480px){
+        background-image: url(${mTextbox});
+    }
 
     &:hover {
         transform: scale(1.02);
@@ -150,7 +228,7 @@ export const CardH2 = styled.h2`
     position: relative;
     width: 250px;
     height: 38px;
-    padding: 12.5% 0;
+    padding: 9.5% 0;
     text-align: center;
     font-family: Ubuntu;
     font-weight: 500;
@@ -170,8 +248,9 @@ export const CardH2 = styled.h2`
 `
 
 export const CardH3 = styled.h3`
-    padding : ${({num}) => (num ==='3' ?`3% 5% 0 5%` : `3% 8% 0 8%`)};
+    padding : ${({num}) => (num ==='3' ?`6% 5% 0 5%` : `6% 8% 0 8%`)};
     word-break: keep-all;
+    object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 20px;
     font-weight: normal;
@@ -180,7 +259,7 @@ export const CardH3 = styled.h3`
     line-height: 1.8;
     letter-spacing: -0.8px;
     text-align: center;
-    color: #303030;
+    color: #616161;
 
     margin-block: 0;
     margin-inline: 0;
@@ -189,6 +268,7 @@ export const Card2H3 = styled.h3`
     padding: 0 13% 0 13%;
     word-break: keep-all;
     margin: 0;
+    object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 20px;
     font-weight: normal;
@@ -197,7 +277,7 @@ export const Card2H3 = styled.h3`
     line-height: 1.8;
     letter-spacing: -0.8px;
     text-align: center;
-    color: #303030;
+    color: #616161;
 
     margin-block: 0;
     margin-inline: 0;

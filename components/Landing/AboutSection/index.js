@@ -1,9 +1,6 @@
 import React from 'react'
-import { AboutContainer, AboutH1, AboutH3, AboutInfoWrapper, AboutCardWrapper, AboutCard, 
-     CardH2,Card2H3, CardH3,Bg} from './AboutElements';
-import Textbox from '../../assets/images/about-textbox@2x.png'
-import TitleUnderline from '../../assets/images/shape-titleunderline.png';
-import bg from '../../assets/images/section-1-about.png';
+import { AboutContainer, AboutH1, AboutH3, AboutInfoWrapper, AboutCardWrapper, AboutCard,About2H3, 
+     CardH2,Card2H3, Line, CardH3,Bg} from './AboutElements';
 
 const AboutSection = () => {
     return (
@@ -13,10 +10,9 @@ const AboutSection = () => {
 
             <AboutInfoWrapper>
             <AboutH1>Bluedot</AboutH1>
-            <img src={TitleUnderline} class="shape_titleunderline"
-                style={{ marginBottom: '27.8px'}}/>
-            <AboutH3>블루닷은 아티스트들을 밤하늘의 푸른 별처럼 빛나게 하고자 만들어졌습니다.
-                    개성을 뽐내고 재능을 통해 수익을 창출하세요.</AboutH3>
+            <Line />
+            <AboutH3>블루닷은 아티스트들을 밤하늘의 푸른 별처럼 빛나게 하고자 만들어졌습니다.</AboutH3>
+            <About2H3>개성을 뽐내고 재능을 통해 수익을 창출하세요.</About2H3>
             </AboutInfoWrapper>
 
             <AboutCardWrapper>

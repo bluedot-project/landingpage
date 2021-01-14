@@ -1,19 +1,20 @@
 import styled from 'styled-components'
-import bg from '../../assets/images/section-3-artist.png';
-import artistField from '..//../assets/images/shape-artist-textfield.png';
-import artistWho from '../../assets/images/textfield-artist-who.png'
+import bg from '../../../assets/images/section-3-artist.png';
+import artistField from '../../../assets/images/shape-artist-textfield.png';
+import artistWho from '../../../assets/images/textfield-artist-who.png'
 
 export const Bg = styled.div`
     background-image: url(${bg});
     backgooun-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #f6f6f6;
 `
 
 export const ArtistContainer = styled.div`
     display: flex;
-    height: 1300px;
-    margin :  0 13.427% 0 13.23%;
+    height: 1668px;
+    margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
 
@@ -26,14 +27,35 @@ export const ArtistContainer = styled.div`
     @media screen and (max-width: 1080px){
         height: 2300px;
     }
+    @media screen and (max-width: 480px){
+        margin :  0 8.2159% 0 8.2159%;
+    }
   
 `
+export const Line = styled.div`
+
+        width: 45px;
+        height: 2px;
+        object-fit: contain;
+        border-radius: 0.5px;
+        background-color: #3d3d3d;
+        
+        margin: 10px 0 21px 0;
+
+    @media screen and (max-width: 480px){
+        width: 30px;
+        height: 2.5px;
+        
+    }
+
+`
+
 export const ArtistInfoWrapper = styled.div`
     max-width: 1920px;
     display: grid;
     word-break: keep-all;
     text-align: left;
-    margin-top: 6.57%;
+    margin-top: 14.335%;
     
 `
 
@@ -61,15 +83,16 @@ export const ArtistCardWrapper = styled.div`
 `
 
 export const ArtistWhoWrapper = styled.div`
-    margin-top: 7.5%;
+    margin-top: 10.8%;
     margin-bottom: 8.75%;
+    margin-left: -1%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1920px;
 
  
     @media screen and (max-width: 1400px){
-        max-width:1200px;
+        max-width: 1200px;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -87,16 +110,16 @@ export const ArtistWhoWrapper = styled.div`
 
 
 export const ArtistH1 = styled.h1`
-    position: relative;
-    width: 202px;
-    height: 67px;
+    width: 164px;
+    height: 56px;
     object-fit: contain;
     font-family: Ubuntu;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    font-size: 60px;
-    letter-spacing: -3.6px;
+    line-height: 2.18;
+    letter-spacing: -2px;
     text-align: left;
     color: #000;
 
@@ -105,26 +128,40 @@ export const ArtistH1 = styled.h1`
     margin-inline: 0;
     
     
-    @media screen and(max-width: 480px){
-        font-size: 2rem;
+    @media screen and (max-width: 480px){
+        width: 104px;
+        height: 34px;
+        font-size: 30px;
+        line-height: 2.53;
+        letter-spacing: -1.8px;
+        margin-block-end: 10.35%;
     }
 `
 export const ArtistH3 = styled.h3`
-    width: 532px;
-    object-fit: contain;
-    font-family: NanumSquareOTFR;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: -0.72px;
-    text-align: left;
-    color: #8d8d8d;
+width: 532px;
+object-fit: contain;
+font-family: NanumSquareOTFR;
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.67;
+letter-spacing: -0.72px;
+text-align: left;
+color: #000;
+margin-block: 0;
+margin-inline: 0;
 
     margin-block: 0;
     margin-inline: 0;
 
+    @media screen and (max-width: 480px){
+        width: 250px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+        
+    }
 `
 
 
@@ -275,6 +312,8 @@ export const ArtistRequiredCard = styled.div`
     align-items: center;
     max-height: 300px;
     background-image: url(${artistWho});
+
+    
 
     @media screen and (max-width: 1920px){
         margin-right : 1%;

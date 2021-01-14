@@ -10,6 +10,7 @@ const App = ({ Component }) => {
         <Head>
             <meta charSet="utf-8"/>
             <title>Bluedot 블루닷 : 아티스트 브랜딩 콘텐츠 커뮤니티 플랫폼</title>
+            <link rel="stylesheet" href="style.css" />
         </Head>
 
 

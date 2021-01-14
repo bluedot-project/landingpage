@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import AboutSection from './AboutSection';
-import ServiceSection from './ServiceSection'
-import ArtistSection from './ArtistSection'
-import Footer from './Footer'
+import HeroSection from './Landing/HeroSection';
+import AboutSection from './Landing/AboutSection';
+import ServiceSection from './Landing/ServiceSection'
+import ArtistSection from './Landing/ArtistSection'
+import Footer from './Landing/Footer'
 // import asd from '../fonts/nanumSquare'
 import {createGlobalStyle} from 'styled-components';
 

@@ -4,6 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
     NavContact, MobileIcon, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import logo from '../../assets/images/logo@2x.png';
+import mLogo from '../../assets/images/mobile-logo.png';
 import { animateScroll as scroll } from 'react-scroll';
 import search from '../../assets/images/search.png';
 import loginBtn from '../../assets/images/login.png';
@@ -34,17 +35,17 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavMenu>
+                            <NavLinks id='1' to="home" 
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                            <Logo src={logo} alt="bludot" />
+                            </NavLinks>
                         <Link href="/">
-                            <Logo src={logo} alt="" />
+                            <MobileIcon src={mLogo} alt="bludot" />
                         </Link>
-                        <MobileIcon to="contact"
-                        smooth={true} 
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80} >
-                            C
-                        </MobileIcon>
 
                         <LeftMenu>
                             <NavLinks to="about" 
@@ -53,7 +54,7 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact='true'
                             offset={-80}>
-                                About
+                                ABOUT
                             </NavLinks>
                             <NavLinks to="service"
                             smooth={true} 
@@ -61,7 +62,7 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact='true'
                             offset={-80}>
-                                Service
+                                SERVICE
                             </NavLinks>
                             <NavLinks to="artist"
                             smooth={true} 
@@ -69,7 +70,15 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact='true'
                             offset={-80}>
-                                Artist
+                                ARTIST
+                            </NavLinks>
+                            <NavLinks to="contact"
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>
+                                CONTACT
                             </NavLinks>
                            
 

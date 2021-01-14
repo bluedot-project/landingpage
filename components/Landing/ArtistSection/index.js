@@ -1,13 +1,12 @@
 import React from 'react'
 import { ArtistContainer, ArtistInfoWrapper, ArtistH1, ArtistH3, ArtistCardRow1, ArtistCardRow2, Bg,
-        ArtistInfoCard, ArtistCardWrapper, ArtistWhoWrapper,
+        ArtistInfoCard, ArtistCardWrapper, ArtistWhoWrapper, Line,
         ArtistRequiredCard, RequiredH2, RequiredH3, InfoNum,
         InfoH2, InfoH3} from './ArtistElements';
-import TitleUnderline from '../../assets/images/shape-titleunderline.png';
-import one from '../../assets/images/number-01.png';
-import two from '../../assets/images/number-02.png';
-import three from '../../assets/images/number-03.png';
-import four from '../../assets/images/number-04.png';
+import one from '../../../assets/images/number-01.png';
+import two from '../../../assets/images/number-02.png';
+import three from '../../../assets/images/number-03.png';
+import four from '../../../assets/images/number-04.png';
 
 const ArtistSection = () => {
     return (
@@ -16,8 +15,7 @@ const ArtistSection = () => {
         <ArtistContainer id="artist"> 
             <ArtistInfoWrapper>
                 <ArtistH1>Artist</ArtistH1>
-                <img src={TitleUnderline} class="shape_titleunderline"
-                style={{ marginBottom: '27.8px'}}/>
+                <Line />
                 <ArtistH3>여러분들은 모두 붓을 들고 있습니다. 점만 찍는다면 아티스트가 될 거예요.</ArtistH3>
             </ArtistInfoWrapper>
 

@@ -1,8 +1,10 @@
 import styled from 'styled-components'
-import bg from '../../assets/images/section-2-service.png';
+import bg from '../../../assets/images/section-2-service.png';
+
 
 export const Bg = styled.div`
     background-image: url(${bg});
+    // color: #000;
     backgooun-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,8 +13,8 @@ export const Bg = styled.div`
 
 export const ServiceContainer = styled.div`
     display: flex;
-    height: 3226px;
-    margin :  0 13.427% 0 13.23%;
+    height: 2916px;
+    margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
 
@@ -32,16 +34,37 @@ export const ServiceContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
+        margin :  0 8.2159% 0 8.2159%;
         height: 2900px;
     }
+
 `
+
+export const Line = styled.div`
+
+        width: 45px;
+        height: 2px;
+        object-fit: contain;
+        border-radius: 0.5px;
+        background-color: #3d3d3d;
+        
+        margin: 10px 0 21px 0;
+
+    @media screen and (max-width: 480px){
+        width: 30px;
+        height: 2.5px;
+        
+    }
+
+`
+
 export const ServiceInfoWrapper = styled.div`
     display: grid;
     word-break: keep-all;
     margin: 0 auto;
-    margin-top: 101px; 
+    margin-top: 200px; 
     margin-left: 0;
-    margin-bottom: 11.364%;
+    margin-bottom: 9.717%;
     text-align: left;
     max-width: 1400px;
     
@@ -54,32 +77,35 @@ export const ServiceInfoWrapper = styled.div`
 `
 
 export const ServiceH1 = styled.h1`
-    color: #000;
-    width: 202px;
-    height: 67px;
+
+    width: 164px;
+    height: 56px;
     object-fit: contain;
     font-family: Ubuntu;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    font-size: 60px;
-    letter-spacing: -3.6px;
+    line-height: 2.18;
+    letter-spacing: -2px;
     text-align: left;
     color: #000;
-
     margin-block-start: 0;
-    margin-block-end: 8.1%;
+    margin-block-end: 10.91%;
     margin-inline: 0;
 
-
-
-    @media screen and(max-width: 480px){
-        font-size: 2rem;
+    @media screen and (max-width: 480px){
+        width: 104px;
+        height: 34px;
+        font-size: 30px;
+        line-height: 2.53;
+        letter-spacing: -1.8px;
+        margin-block-end: 10.35%;
     }
 `
 export const ServiceH3 = styled.h3`
 
-    width: 532px;
+    width: 432px;
     object-fit: contain;
     font-family: NanumSquareOTFR;
     font-size: 18px;
@@ -89,11 +115,17 @@ export const ServiceH3 = styled.h3`
     line-height: 1.67;
     letter-spacing: -0.72px;
     text-align: left;
-    color: #8d8d8d;
+    color: #000;
 
     margin-block: 0;
     margin-inline: 0;
-    
+    @media screen and (max-width: 480px){
+        width: 290px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+        
+    }
 `
 
 export const ServiceCardContainer = styled.div`
@@ -112,8 +144,9 @@ export const ServiceCardContainer = styled.div`
 export const InfoWrapper = styled.div`
 display: grid;
 margin: 0 auto;
-margin-left: ${({imgStart}) => (imgStart ? `-6%` : `0`)};
-margin-bottom: 12.3%;
+margin-left: ${({num}) => (num===3 ? `-1%` : `0`)};
+margin-top: ${({num}) => (num===3 ? `3%` : `0`)};
+margin-bottom: 6.3%;
 grid-template-columns: 1fr;
 justify-content: center;
 align-items: center;
@@ -150,8 +183,9 @@ export const Column1 = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    width:100%;
-
+    padding: ${ ({ num }) => (num===1 ? `0` :
+    (num===2 ? `0 0 0 150px` : 
+    (num===3 ? `0` : `0`)))};
     @media screen and (max-width: 1680px){
         margin-right: -80px;
     }
@@ -166,9 +200,15 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    width: 933.5px;
-    height: 690.1px;
+    width: 835px;
+    height: 589px;
     object-fit: contain;
+    width: ${ ({ num }) => (num===1 ? `835px` :
+    (num===2 ? `884.9px` : 
+    (num===3 ? `880px` : `0`)))};
+    height: ${ ({ num }) => (num===1 ? `589px` :
+    (num===2 ? `598.2px` : 
+    (num===3 ? `721.9px` : `0`)))};
 
     @media screen and (max-width: 1680px){
         width: 800.5px;
@@ -190,9 +230,9 @@ export const Img = styled.img`
 `
 
 export const Column2 = styled.div`
-    margin-bottom: ${ ({ num }) => (num===1 ? `250px` :
-        (num===2 ? `-110px` : 
-        (num===3 ? `-350px` : `0`)))};
+    margin: ${ ({ num }) => (num===1 ? `90px 0 0 0` :
+        (num===2 ? `0 0 -110px 0` : 
+        (num===3 ? `0 0 -200px 0` : `0`)))};
     grid-area: col1;
     width:100%;
     word-break: keep-all;
@@ -213,8 +253,8 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     height: 100%;
     max-width: 520px;
-    padding-left: ${ ({ num }) => (num===2 ? `0px` : `90px`)};
-    
+    padding-left: ${ ({ num }) => (num===2 ? `0px` : `85px`)};
+    margin-left: ${ ({ num }) => (num===2 ? `40px` : `0`)};
     @media screen and (max-width: 1080px){
         max-width: 300px;
     }
@@ -224,20 +264,27 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.h1`
+ 
+    width: 400px;
     object-fit: contain;
-    width: 480px;
-    font-family: NanumSquareOTFEB;
+    font-family: Ubuntu;
     font-size: 78px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.73;
     letter-spacing: -3.12px;
     text-align: left;
-    color: #000;
-
     margin-block-start: 0;
     margin-block-end: 5.163%;
+    color: #000;
+    margin-block: 0;
+    margin-inline:0;
+
+    margin: ${({ num }) => (num === 1? `0 0 0 0` :
+        num==='1'? `-50px 0 5.856% 140px` : '0 0 4.156% 0')};
+    
+
 
     @media screen and (max-width: 1680px){
         font-size : 62px;
@@ -250,11 +297,14 @@ export const TopLine = styled.h1`
         font-size: 48px;
         height: 60px;
         margin-bottom: 30px;
+        margin-left: ${ ({ num }) => (num===2 ? `175px` : `0`)};
     }
 
     @media screen and (max-width: 1080px){
         font-size: 36px;
         margin-bottom: 2px;
+        margin-left: 0;
+
     }
     @media screen and (max-width: 768px){
         font-size: 48px;
@@ -264,19 +314,22 @@ export const TopLine = styled.h1`
 `
 
 export const Subtitle = styled.h3`
-    width: 560px;
+    width: 400px;
     max-width: 560px;
-    margin-bottom: 0;
-    font-family: NanumSquareOTFR;
+    font-family: NanumSquareOTFB;
     font-size: 18px;
     font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.72px;
-    text-align: left;
-    color: #8d8d8d;
+    text-align: ${({ num }) => (num===2? `right`: `left`)};
+    color: ##3d3d3d;
 
     margin-block: 0;
     margin-inline:0;
+    padding-right: ${({ num }) => (num===2? `55px` : `0`)};
+
     
     @media screen and (max-width: 1680px){
         font-size : 16px

@@ -1,0 +1,18 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #000;
+  --vivid-blue-color: #1127fe;
+  --perwinkle-color: #8892fe;
+  --greyish-color: #3d3d3d;
+
+  /* Size */
+  /* --padding: 12px;
+    --avatar-size: 36px; */
+
+  /* Font Size */
+  /* --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px; */
+}
