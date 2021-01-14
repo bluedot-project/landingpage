@@ -32,20 +32,20 @@ body {
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu";
   font-weight: lighter, normal, bold;
   src: url("/fonts/ubuntu/Ubuntu-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: lighter, normal, bold;
+  font-family: "Ubuntu";
+  font-weight: bold;
   src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: lighter, normal, bold;
+  font-family: "Ubuntu";
+  font-weight: bold;
   src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
 }
 
