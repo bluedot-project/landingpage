@@ -18,13 +18,13 @@ const Global = createGlobalStyle`
     @font-face {
         font-family: "Ubuntu", sans-serif;
         font-weight: 300, 400, 500, 700;
-        src: url("/fonts/ubuntu/Ubuntu-Light.ttf") format("turetype");
+        src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
     }
 
     @font-face {
         font-family: "Ubuntu", sans-serif;
         font-weight: 300, 400, 500, 700;
-        src: url("/fonts/ubuntu/") format("turetype");
+        src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
     }
    
 
