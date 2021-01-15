@@ -283,7 +283,7 @@ export const InfoH3 = styled.h3`
     width: 340px;
     height: 18px;
     margin: ${({ num }) => (num ==='2' ? `0 0 39.5px 169.5px` : `0 0 39.5px 170.5px`)};
-    font-family: NanumSquareOTFR;
+    font-family: NanumSquareOTFB;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -352,7 +352,7 @@ export const RequiredH2 = styled.h2`
 export const RequiredH3 = styled.h3`
     width: 350px;
     height: 70px;
-    font-family: S-CoreDream-4;
+    font-family: NanumSquareOTFB;
     font-size: 21px;
     font-weight: normal;
     font-stretch: normal;
