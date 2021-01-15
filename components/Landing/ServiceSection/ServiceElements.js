@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 import bg from '../../../assets/images/section-2-service.png';
-
+import mBg from '../../../assets/images/mobile-section-2-service.png';
 
 export const Bg = styled.div`
     background-image: url(${bg});
-    // color: #000;
     backgooun-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 480px){
+        background-image: url(${mBg});
+    }
 
 `
 
@@ -29,13 +32,13 @@ export const ServiceContainer = styled.div`
         height: 1800px;
     }
     @media screen and (max-width: 768px){
-        height: 3100px;
+        height: 2300px;
         max-width:700px;
     }
 
     @media screen and (max-width: 480px){
         margin :  0 8.2159% 0 8.2159%;
-        height: 2900px;
+        height: 1754px;
     }
 
 `
@@ -71,7 +74,10 @@ export const ServiceInfoWrapper = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
-        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin-top: 15.335%;
     }
     
 `
@@ -107,13 +113,11 @@ export const ServiceH3 = styled.h3`
 
     width: 432px;
     object-fit: contain;
-    font-family: NanumSquareOTFB;
-    font-weight: normal;
+    
+    font-family: NanumSquare;
     font-size: 18px;
-
-    font-family: 'NanumSquare';
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.92px;
 
 
     font-stretch: normal;
@@ -136,13 +140,12 @@ export const ServiceH3 = styled.h3`
 
 export const ServiceCardContainer = styled.div`
     position: relative;
-    width: 100%;
-    margin: 0 auto;
     max-width: 1920px;
     
     @media screen and (max-width: 768px){
         max-width: 580px;
-        padding: 100px 0;
+    }
+    @media screen and (max-width: 480px){
     }
 `
 
@@ -163,9 +166,20 @@ align-items: center;
 
 @media screen and (max-width: 768px){
     grid-template-columns: 1fr;
-    padding: 0 20px;
-    margin: 0 auto;
+    padding: 0 30px;
 }
+
+@media screen and (max-width: 768px){
+    padding: 0;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 480px){
+    margin-top: 50%;
+    margin-bottom: -15%;
+}
+
+
     
 `
 
@@ -173,18 +187,30 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-column: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col2 col1'`)};
 
     
 
     @media screen and (max-width: 768px){
-        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`)};
+        margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 480px){
+        grid-template-columns: 1fr;
+        grid-template-areas: 'col1 col1';
+    }
+ 
 `
 
 
 export const Column1 = styled.div`
-    grid-area: col2;
+    grid-area: col1;
+
+    @media screen and (max-width: 768px){
+        margin: 0 0 0 -16%;
+    }
+    
    
 `
 
@@ -200,9 +226,15 @@ export const ImgWrap = styled.div`
         margin-right: -20px;
     }
     @media screen and (max-width: 768px){
-        margin-top: -100px;
+        padding:0;
         max-width: 500px;
+        margin: -100px 0 0 100px;
     }
+    @media screen and (max-width: 480px){
+        margin: -100px 0 0 0;
+    }
+
+    
 `
 
 export const Img = styled.img`
@@ -230,16 +262,21 @@ export const Img = styled.img`
         height: 300.1px;
     }
     @media screen and (max-width: 768px){
-        width: 500.5px;
-        height: 400.1px;
+        width: 400.5px;
+        height: 300.1px;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 369.6px;
+        height: 260.6px;
     }
 `
 
 export const Column2 = styled.div`
+    grid-area: col2;    
     margin: ${ ({ num }) => (num===1 ? `90px 0 0 0` :
         (num===2 ? `0 0 -110px 0` : 
         (num===3 ? `0 0 -200px 0` : `0`)))};
-    grid-area: col1;
     width:100%;
     word-break: keep-all;
 
@@ -252,7 +289,11 @@ export const Column2 = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        margin-bottom: 180px;
+        margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin: 0 15% 0 0;
     }
 `
 
@@ -265,7 +306,8 @@ export const TextWrapper = styled.div`
         max-width: 300px;
     }
     @media screen and (max-width: 768px){
-        padding-left: 90px;
+        padding-left: 0px;
+        margin-left: 0;
     }
 `
 
@@ -308,29 +350,35 @@ export const TopLine = styled.h1`
 
     @media screen and (max-width: 1080px){
         font-size: 36px;
-        margin-bottom: 2px;
-        margin-left: 0;
+        margin: ${({ num }) => (num === 1? `0 0 0 0` :
+        num==='1'? `-60px 0 5% 135px` : '0 0 4.156% 0')};
 
     }
     @media screen and (max-width: 768px){
-        font-size: 48px;
-        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 180px;
+        margin: ${({ num }) => (num === 1? `0 0 0 0` :
+        num===2 ? `0 0 0 190px` :
+        num==='1'? `-60px 0 5% 135px` : '0 0 4.156% 0')};
+
     }
     
 `
 
 export const Subtitle = styled.h3`
-    width: 400px;
+    width: ${({ id }) => (id ==='community' ? `400px`: `430px`)};
     max-width: 560px;
-    font-family: NanumSquareOTFB;
+    font-family: NanumSquareB;
     font-size: 18px;
     font-weight: normal;
+    letter-spacing: -0.82px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
-    letter-spacing: -0.72px;
     text-align: ${({ num }) => (num===2? `right`: `left`)};
-    color: ##3d3d3d;
+    color: var(--greyish-brown);
 
     margin-block: 0;
     margin-inline:0;
@@ -352,10 +400,16 @@ export const Subtitle = styled.h3`
     }
 
     @media screen and (max-width: 768px){
+        width: 340px;
         font-size: 14px;
-        width: 560px;
+        text-align: left;
     }
     @media screen and (max-width: 480px){
-        font-size: 8px;
+        width: 300px;
+        text-align: ${({ num }) => (num===2? `right`: `left`)};
+        margin-left: ${({ num }) => (num===2? `65px` : `0`)};
+        line-height: 1.71;
+        letter-spacing: -0.56px;
+        padding-right: 25px;
     }
 `

@@ -2,11 +2,12 @@ import React from 'react'
 import { ServiceCardContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap,
     Img, TextWrapper, TopLine, Subtitle} from '../ServiceElements'
 
-const Card = ({ id, imgStart, topLine,topLine2, description1, 
+const Card = ({ id, imgStart, topLine,topLine2, description1,
                 description2,description3, num, img, alt}) => {
     return (
         <>
          <ServiceCardContainer id={id}>
+
             <InfoWrapper  num={num}>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
@@ -21,7 +22,7 @@ const Card = ({ id, imgStart, topLine,topLine2, description1,
                         { num ===1 &&
                         <TopLine num='1'>{topLine2}</TopLine>}
                         <Subtitle num={num}>{description1}</Subtitle>
-                        <Subtitle num={num}>{description2}</Subtitle>
+                        <Subtitle id={id} num={num}>{description2}</Subtitle>
                         <Subtitle num={num}>{description3}</Subtitle>
                         
                     </TextWrapper>
@@ -30,6 +31,7 @@ const Card = ({ id, imgStart, topLine,topLine2, description1,
                  
                 </InfoRow>
             </InfoWrapper>
+
             </ServiceCardContainer>
 
         

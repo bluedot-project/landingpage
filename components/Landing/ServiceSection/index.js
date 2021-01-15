@@ -5,7 +5,7 @@ import TitleUnderline from '../../../assets/images/shape-titleunderline.png';
 
 
 import ServiceCard from './ServiceCard/index.js';
-import { HomeObjOne, HomeObjTwo, HomeObjThree } from './ServiceCard/Data'
+import { HomeObjOne, HomeObjTwo, HomeObjThree, MoHomeObjOne, MoHomeObjThree, MoHomeObjTwo } from './ServiceCard/Data'
 import img1 from '../../../assets/images/service-img-1.png';
 import img2 from '../../../assets/images/service-img-2.png';
 import img3 from '../../../assets/images/service-img-3.png';
@@ -27,9 +27,13 @@ import img3 from '../../../assets/images/service-img-3.png';
             </ServiceInfoWrapper>
         
 
-                <ServiceCard {...HomeObjOne} img={img1}/>
-                <ServiceCard {...HomeObjTwo} img={img2}/>
-                <ServiceCard {...HomeObjThree} img={img3}/>
+                <ServiceCard {...HomeObjOne} img={img1} mobile='off'/>
+                <ServiceCard {...HomeObjTwo} img={img2} mobile='off'/>
+                <ServiceCard {...HomeObjThree} img={img3} mobile='off'/>
+
+                {/* <ServiceCard {...MoHomeObjOne} img={img1} mobile='on'/>
+                <ServiceCard {...MoHomeObjTwo} img={img2} mobile='on'/>
+                <ServiceCard {...MoHomeObjThree} img={img3} mobile='on'/> */}
 
         </ServiceContainer>
         </Bg>

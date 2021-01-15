@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3, Line,
+import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3, Line, Bg, SocialLink,
     FooterInputWrapper, FooterContactWrapper, Contact1, TextInput, TextInput2, TextInput3,
     Row1, Row2, Row3, Contact2, ShareH2, VisitH2, ShareH3, VisitH3, EmailBtn} from './FooterElements'
 import youtube from '../../../assets/images/img-youtube.png'
@@ -63,6 +63,9 @@ const Footer = () => {
         
         <>
             <div id="contact" >
+
+        
+             <Bg>
             <FooterContainer > 
                 <FooterInfoWrapper>
                     <FooterH1>Contact</FooterH1>
@@ -148,10 +151,11 @@ const Footer = () => {
                         <VisitH2>visit</VisitH2>
                         <VisitH3>블루닷의 유튜브,블로그, SNS를 방문해보세요</VisitH3>
 
+                        <SocialLink >
                         <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} 
                                     style={{ marginRight:'6px', cursor: 'pointer'}}/>
-                            </Link>
+                             </Link>           
 
                             <Link href="https://bluedot.tistory.com/" class="tistory">
                                 <img src={tistory}
@@ -161,6 +165,9 @@ const Footer = () => {
                             <Link href="https://www.instagram.com/bluedot_korea/" class="instagram">
                                 <img src={insta} style={{ cursor: 'pointer'}}/>
                             </Link>
+                            </SocialLink>
+                        
+                            
                     </Contact1>
 
 
@@ -174,7 +181,7 @@ const Footer = () => {
                 </FooterContactWrapper>
 
         </FooterContainer>
-    
+        </Bg>   
             </div>
         </>
         

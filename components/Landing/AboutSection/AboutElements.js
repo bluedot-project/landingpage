@@ -13,6 +13,7 @@ export const Bg = styled.div`
 
     @media screen and (max-width: 480px){
         background-image: url(${mBg});
+        background-color: #fff;
     }
 
 `
@@ -42,9 +43,6 @@ export const AboutContainer = styled.div`
     display:flex;
     flex-direction: column;
     
-    @media screen and (max-width: 1920px){
-        height: 1074px;
-    }
 
     @media screen and (max-width: 1920px){
         height: 1200px;
@@ -66,6 +64,9 @@ export const AboutInfoWrapper = styled.div`
     text-align: left;
     margin-top: 14.335%;
     
+    @media screen and (max-width: 480px){
+        margin-top: 4.335%;
+    }
     
 `
 export const AboutCardWrapper = styled.div`
@@ -92,6 +93,12 @@ export const AboutCardWrapper = styled.div`
 
     @media screen and (max-width: 768px){
         margin-left: 0;
+    }
+
+    @media screen and (max-width: 480px){
+        padding: 0;
+        margin :  10.7% 10.2159% 21% 10.2159%;
+
     }
     
 `
@@ -127,15 +134,17 @@ export const AboutH1 = styled.h1`
 export const AboutH3 = styled.h3`
     width: 600px;
     object-fit: contain;
-    font-family: NanumSquareOTFB;
+
+    font-family: NanumSquare;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
+    letter-spacing: -0.92px;
+
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
-    letter-spacing: -0.72px;
     text-align: left;
-    color: #000;
+    color: #3d3d3d;
     margin-block: 0;
     margin-inline: 0;
 
@@ -143,7 +152,7 @@ export const AboutH3 = styled.h3`
     margin-inline: 0;
 
     @media screen and (max-width: 480px){
-        width: 330px;
+        width: 320px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: -0.16px;
@@ -155,15 +164,16 @@ export const AboutH3 = styled.h3`
 export const About2H3 = styled.h3`
     width: 532px;
     object-fit: contain;
-    font-family: NanumSquareOTFB;
+    font-family: NanumSquare;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
+    letter-spacing: -0.92px;
+
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
-    letter-spacing: -0.72px;
     text-align: left;
-    color: #000;
+    color: #3d3d3d;
     margin-block: 0;
     margin-inline: 0;
 
@@ -213,6 +223,9 @@ export const AboutCard = styled.div`
     
     @media screen and (max-width: 480px){
         background-image: url(${mTextbox});
+        width: 359px;
+        height: 217px;
+        margin :  0;
     }
 
     &:hover {
@@ -242,43 +255,76 @@ export const CardH2 = styled.h2`
     margin-block: 0;
     margin-inline: 0;
 
-@media screen and(max-width: 480px){
-    font-size: 2rem;
-}  
+@media screen and (max-width: 480px){
+    width: 250px;
+    height: 24px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    padding: 0;
+    margin: 5.69% 5% 4.7% 5%;
+} 
 `
 
 export const CardH3 = styled.h3`
     padding : ${({num}) => (num ==='3' ?`6% 5% 0 5%` : `6% 8% 0 8%`)};
     word-break: keep-all;
     object-fit: contain;
-    font-family: NanumSquareOTFR;
+
+
+    font-family: NanumSquare;
+    font-weight: 400;
     font-size: 20px;
-    font-weight: normal;
+    letter-spacing: -1.2px;
+    line-height: 1.8;
+
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.8;
-    letter-spacing: -0.8px;
     text-align: center;
     color: #616161;
 
     margin-block: 0;
     margin-inline: 0;
+
+    @media screen and (max-width: 480px){
+        width: 230px;
+        
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: -0.7px;
+        padding: 0;
+        margin: 0 10%;
+    }  
 `
 export const Card2H3 = styled.h3`
-    padding: 0 13% 0 13%;
+    
+    padding:${({ id }) => (id === 'communication' ? ` 0 25% 0 25%;` : ` 0 15% 0 15%;`)};
     word-break: keep-all;
     margin: 0;
     object-fit: contain;
-    font-family: NanumSquareOTFR;
+    
+    
+
+    ffont-family: NanumSquare;
+    font-weight: 400;
     font-size: 20px;
-    font-weight: normal;
+    letter-spacing: -1.2px;
+    line-height: 1.8;
+
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.8;
-    letter-spacing: -0.8px;
     text-align: center;
     color: #616161;
 
     margin-block: 0;
     margin-inline: 0;
+
+    @media screen and (max-width: 480px){
+        width: 170px;
+        width: ${({num}) => (num ==='3' ?`200px` : `170px`)};
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: -0.7px;
+        padding: 0;
+        margin: 0 10%;
+    }  
 `

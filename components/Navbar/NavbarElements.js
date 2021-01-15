@@ -123,14 +123,15 @@ export const RightMenu = styled.div`
 
 `
 export const NavContact = styled(LinkS)`
-  font-family: NanumSquareOTFR;
+  font-family: NanumSquareR;
+  font-size: 16px;
+  font-weight: normal;
+
   margin-left: -113%;
   padding: 19.2% 55.99%;
   white-space: nowrap;
   background: #4052fe;
   color: #fff;
-  font-size: 16px;
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;

@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 import { Input} from 'antd';
+import mBg from '../../../assets/images/mobile-section-4-contact.png';
 
+export const Bg = styled.div`
+
+    @media screen and (max-width: 480px){
+        background-image: url(${mBg});
+        background-color: #fff;
+    }
+`
 export const FooterContainer = styled.div`
     display: flex;
     height: 1500px;
@@ -108,9 +116,12 @@ margin-inline: 0;
 export const FooterH3 = styled.h3`
 width: 442px;
 object-fit: contain;
-font-family: NanumSquareOTFR;
-font-size: 18px;
-font-weight: normal;
+font-family: NanumSquare;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.92px;
+
+
 font-stretch: normal;
 font-style: normal;
 line-height: 1.67;
@@ -143,9 +154,14 @@ export const FooterInputWrapper = styled.div`
 export const Row1 = styled.div`
     margin-top: 3.45%;
     display: grid;
-    
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
   
    
 `
@@ -169,15 +185,17 @@ export const Row3 = styled.div`
 
 export const TextInput = styled(Input)`
         opacity: 0.83;
-        font-family: NanumSquareOTFR;
+        font-family: NanumSquare;
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.71;
-        letter-spacing: -0.96px;
+        letter-spacing: -1px;
         text-align: left;
         color: #565656;
+
+        width: auto;
 
 
         height: 76px;
@@ -187,13 +205,21 @@ export const TextInput = styled(Input)`
         background-color: #fff;
 
         margin-block-end: -5%;
-        margin-inline-end: 5%;
+        margin-inline-end: ${({ id }) => (id==='phoneNumber' ? `0` : `5.102%`)};
         padding: 25px 32px;
+
+        @media screen and (max-width: 768px){
+            margin-inline-end: ${({ id }) => (id==='email' || id ==='phoneNumber' ? `0` : `5.102%`)};
+            width: ${({ id }) => (id==='phoneNumber' ? `200%` : `autow`)};
+            margin-block-end: 5%;
+            
+        }
+
 `
 
 export const TextInput2 = styled(Input)`
         opacity: 0.83;
-        font-family: NanumSquareOTFR;
+        font-family: NanumSquare;
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -210,11 +236,16 @@ export const TextInput2 = styled(Input)`
         background-color: #fff;
         padding: 25px 32px;
         margin-block-end: -2%;
+
+        @media screen and (max-width: 768px){
+            margin-inline-end: 0;
+            margin-block-end: 2%;
+            
 `
 
 export const TextInput3 = styled(Input)`
         opacity: 0.83;
-        font-family: NanumSquareOTFR;
+        font-family: NanumSquare;
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -283,6 +314,11 @@ export const Contact1 = styled.div`
     @media screen and (max-width: 1080px){
         margin-left: 0;
     }
+    @media screen and (max-width: 768px){
+        width:380px;
+        display: grid;
+        margin-bottom: 10px;
+    }
    
 `
 export const Contact2 = styled.div`
@@ -299,6 +335,13 @@ export const Contact2 = styled.div`
     }
     @media screen and (max-width: 1080px){
         margin-left: 0;
+    }
+
+
+    @media screen and (max-width: 768px){
+        width:380px;
+        display: grid;
+        margin-bottom: 10px;
     }
 `
 
@@ -319,33 +362,62 @@ color: #686868;
     margin-block: 0;
     margin-inline-start: 100px;
     margin-inline-end: 19px;
+    @media screen and (max-width: 1080px){
+        margin-inline-start: 80px;
+        margin-inline-end: 19px;
+        margin-block: 10px;
+    }
+    
+
+    @media screen and (max-width: 480px){
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 3;
+        letter-spacing: -0.8px;
+        margin-inline-start: 10px;
+        margin-block: 0px;
+    }
 `
 
 export const VisitH2 = styled.h2`
-width: 68px;
-height: 45px;
-object-fit: contain;
-font-family: Ubuntu;
-font-size: 40px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.5;
-letter-spacing: -1.6px;
-text-align: center;
-color: #686868;
+    width:78px;
+    height: 45px;
+    object-fit: contain;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -1.6px;
+    text-align: center;
+    color: #686868;
 
     margin-block: 0;
     margin-inline-start: 0px;
     margin-inline-end: 19px;
+
+    @media screen and (max-width: 1080px){
+        margin-inline-start: 80px;
+        margin-block: 10px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 3;
+        letter-spacing: -0.8px;
+        margin-inline-start: 10px;
+        margin-block: 0px;
+    }
 `
 export const ShareH3 = styled.h2`
 width: 328px;
 height: 18px;
 object-fit: contain;
-font-family: NanumSquareOTFR;
+font-family: NanumSquare;
 font-size: 16px;
-font-weight: normal;
+font-weight: 700;
 font-stretch: normal;
 font-style: normal;
 line-height: 2.56;
@@ -356,15 +428,27 @@ color: #999999;
     margin-block: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
+    @media screen and (max-width: 1080px){
+        margin-block: 10px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin-inline-start: 10px;
+        margin-inline-end: 19px;
+        font-size: 14px;
+        line-height: 2.93;
+        letter-spacing: -0.56px;
+    }
 `
 
 export const VisitH3 = styled.h2`
 width: 328px;
 height: 18px;
 object-fit: contain;
-font-family: NanumSquareOTFR;
+font-family: NanumSquare;
 font-size: 16px;
-font-weight: normal;
+font-weight: 700;
 font-stretch: normal;
 font-style: normal;
 line-height: 2.56;
@@ -374,6 +458,27 @@ color: #999999;
 
     margin-block: 0;
     margin-inline-start: 0px;
-    margin-inline-end: 19px;    
+    margin-inline-end: 19px; 
+    
+    @media screen and (max-width: 480px){
+        width: 328px;
+        margin-inline-start: 20px;
+        margin-inline-end: 19px;
+        margin-block: 10px;
 
+        font-size: 14px;
+        line-height: 2.93;
+        letter-spacing: -0.56px;
+    }
+
+`
+
+
+export const SocialLink = styled.div`
+    display: flex;
+    @media screen and (max-width: 480px){
+        margin-inline: 85px;
+        margin-block-start:10px;
+        margin-block-end:20px;
+    }
 `

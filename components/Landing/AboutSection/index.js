@@ -19,7 +19,7 @@ const AboutSection = () => {
                 <AboutCard>
                     <CardH2> Communication</CardH2>
                     <CardH3>블루닷은 팬과 아티스트간의 간편하고 다양한 상호 소통을 지원합니다.</CardH3>
-                    <Card2H3>팬들을 만들고 소통을 통해 그들의 별이 되어 주세요.</Card2H3>
+                    <Card2H3 id='communication'>팬들을 만들고 소통을 통해 그들의 별이 되어 주세요.</Card2H3>
                     
                         
                 </AboutCard>
@@ -34,7 +34,7 @@ const AboutSection = () => {
                 <AboutCard num='3'>    
                     <CardH2>Challenge</CardH2>
                     <CardH3 num='3'>블루닷에서는 새로운 도전을 응원합니다.</CardH3>
-                    <Card2H3>다양한 소통과 협업을 통해 새로운 창작기회에 도전해보세요.</Card2H3>
+                    <Card2H3 num='3'>다양한 소통과 협업을 통해 새로운 창작기회에 도전해보세요.</Card2H3>
                 </AboutCard>
 
             </AboutCardWrapper>

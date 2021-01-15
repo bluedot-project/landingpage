@@ -47,7 +47,7 @@ export const HeroContainer = styled.div`
 `
 
 const CtaBtn = styled.div`
-    width: 170px;
+    width: 175px;
     height: 55px;
     object-fit: contain;
     border-radius: 12px;
@@ -55,14 +55,10 @@ const CtaBtn = styled.div`
     background-color: #fff;
     cursor: pointer;
 
-    font-family: NanumSquareOTFB;
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: -1.2px;
 
-    font-family: 'NanumSquare';
-    font-weight: normal;
-    font-size: 18px;
+    font-family: NanumSquare;
+    font-weight: 700;
+    font-size: 20px;
     letter-spacing: -1.5px;
 
     font-stretch: normal;
@@ -72,7 +68,7 @@ const CtaBtn = styled.div`
     color: #1127fe;
 
 
-    padding: 12px 24px 12px 22px;
+    padding: 12px 10px 12px 10px;
     margin-block-start: 70px;
     
     &:hover{

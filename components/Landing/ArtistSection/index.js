@@ -32,7 +32,7 @@ const ArtistSection = () => {
                         <ArtistInfoCard>
                             <InfoNum src={two} />
                             <InfoH2 num='2'>작업물 인증</InfoH2>
-                            <InfoH3 num='2'>자신을 표현하기 위한 작업물을 최소 1개이상 업로드 해주세요</InfoH3>
+                            <InfoH3 num='2'>자신의 작업물이나 닷비디오를 제작하고 프로필페이지에 업로드 해주세요</InfoH3>
                         </ArtistInfoCard>
                     </ArtistCardRow1>
                 
@@ -54,12 +54,14 @@ const ArtistSection = () => {
             <ArtistWhoWrapper>
                         <ArtistRequiredCard>
                             <RequiredH2>창작 욕구가 있으신 분</RequiredH2>
-                            <RequiredH3>타인의 작품을 감상하는 것도 좋지만 자신만의 작품을 만들고 발전시켜보세요</RequiredH3>
+                            <RequiredH3>타인의 작품을 감상하는 것도 좋지만</RequiredH3>
+                            <RequiredH3>자신만의 작품을 만들고 발전시켜보세요</RequiredH3>
                         </ArtistRequiredCard>
 
                         <ArtistRequiredCard>
                             <RequiredH2>대중의 반응이 궁금하신 분</RequiredH2>
-                            <RequiredH3>블루닷의 서비스를 통해 당신의 작품을 세상에 선보이고 반응을 보세요</RequiredH3>
+                            <RequiredH3>블루닷의 서비스를 통해 </RequiredH3>
+                            <RequiredH3>당신의 작품을 세상에 선보이고 반응을 보세요</RequiredH3>
                         </ArtistRequiredCard>
 
                         <ArtistRequiredCard>

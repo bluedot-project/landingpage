@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import bg from '../../../assets/images/section-3-artist.png';
+import mBg from '../../../assets/images/mobile-section-3-artist.png';
 import artistField from '../../../assets/images/shape-artist-textfield.png';
-import artistWho from '../../../assets/images/textfield-artist-who.png'
+import mArtistField from '../../../assets/images/mobile-shape-artist-textfield.png';
 
 export const Bg = styled.div`
     background-image: url(${bg});
@@ -9,6 +10,11 @@ export const Bg = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-color: #f6f6f6;
+
+    @media screen and (max-width: 480px){
+        background-image: url(${mBg});
+        background-color: #fff;
+    }
 `
 
 export const ArtistContainer = styled.div`
@@ -29,6 +35,7 @@ export const ArtistContainer = styled.div`
     }
     @media screen and (max-width: 480px){
         margin :  0 8.2159% 0 8.2159%;
+        height: 1552px;
     }
   
 `
@@ -69,13 +76,15 @@ export const ArtistCardWrapper = styled.div`
         max-width: 1200px;
     }
 
-    @media screen and (max-width: 1080px){
-    }
 
     @media screen and (max-width: 768px){
         max-width: 500px;
-        padding: 0 20px;
         grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 480px){
+        margin-top: 5.41%;
+        margin-bottom: 12%;
     }
    
 
@@ -83,9 +92,9 @@ export const ArtistCardWrapper = styled.div`
 `
 
 export const ArtistWhoWrapper = styled.div`
-    margin-top: 10.8%;
+    margin-top: 8.8%;
     margin-bottom: 8.75%;
-    margin-left: -1%;
+    margin-left: 0.5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1920px;
@@ -103,8 +112,12 @@ export const ArtistWhoWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        padding: 0 20px;
-        max-width: 500px;
+        width: 500px;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 414px;
+        margin-left: 1%;
     }
 `
 
@@ -141,22 +154,19 @@ export const ArtistH3 = styled.h3`
 width: 592px;
 object-fit: contain;
 
-font-family: NanumSquareOTFB;
-font-size: 18px;
-font-weight: normal;
-letter-spacing: -0.72px;
+font-family: NanumSquare;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.92px;
 
-font-family: 'NanumSquare';
-font-weight: normal;
-font-size: 18px;
-letter-spacing: -1.5px;
+
 
 font-stretch: normal;
 font-style: normal;
 line-height: 1.67;
 
 text-align: left;
-color: #000;
+color: #3d3d3d;
 margin-block: 0;
 margin-inline: 0;
 
@@ -218,6 +228,10 @@ export const ArtistCardRow2 = styled.div`
         margin-top: 5%;
     }
 
+    @media screen and (max-width: 480px){
+        margin-top: 2%;
+    }
+
 
 `
 
@@ -233,6 +247,7 @@ export const ArtistInfoCard = styled.div`
     transition: all 0.2s ease-in-out;
 
     background-image: url(${artistField});
+    background-repeat: no-repeat;
 
     @media screen and (max-width: 1920px){
         margin-right : 5%;
@@ -243,7 +258,16 @@ export const ArtistInfoCard = styled.div`
         
     }
 
+    @media screen and (max-width: 480px){
+        background-image: url(${mArtistField});
+        width: 360px;
+        height: 147px;
+        margin-top: 0;
+        
+    }
+
     &:hover {
+        
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
     }
@@ -255,11 +279,16 @@ export const InfoNum = styled.img`
     position: relative;
     width: 69.4px;
     height: 54.3px;
-    font-family: NanumSquareOTFEB;
     margin: ${({ num }) => (num ==='2' ? `39.5px 0 0 72.5px` : `53.5px 0 0 72.5px`)};
     margin: 63.5px 0 0 72.5px;
-    letter-spacing: -0.8px;
-    color: #1127fe;
+    color: var(--vivid-blue-color);
+
+    @media screen and (max-width: 480px){
+        margin: ${({ num }) => (num ==='2' ? `30px 0 0 38.5px` : `30px 0 0 38.5px`)};
+        width: 36px;
+        height: 28px;
+        
+    }
 ` 
 
 export const InfoH2 = styled.h2`
@@ -267,53 +296,52 @@ export const InfoH2 = styled.h2`
     width: 150px;
     height: 22px;
     padding: ${({ num }) => (num ==='2' ? `85.4px 0 0 0` : `80.4px 0 0 0`)};
-    margin: ${({ num }) => (num ==='2' ? `0 0 0 -360px` : `0 0 0 -360px`)};
+    margin: ${({ num }) => (num ==='2' ? `0 0 0 -290px` : `0 0 0 -360px`)};
     padding: 92.4px 0 0 0;
     
-    font-family: NanumSquareOTFEB;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.45;
-    letter-spacing: -0.8px;
+    
     font-stretch: normal;
     font-style: normal;
     line-height: 1.45;
     
 
-    font-family: 'NanumSquare';
-    font-weight: 700;
+    font-family: NanumSquare;
+    font-weight: 800;
     font-size: 20px;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.8px;
 
     
     text-align: left;
-    color: #1127fe;
-
-  
+    color: var(--vivid-blue-color);
 
 
     @media screen and (max-width: 1400px){
         font-size: 18px;
     }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+        line-height: 0.33;
+        letter-spacing: -0.72px;
+        padding-top: 50px;
+        margin: ${({ num }) => (num ==='2' ? `0 0 0 -260px` : `0 0 0 -282px`)};
+        
+    }
+
+  
+
+
 `
 export const InfoH3 = styled.h3`
-    width: 400px;
     height: 18px;
-    margin:${({ num }) => (num ==='2' ? `0 0 39.5px 122.5px` : `0 0 39.5px 122.5px`)};
+    margin:${({ num }) => (num ==='2' ? `0 0 39.5px 152.5px` : `0 0 39.5px 122.5px`)};
+    width: ${({ num }) => (num ==='2' ? `300px` : `400px`)};
     
     
-    font-family: NanumSquareOTFB;
+    font-family: NanumSquare;
+    font-weight: 700;
     font-size: 16px;
-    font-weight: normal;
-    letter-spacing: -0.32px;
-
-
-    font-family: 'NanumSquare';
-    font-weight: normal;
-    font-size: 15px;
-    letter-spacing: -0.92px;
+    letter-spacing: -0.72px;
 
     font-stretch: normal;
     font-style: normal;
@@ -327,21 +355,29 @@ export const InfoH3 = styled.h3`
     @media screen and (max-width: 1400px){
         font-size: 14px;
     }
+
+    @media screen and (max-width: 480px){
+        width: ${({ num }) => (num ==='2' ? `280px` : `320px`)};
+        margin:${({ num }) => (num ==='2' ? `0 0 39.5px 81.5px` : `0 0 39.5px 65.5px`)};
+        font-size: 14px;
+        line-height: 1.57;
+        letter-spacing: -1.2px;
+        
+    }
 `
 
 
 
 export const ArtistRequiredCard = styled.div`
-    display: grid;
-    width: 488.5px;
-    height: 290.5px;
-    margin-left : -2.2%;
-    flex-direction: column;
-    word-break: keep-all;
     align-items: center;
-    max-height: 300px;
-    background-image: url(${artistWho});
-
+    width: 454px;
+    height: 258px;
+    padding: 67px 35px 60px 35px;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: 4px 8px 14px 0 rgba(0, 0, 0, 0.26);
+    border: solid 1px rgba(0, 0, 0, 0);
+    background-color: var(--white-color);
     
 
     @media screen and (max-width: 1920px){
@@ -351,55 +387,82 @@ export const ArtistRequiredCard = styled.div`
         margin-top: 5%;
     }
 
+    @media screen and (max-width: 480px){
+        margin: 0;
+        width: 338px;
+        height: 186px;
+        padding: 41px 41px 15px;
+        border-radius: 20px;
+        margin-bottom: 3.7%;
+    }
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
+        box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.26);
     }
 
 `
 
 export const RequiredH2 = styled.h2`
-    position: relative;
     height: 33px;
-    font-family: NanumSquareOTFEB;
-    font-size: 24px;
-    font-weight: bold;
+  
     font-stretch: normal;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: -0.96px;
     text-align: center;
-    color: #474747;
+    color: var(--black-color);
 
-    margin-block-start: 12.95%;
-    margin-block-end: 2%;
+    font-family: NanumSquare;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+
+
+    margin-block-start: 0;
+    margin-block-end: 6.715%;
     margin-inline-start: 15%;
     margin-inline-end: 15%;
+
+    @media screen and (max-width: 480px){
+        font-size: 20px;
+        line-height: 2.05;
+        letter-spacing: -0.8px;
+
+        margin-block-start: 0;
+        margin-block-end: 7.715%;
+        margin-inline-start: 5%;
+        margin-inline-end: 5%;
+    }
 
 `
 
 export const RequiredH3 = styled.h3`
-    width: 350px;
-    height: 70px;
     
-    font-family: NanumSquareOTFB;
-    font-size: 21px;
-    font-weight: normal;
-
-    font-family: 'NanumSquare';
-    font-weight: 500;
-    font-size: 20px;
 
     font-stretch: normal;
     font-style: normal;
     line-height: 1.8;
-    letter-spacing: -0.84px;
     color: #6d6d6d;
     text-align: center;
 
-    margin-block-start: 2%;
-    margin-block-end: 13.6%;
-    margin-inline-start: 15%;
-    margin-inline-end: 10%;
+    font-family: NanumSquare;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: -0.8px;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 3%;
+    margin-inline-end: 0;
+
+    @media screen and (max-width: 480px){
+        width: 240px;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: -0.56px;
+    }
 
 `
