@@ -146,7 +146,7 @@ const Footer = () => {
 
                     <Contact1>
                         <VisitH2>visit</VisitH2>
-                        <VisitH3>블루닷의 유튜브를 방문해보세요</VisitH3>
+                        <VisitH3>블루닷의 유튜브,블로그, SNS를 방문해보세요</VisitH3>
 
                         <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} 
@@ -166,7 +166,7 @@ const Footer = () => {
 
                     <Contact2>
                         <ShareH2>address</ShareH2>
-                        <ShareH3>bluedot900214@gmail.com</ShareH3>
+                        <ShareH3>문의 : bluedot900214@gmail.com</ShareH3>
 
                     </Contact2>
 

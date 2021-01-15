@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-import { FaBars } from 'react-icons/fa'
 import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
     NavContact, MobileIcon, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import logo from '../../assets/images/logo@2x.png';
@@ -41,10 +40,10 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact='true'
                             offset={-80}>
-                            <Logo src={logo} alt="bludot" />
+                            <Logo src={logo} alt="bluedot" />
                             </NavLinks>
                         <Link href="/">
-                            <MobileIcon src={mLogo} alt="bludot" />
+                            <MobileIcon src={mLogo} alt="bluedot" />
                         </Link>
 
                         <LeftMenu>

@@ -33,20 +33,23 @@ body {
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: url("/fonts/Ubuntu-Light.ttf") format("truetype");
-  src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
-  src: url("/fonts/Ubuntu-Medium.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "NanumSquareOTFEB", sans-serif !important;
-  font-weight: lighter, normal, bold;
+  font-weight: normal;
+  font-style: normal;
   src: url("/fonts/NanumSquareOTFEB.otf") format("opentype");
 }
 
 @font-face {
   font-family: "NanumSquareOTFR", sans-serif !important;
-  font-weight: lighter, normal, bold;
+  font-weight: normal;
+  font-weight: normal;
   src: url("/fonts/NanumSquareOTFR.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

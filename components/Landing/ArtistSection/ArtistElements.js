@@ -138,22 +138,28 @@ export const ArtistH1 = styled.h1`
     }
 `
 export const ArtistH3 = styled.h3`
-width: 532px;
+width: 592px;
 object-fit: contain;
+
 font-family: NanumSquareOTFB;
 font-size: 18px;
 font-weight: normal;
+letter-spacing: -0.72px;
+
+font-family: 'NanumSquare';
+font-weight: normal;
+font-size: 18px;
+letter-spacing: -1.5px;
+
 font-stretch: normal;
 font-style: normal;
 line-height: 1.67;
-letter-spacing: -0.72px;
+
 text-align: left;
 color: #000;
 margin-block: 0;
 margin-inline: 0;
 
-    margin-block: 0;
-    margin-inline: 0;
 
     @media screen and (max-width: 480px){
         width: 250px;
@@ -216,11 +222,10 @@ export const ArtistCardRow2 = styled.div`
 `
 
 export const ArtistInfoCard = styled.div`
-    background: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 500px;
-    height: 206px;
+    width: 512px;
+    height: 228px;
     margin-right : 20%;
     word-break: keep-all;
     border-radius: 10px;
@@ -251,7 +256,8 @@ export const InfoNum = styled.img`
     width: 69.4px;
     height: 54.3px;
     font-family: NanumSquareOTFEB;
-    margin: ${({ num }) => (num ==='2' ? `39.5px 0 0 71.5px` : `53.5px 0 0 71.5px`)};
+    margin: ${({ num }) => (num ==='2' ? `39.5px 0 0 72.5px` : `53.5px 0 0 72.5px`)};
+    margin: 63.5px 0 0 72.5px;
     letter-spacing: -0.8px;
     color: #1127fe;
 ` 
@@ -260,15 +266,28 @@ export const InfoH2 = styled.h2`
     position: relative;
     width: 150px;
     height: 22px;
-    padding: ${({ num }) => (num ==='2' ? `70.4px 0 0 0` : `80.4px 0 0 0`)};
-    margin:${({ num }) => (num ==='2' ? `0 0 0 -345px` : `0 0 0 -340px`)};
+    padding: ${({ num }) => (num ==='2' ? `85.4px 0 0 0` : `80.4px 0 0 0`)};
+    margin: ${({ num }) => (num ==='2' ? `0 0 0 -360px` : `0 0 0 -360px`)};
+    padding: 92.4px 0 0 0;
+    
     font-family: NanumSquareOTFEB;
-    letter-spacing: -0.8px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.45;
+    letter-spacing: -0.8px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    
+
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+
+    
     text-align: left;
     color: #1127fe;
 
@@ -280,16 +299,26 @@ export const InfoH2 = styled.h2`
     }
 `
 export const InfoH3 = styled.h3`
-    width: 340px;
+    width: 400px;
     height: 18px;
-    margin: ${({ num }) => (num ==='2' ? `0 0 39.5px 169.5px` : `0 0 39.5px 170.5px`)};
+    margin:${({ num }) => (num ==='2' ? `0 0 39.5px 122.5px` : `0 0 39.5px 122.5px`)};
+    
+    
     font-family: NanumSquareOTFB;
     font-size: 16px;
     font-weight: normal;
+    letter-spacing: -0.32px;
+
+
+    font-family: 'NanumSquare';
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -0.92px;
+
     font-stretch: normal;
     font-style: normal;
     line-height: 1.63;
-    letter-spacing: -0.32px;
+
     text-align: left;
     color: #1127fe;
 
@@ -304,9 +333,9 @@ export const InfoH3 = styled.h3`
 
 export const ArtistRequiredCard = styled.div`
     display: grid;
-    width: 478.5px;
+    width: 488.5px;
     height: 290.5px;
-    margin-right : 20%;
+    margin-left : -2.2%;
     flex-direction: column;
     word-break: keep-all;
     align-items: center;
@@ -352,13 +381,18 @@ export const RequiredH2 = styled.h2`
 export const RequiredH3 = styled.h3`
     width: 350px;
     height: 70px;
+    
     font-family: NanumSquareOTFB;
     font-size: 21px;
     font-weight: normal;
+
+    font-family: 'NanumSquare';
+    font-weight: 500;
+    font-size: 20px;
+
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.95;
-    line-height: 1.95;
+    line-height: 1.8;
     letter-spacing: -0.84px;
     color: #6d6d6d;
     text-align: center;
@@ -366,6 +400,6 @@ export const RequiredH3 = styled.h3`
     margin-block-start: 2%;
     margin-block-end: 13.6%;
     margin-inline-start: 15%;
-    margin-inline-end: 15%;
+    margin-inline-end: 10%;
 
 `

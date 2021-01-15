@@ -317,7 +317,7 @@ text-align: center;
 color: #686868;
 
     margin-block: 0;
-    margin-inline-start: 0px;
+    margin-inline-start: 100px;
     margin-inline-end: 19px;
 `
 
@@ -340,7 +340,7 @@ color: #686868;
     margin-inline-end: 19px;
 `
 export const ShareH3 = styled.h2`
-width: 208px;
+width: 328px;
 height: 18px;
 object-fit: contain;
 font-family: NanumSquareOTFR;
@@ -359,7 +359,7 @@ color: #999999;
 `
 
 export const VisitH3 = styled.h2`
-width: 208px;
+width: 328px;
 height: 18px;
 object-fit: contain;
 font-family: NanumSquareOTFR;

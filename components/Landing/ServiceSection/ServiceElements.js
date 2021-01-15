@@ -108,8 +108,14 @@ export const ServiceH3 = styled.h3`
     width: 432px;
     object-fit: contain;
     font-family: NanumSquareOTFB;
-    font-size: 18px;
     font-weight: normal;
+    font-size: 18px;
+
+    font-family: 'NanumSquare';
+    font-weight: normal;
+    font-size: 18px;
+
+
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;

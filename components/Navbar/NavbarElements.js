@@ -63,7 +63,6 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   padding:${({ id }) => (id==='1' ? `0 `: `0 1rem;`)};
-  margin-right: ${({ id }) => (id==='1' ? `0 `: `2%`)};
   height: 100%;
   cursor: pointer;
 
@@ -82,6 +81,7 @@ export const NavLinks = styled(LinkS)`
 export const Logo = styled.img`
     height: 60px;
     margin: 3px 3% 0 0;
+    padding-right: 24.399%;
     cursor: pointer;
     @media screen and (max-width: 768px){
         margin: 15px 3% 0 0;

@@ -30,9 +30,9 @@ const ArtistSection = () => {
                         </ArtistInfoCard>
 
                         <ArtistInfoCard>
-                            <InfoNum num='2' src={two} />
+                            <InfoNum src={two} />
                             <InfoH2 num='2'>작업물 인증</InfoH2>
-                            <InfoH3 num='2' >자신의 작업물이나 닷비디오를 제작하고 프로필페이지에 업로드 하세요</InfoH3>
+                            <InfoH3 num='2'>자신을 표현하기 위한 작업물을 최소 1개이상 업로드 해주세요</InfoH3>
                         </ArtistInfoCard>
                     </ArtistCardRow1>
                 
