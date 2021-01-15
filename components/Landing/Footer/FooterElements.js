@@ -46,18 +46,18 @@ export const FooterInfoWrapper = styled.div`
 
 export const Line = styled.div`
 
-        width: 45px;
-        height: 2px;
-        object-fit: contain;
-        border-radius: 0.5px;
-        background-color: #3d3d3d;
-        
-        margin: 10px 0 21px 0;
+    width: 45px;
+    height: 2px;
+    object-fit: contain;
+    border-radius: 0.5px;
+    background-color: #3d3d3d;
+
+    margin: 10px 0 21px 0;
 
     @media screen and (max-width: 480px){
-        width: 30px;
-        height: 2.5px;
-        
+    width: 30px;
+    height: 2.5px;
+
     }
 
 `
@@ -94,24 +94,20 @@ line-height: 2.18;
 letter-spacing: -2px;
 text-align: left;
 color: #000;
+
+margin: 0;
 margin-block-start: 0;
-margin-block-end: 9.31%;
+margin-block-end: 3.35%;
 margin-inline: 0;
 
-
-    margin-block-start: 0;
-    margin-block-end: 4.31%;
-    margin-inline: 0;
-    
-
-    @media screen and (max-width: 480px){
-        width: 104px;
-        height: 34px;
-        font-size: 30px;
-        line-height: 2.53;
-        letter-spacing: -1.8px;
-        margin-block-end: 10.35%;
-    }
+@media screen and (max-width: 480px){
+    width: 104px;
+    height: 34px;
+    font-size: 30px;
+    line-height: 2.53;
+    letter-spacing: -1.8px;
+    margin-block-end: 10.35%;
+}
 `
 export const FooterH3 = styled.h3`
 width: 442px;

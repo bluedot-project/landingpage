@@ -123,6 +123,7 @@ export const ArtistWhoWrapper = styled.div`
 
 
 export const ArtistH1 = styled.h1`
+
     width: 164px;
     height: 56px;
     object-fit: contain;
@@ -136,11 +137,11 @@ export const ArtistH1 = styled.h1`
     text-align: left;
     color: #000;
 
+    margin: 0;
     margin-block-start: 0;
-    margin-block-end: 4.31%;
+    margin-block-end: 3.35%;
     margin-inline: 0;
-    
-    
+   
     @media screen and (max-width: 480px){
         width: 104px;
         height: 34px;
