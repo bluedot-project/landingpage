@@ -296,15 +296,13 @@ export const CardH3 = styled.h3`
     }  
 `
 export const Card2H3 = styled.h3`
-    
-    padding:${({ id }) => (id === 'communication' ? ` 0 25% 0 25%;` : ` 0 15% 0 15%;`)};
+    padding:${({ id }) => (id === 'communication' ? ` 0 18% 0 18%;` : ` 0 15% 0 15%;`)};
     word-break: keep-all;
     margin: 0;
     object-fit: contain;
     
-    
 
-    ffont-family: NanumSquare;
+    font-family: NanumSquare;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: -1.2px;

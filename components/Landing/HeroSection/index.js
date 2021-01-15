@@ -57,15 +57,15 @@ const CtaBtn = styled.div`
 
 
     font-family: NanumSquare;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.2px;
 
     font-stretch: normal;
     font-style: normal;
     
     text-align: center;
-    color: #1127fe;
+    color: var(--vivid-blue-color);
 
 
     padding: 12px 10px 12px 10px;
@@ -73,7 +73,7 @@ const CtaBtn = styled.div`
     
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: #1127fe;
+        background: var(--vivid-blue-color);
         color: #fff;
     }
 

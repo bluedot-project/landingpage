@@ -372,7 +372,7 @@ export const ArtistRequiredCard = styled.div`
     align-items: center;
     width: 454px;
     height: 258px;
-    padding: 67px 35px 60px 35px;
+    padding: 67px 32px 60px 32px;
     object-fit: contain;
     border-radius: 30px;
     box-shadow: 4px 8px 14px 0 rgba(0, 0, 0, 0.26);
