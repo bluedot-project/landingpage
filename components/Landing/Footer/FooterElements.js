@@ -39,7 +39,7 @@ export const FooterInfoWrapper = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0;
     }
     
 `
@@ -373,7 +373,7 @@ color: #686868;
     }
     
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         font-size: 20px;
         font-weight: 500;
         line-height: 3;
@@ -406,7 +406,7 @@ export const VisitH2 = styled.h2`
         margin-block: 10px;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         font-size: 20px;
         font-weight: 500;
         line-height: 3;
@@ -464,15 +464,20 @@ color: #999999;
     margin-inline-start: 0px;
     margin-inline-end: 19px; 
     
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 328px;
-        margin-inline-start: 20px;
-        margin-inline-end: 19px;
-        margin-block: 10px;
+        margin-block: 20px;
 
         font-size: 14px;
         line-height: 2.93;
         letter-spacing: -0.56px;
+    }
+
+    @media screen and (max-width: 480px){
+        margin-inline-start: 20px;
+        margin-inline-end: 19px;
+        margin-block: 10px;
+
     }
 
 `
@@ -480,7 +485,7 @@ color: #999999;
 
 export const SocialLink = styled.div`
     display: flex;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width:220px;
         margin-inline-start: 85px;
         margin-block-start:10px;
