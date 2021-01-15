@@ -107,16 +107,13 @@ export const ArtistWhoWrapper = styled.div`
 
     @media screen and (max-width: 1080px){
         grid-template-columns: 1fr;
-        width: 500px;
         margin: 0 auto;
     }
 
     @media screen and (max-width: 768px){
-        width: 500px;
     }
 
     @media screen and (max-width: 480px){
-        width: 414px;
         margin-left: 1%;
     }
 `
@@ -263,7 +260,14 @@ export const ArtistInfoCard = styled.div`
         background-image: url(${mArtistField});
         width: 360px;
         height: 147px;
-        margin-top: 0;
+        margin: 0;
+        
+    }
+
+    @media screen and (max-width: 400px){
+        width: 350px;
+        height: 147px;
+        margin: 0;
         
     }
 
@@ -325,7 +329,7 @@ export const InfoH2 = styled.h2`
         line-height: 0.33;
         letter-spacing: -0.72px;
         padding-top: 50px;
-        margin: ${({ num }) => (num ==='2' ? `0 0 0 -260px` : `0 0 0 -282px`)};
+        margin: ${({ num }) => (num ==='2' ? `0 0 0 -260px` : `0 0 0 -222px`)};
         
     }
 
@@ -358,7 +362,7 @@ export const InfoH3 = styled.h3`
     }
 
     @media screen and (max-width: 480px){
-        width: ${({ num }) => (num ==='2' ? `280px` : `320px`)};
+        width: ${({ num }) => (num ==='2' ? `280px` : `260px`)};
         margin:${({ num }) => (num ==='2' ? `0 0 39.5px 81.5px` : `0 0 39.5px 65.5px`)};
         font-size: 14px;
         line-height: 1.57;

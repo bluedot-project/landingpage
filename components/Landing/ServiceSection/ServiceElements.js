@@ -400,15 +400,16 @@ export const Subtitle = styled.h3`
 
     @media screen and (max-width: 768px){
         width: 340px;
+        padding:0;
         font-size: 14px;
         text-align: left;
     }
     @media screen and (max-width: 480px){
-        width: 300px;
+        
+        width: 320px;
         text-align: ${({ num }) => (num===2? `right`: `left`)};
-        margin-left: ${({ num }) => (num===2? `65px` : `0`)};
+        margin-left: ${({ num }) => (num===2? `20px` : `0`)};
         line-height: 1.71;
         letter-spacing: -0.56px;
-        padding-right: 25px;
     }
 `

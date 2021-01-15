@@ -315,6 +315,10 @@ export const Contact1 = styled.div`
         display: grid;
         margin-bottom: 10px;
     }
+
+    @media screen and (max-width: 480px){
+        width:320px;
+    }
    
 `
 export const Contact2 = styled.div`
@@ -339,6 +343,10 @@ export const Contact2 = styled.div`
         display: grid;
         margin-bottom: 10px;
     }
+    @media screen and (max-width: 480px){
+        width:320px;
+    }
+   
 `
 
 export const ShareH2 = styled.h2`
@@ -473,7 +481,8 @@ color: #999999;
 export const SocialLink = styled.div`
     display: flex;
     @media screen and (max-width: 480px){
-        margin-inline: 85px;
+        width:220px;
+        margin-inline-start: 85px;
         margin-block-start:10px;
         margin-block-end:20px;
     }
