@@ -17,19 +17,19 @@
     --font-micro: 10px; */
 }
 
+html,
 body {
   padding: 0;
   margin: 0;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, NanumSquareOTFEB, NanumSquareOTFR, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif, InkLipquid;
+    "Helvetica Neue", sans-serif, East Sea Dokdo;
 }
 
 @font-face {
-  font-family: "InkLipquid";
-  font-weight: 200;
-  src: url("/fonts/InkLipquidFonts.ttf") format("truetype");
+  font-family: "East Sea Dokdo", cursive;
+  src: url("/fonts/EastSeaDokdo-Regular.ttf") format("truetype");
 }
 
 @font-face {

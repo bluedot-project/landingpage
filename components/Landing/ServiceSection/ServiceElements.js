@@ -107,7 +107,7 @@ export const ServiceH3 = styled.h3`
 
     width: 432px;
     object-fit: contain;
-    font-family: NanumSquareOTFR;
+    font-family: NanumSquareOTFB;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;

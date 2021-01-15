@@ -140,7 +140,7 @@ export const ArtistH1 = styled.h1`
 export const ArtistH3 = styled.h3`
 width: 532px;
 object-fit: contain;
-font-family: NanumSquareOTFR;
+font-family: NanumSquareOTFB;
 font-size: 18px;
 font-weight: normal;
 font-stretch: normal;

@@ -125,9 +125,9 @@ export const AboutH1 = styled.h1`
     }
 `
 export const AboutH3 = styled.h3`
-    width: 532px;
+    width: 600px;
     object-fit: contain;
-    font-family: NanumSquareOTFR;
+    font-family: NanumSquareOTFB;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -155,7 +155,7 @@ export const AboutH3 = styled.h3`
 export const About2H3 = styled.h3`
     width: 532px;
     object-fit: contain;
-    font-family: NanumSquareOTFR;
+    font-family: NanumSquareOTFB;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
