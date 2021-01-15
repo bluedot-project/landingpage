@@ -301,7 +301,7 @@ export const TextWrapper = styled.div`
     height: 100%;
     max-width: 520px;
     padding-left: ${ ({ num }) => (num===2 ? `0px` : `85px`)};
-    margin-left: ${ ({ num }) => (num===2 ? `40px` : `0`)};
+    margin-left: ${ ({ num }) => (num===2 ? `60px` : `0`)};
     @media screen and (max-width: 1080px){
         max-width: 300px;
     }
@@ -323,14 +323,13 @@ export const TopLine = styled.h1`
     line-height: 1.73;
     letter-spacing: -3.12px;
     text-align: left;
-    margin-block-start: 0;
-    margin-block-end: 5.163%;
     color: #000;
     margin-block: 0;
     margin-inline:0;
 
     margin: ${({ num }) => (num === 1? `0 0 0 0` :
-        num==='1'? `-50px 0 5.856% 140px` : '0 0 4.156% 0')};
+        num==='1'? `-50px 0 5.856% 140px` : 
+        num ===2 ? `0 0 4.156% 15%` : `0 0 4.156% 0`)};
     
 
 
@@ -368,11 +367,11 @@ export const TopLine = styled.h1`
 `
 
 export const Subtitle = styled.h3`
-    width: ${({ id }) => (id ==='community' ? `400px`: `430px`)};
+    width: ${({ id }) => (id ==='community' ? `400px`: `470px`)};
     max-width: 560px;
-    font-family: NanumSquareB;
+    font-family: NanumSquare;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
     letter-spacing: -0.82px;
     font-stretch: normal;
     font-style: normal;
