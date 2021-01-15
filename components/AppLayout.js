@@ -21,11 +21,7 @@ const Global = createGlobalStyle`
         src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
     }
 
-    @font-face {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 300, 400, 500, 700;
-        src: url("/fonts/ubuntu/Ubuntu-Regular.ttf") format("turetype");
-    }
+
    
 
 `
