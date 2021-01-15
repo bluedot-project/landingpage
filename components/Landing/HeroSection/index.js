@@ -119,8 +119,8 @@ const HeroContent = styled.div`
 const SloganH1 = styled.h1`
     width: 720px;
     margin: 0 0 69px;
-    // font-family: Ubuntu;
-    font-family: East Sea Dokdo;
+    font-family: Ubuntu;
+    // font-family: East Sea Dokdo;
     font-size: 86px;
     font-weight: bold;
     font-stretch: normal;
