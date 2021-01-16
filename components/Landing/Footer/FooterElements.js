@@ -16,7 +16,7 @@ export const FooterContainer = styled.div`
     margin-bottom: 10.6%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: visible;
+    overflow: scroll;
 
     @media screen and (max-width: 1920px){
         height: 1300px;

@@ -42,7 +42,7 @@ export const AboutContainer = styled.div`
     max-width: 1920px;
     display:flex;
     flex-direction: column;
-    overflow: visible;
+    overflow: scroll;
     
 
     @media screen and (max-width: 1920px){
@@ -55,7 +55,12 @@ export const AboutContainer = styled.div`
 
     @media screen and (max-width: 768px){
         margin: 0;
-        height: 963px;
+    }
+
+    @media screen and (max-width: 414px){
+        margin: 0;
+        // height: 1163px;
+        height: 100%;
     }
 `
 export const AboutInfoWrapper = styled.div`

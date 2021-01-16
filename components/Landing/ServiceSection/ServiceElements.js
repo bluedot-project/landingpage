@@ -20,7 +20,7 @@ export const ServiceContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: visible;
+    overflow: scroll;
 
     @media screen and (max-width: 1680px){
      height: 2600px;
@@ -318,7 +318,11 @@ export const TextWrapper = styled.div`
     }
 
     @media screen and (max-width: 414px){
-        margin-left: ${ ({ num }) => (num===2 ? `-8%` : `3%`)};
+        margin-left: ${ ({ num }) => (num===2 ? `-8%` : `-4%`)};
+    }
+
+    @media screen and (max-width: 360px){
+        margin-left: ${ ({ num }) => (num===2 ? `-8%` : `0%`)};
     }
 
    
