@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import bg from '../../../assets/images/top-bg.png'
 import mBg from '../../../assets/images/mobile-top-bg.png'
-import Video from '../../../assets/video/hero-video.mp4';
 
 import Link from 'next/link';
 

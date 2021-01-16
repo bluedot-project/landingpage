@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "backend" : "node server.js",
+    "client" : "next",
+    "dev": "concurrently \"npm run backend\" \"npm run client\"",
     "build": "cross-env ANALYZE=true NODE_ENV=production next build",
-    "start": "cross-env NODE_ENV=production next start -p 80"
+    "start": "cross-env NODE_ENV=production next start -p 80 "
   },
   "author": "loosie",
   "license": "ISC",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.12",
     "@svgr/webpack": "^5.5.0",
-    "babel-plugin-inline-react-svg": "^1.1.2"
+    "babel-plugin-inline-react-svg": "^1.1.2",
+    "concurrently": "^5.3.0"
   }
 }

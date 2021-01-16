@@ -5,13 +5,14 @@ const bodyParser = require('body-parser')
 const mailer = require('./mail/mailer');
 
 const dev = process.env.NODE_ENV !== 'production'
-const prod = process.env.NODE_ENV === 'production'
+// const prod = process.env.NODE_ENV === 'production'
 const app = next({ dev })
-const prodApp = next({ prod })
+// const prodApp = next({ prod })
 const handle = app.getRequestHandler()
 
-// app.prepare().then(() => {
-prodApp.prepare().then(() => {
+
+app.prepare().then(() => {
+// prodApp.prepare().then(() => {
   const server = express()
 
   server.use(bodyParser.json())
