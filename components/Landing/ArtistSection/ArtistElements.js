@@ -23,7 +23,7 @@ export const ArtistContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
-    overflow:scroll;
+    overflow: visible;
 
     @media screen and (max-width: 1600px){
         height: 1400px;

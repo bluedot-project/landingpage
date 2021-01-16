@@ -16,7 +16,7 @@ export const FooterContainer = styled.div`
     margin-bottom: 10.6%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: scroll;
+    overflow: visible;
 
     @media screen and (max-width: 1920px){
         height: 1300px;
@@ -153,7 +153,7 @@ export const FooterInputWrapper = styled.div`
 
       
     @media screen and (max-width: 768px){
-        width: 92%;
+        width: 100%;
         
     }
   
@@ -298,6 +298,10 @@ export const EmailBtn = styled.div`
     margin-block: 20px;
     margin-inline-start: 0px;
     margin-inline-end: 19px;    
+
+    @media screen and (max-width: 480px){
+        margin-block-start: 30px;
+    }
 
     &:hover{
         transition: all 0.2s ease-in-out;

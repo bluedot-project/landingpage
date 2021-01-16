@@ -116,7 +116,8 @@ const HeroContent = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        margin: 0 5.699% 0 5.77%;
+        // margin: 0 5.699% 0 5.77%;
+        margin: 0;
     }
 
 `

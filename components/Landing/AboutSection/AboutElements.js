@@ -42,7 +42,7 @@ export const AboutContainer = styled.div`
     max-width: 1920px;
     display:flex;
     flex-direction: column;
-    overflow:scroll;
+    overflow: visible;
     
 
     @media screen and (max-width: 1920px){
