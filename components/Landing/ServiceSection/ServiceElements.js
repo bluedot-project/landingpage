@@ -20,6 +20,7 @@ export const ServiceContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
+    overflow:scroll;
 
     @media screen and (max-width: 1680px){
      height: 2600px;
@@ -292,6 +293,7 @@ export const Column2 = styled.div`
     }
 
     @media screen and (max-width: 378px){
+        
         margin: 0 8% 0 0;
         
     }
@@ -309,6 +311,10 @@ export const TextWrapper = styled.div`
         width:100%;
         padding-left: 0;
     margin-left: ${ ({ num }) => (num===2 ? `-10%` : `-4%`)};
+    }
+
+    @media screen and (max-width: 480px){
+        margin: 0;
     }
 
    
@@ -362,7 +368,7 @@ export const TopLine = styled.h1`
     @media screen and (max-width: 768px){
         width: 147px;
         margin: ${({ num }) => (num === 1? `0 0 0 0` :
-        num===2 ? `0 0 0 64%` :
+        num===2 ? `0 0 0 57%` :
         num==='1'? `-60px 0 5% 45%` : '0 0 4.156% 0')};
 
     }
@@ -409,7 +415,7 @@ export const Subtitle = styled.h3`
     }
     @media screen and (max-width: 768px){
         
-        width: 320px;
+        width: 300px;
         text-align: ${({ num }) => (num===2? `right`: `left`)};
         margin-left: ${({ num }) => (num===2? `20px` : `0`)};
         line-height: 1.71;

@@ -70,7 +70,7 @@ const Footer = () => {
                 <FooterInfoWrapper>
                     <FooterH1>Contact</FooterH1>
                     <Line />
-                    <FooterH3>블루닷과 함께 하고싶으신 아티스트/ 크리에이터 혹은 다른 의견이 있으면 여기를 통해 소통해주세요.</FooterH3>
+                    <FooterH3>블루닷과 함께 하고싶으신 아티스트/ 크리에이터분 또는 궁금한 점이 있으면 여기를 통해 소통해주세요.</FooterH3>
                 
                     <FooterInputWrapper >
                         <Row1>

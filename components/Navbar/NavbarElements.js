@@ -41,6 +41,7 @@ export const MobileIcon = styled.img`
     cursor: pointer;
     display: none;
     @media screen and (max-width: 480px){
+    
         display: block;
         
       

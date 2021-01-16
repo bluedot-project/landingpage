@@ -23,6 +23,7 @@ export const ArtistContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
+    overflow:scroll;
 
     @media screen and (max-width: 1600px){
         height: 1400px;
@@ -33,7 +34,7 @@ export const ArtistContainer = styled.div`
     @media screen and (max-width: 1080px){
         height: 2300px;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 480px){
         margin :  0 ;
         height: 1552px;
     }
@@ -120,6 +121,7 @@ export const ArtistWhoWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px){
+        margin: 0 2%;
     }
 
     @media screen and (max-width: 480px){
@@ -251,6 +253,7 @@ export const ArtistInfoCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     transition: all 0.2s ease-in-out;
+    
 
     background-image: url(${artistField});
     background-repeat: no-repeat;
@@ -331,7 +334,7 @@ export const InfoH2 = styled.h2`
         line-height: 0.33;
         letter-spacing: -0.72px;
         padding-top: 50px;
-        margin: ${({ num }) => (num ==='2' ? `0 0 0 -260px` : `0 0 0 -222px`)};
+        margin: ${({ num }) => (num ==='2' ? `0 0 0 -230px` : `0 0 0 -212px`)};
         
     }
 
@@ -364,7 +367,7 @@ export const InfoH3 = styled.h3`
     }
 
     @media screen and (max-width: 768px){
-        width: ${({ num }) => (num ==='2' ? `280px` : `260px`)};
+        width: 240px;
         margin:${({ num }) => (num ==='2' ? `0 0 39.5px 81.5px` : `0 0 39.5px 65.5px`)};
         font-size: 14px;
         line-height: 1.57;
@@ -393,12 +396,12 @@ export const ArtistRequiredCard = styled.div`
     @media screen and (max-width: 1400px){
         margin-top: 5%;
     }
-
-    @media screen and (max-width: 768px){
-        margin: 0;
-        width:100%;
+    
+    @media screen and (max-width: 480px){
+        padding: 12.134% 12.134% 3.438%;
+        margin-left: 3%;
+        width:95%;
         height: 186px;
-        padding: 12.134% 12.134% 4.438%;
         border-radius: 20px;
         margin-bottom: 3.7%;
     }
@@ -432,7 +435,7 @@ export const RequiredH2 = styled.h2`
     margin-inline-start: 15%;
     margin-inline-end: 15%;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 480px){
         font-size: 20px;
         line-height: 2.05;
         letter-spacing: -0.8px;
@@ -464,8 +467,9 @@ export const RequiredH3 = styled.h3`
     margin-inline-start: 3%;
     margin-inline-end: 0;
 
-    @media screen and (max-width: 768px){
-        width: 240px;
+    @media screen and (max-width: 480px){
+        margin-inline-start: 0;
+        width: 250px;
         font-size: 14px;
         font-style: normal;
         line-height: 1.71;

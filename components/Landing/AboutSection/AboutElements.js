@@ -42,6 +42,7 @@ export const AboutContainer = styled.div`
     max-width: 1920px;
     display:flex;
     flex-direction: column;
+    overflow:scroll;
     
 
     @media screen and (max-width: 1920px){
@@ -151,7 +152,7 @@ export const AboutH3 = styled.h3`
     margin-inline: 0;
 
     @media screen and (max-width: 768px){
-        width: 320px;
+        width: 300px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: -0.16px;
@@ -181,7 +182,7 @@ export const About2H3 = styled.h3`
     margin-inline: 0;
 
     @media screen and (max-width: 768px){
-        width: 330px;
+        width: 300px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: -0.16px;
