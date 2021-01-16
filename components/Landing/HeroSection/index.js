@@ -41,6 +41,7 @@ export const HeroContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
+        justify-content: center;
         height: 264px;
         margin :  0 8.2159% 0 8.2159%;
     }
@@ -158,8 +159,9 @@ const SloganH1 = styled.h1`
         letter-spacing: -2.16px;
         text-align: center;
 
-        margin-inline-start: 14.23%;
-        margin-inline-end:  13.427%;
+        // margin-inline-start: 14.23%;
+        // margin-inline-end:  13.427%;
+        margin-inline: 0;
     }
 `
 

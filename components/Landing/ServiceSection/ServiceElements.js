@@ -32,12 +32,12 @@ export const ServiceContainer = styled.div`
         height: 1800px;
     }
     @media screen and (max-width: 768px){
-        height: 2300px;
+        height: 2100px;
         max-width:700px;
     }
 
     @media screen and (max-width: 480px){
-        margin :  0 8.2159% 0 8.2159%;
+        margin :  0;
         height: 1754px;
     }
 
@@ -53,7 +53,7 @@ export const Line = styled.div`
         
         margin: 10px 0 21px 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 30px;
         height: 2.5px;
         
@@ -72,11 +72,10 @@ export const ServiceInfoWrapper = styled.div`
     max-width: 1400px;
     
 
+
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
-    }
-
-    @media screen and (max-width: 480px){
+        margin :  0 8.2159% 0 8.2159%;
         margin-top: 15.335%;
     }
     
@@ -100,7 +99,7 @@ export const ServiceH1 = styled.h1`
     margin-block-end: 10.91%;
     margin-inline: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 104px;
         height: 34px;
         font-size: 30px;
@@ -129,7 +128,7 @@ export const ServiceH3 = styled.h3`
 
     margin-block: 0;
     margin-inline: 0;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 290px;
         font-size: 16px;
         line-height: 1.5;
@@ -145,8 +144,7 @@ export const ServiceCardContainer = styled.div`
     @media screen and (max-width: 768px){
         max-width: 580px;
     }
-    @media screen and (max-width: 480px){
-    }
+  
 `
 
 
@@ -167,14 +165,11 @@ align-items: center;
 @media screen and (max-width: 768px){
     grid-template-columns: 1fr;
     padding: 0 30px;
-}
-
-@media screen and (max-width: 768px){
-    padding: 0;
-    margin-top: 10%;
+    margin-top: 30%;
 }
 
 @media screen and (max-width: 480px){
+    padding: 0;
     margin-top: 50%;
     margin-bottom: -15%;
 }
@@ -190,16 +185,13 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col2 col1'`)};
 
     
-
     @media screen and (max-width: 768px){
-        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`)};
         margin-bottom: 50px;
-    }
-
-    @media screen and (max-width: 480px){
         grid-template-columns: 1fr;
         grid-template-areas: 'col1 col1';
     }
+
+    
  
 `
 
@@ -228,10 +220,10 @@ export const ImgWrap = styled.div`
     @media screen and (max-width: 768px){
         padding:0;
         max-width: 500px;
-        margin: -100px 0 0 100px;
+        margin: -100px 0 0 10%;
     }
     @media screen and (max-width: 480px){
-        margin: -100px 0 0 0;
+        margin: -100px 0 0 30%;
     }
 
     
@@ -270,6 +262,12 @@ export const Img = styled.img`
         width: 369.6px;
         height: 260.6px;
     }
+
+    @media screen and (max-width: 378px){
+        width: 340.6px;
+        height: 220.6px;
+        
+    }
 `
 
 export const Column2 = styled.div`
@@ -289,11 +287,13 @@ export const Column2 = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        margin-bottom: 100px;
+        
+        margin: 0 15% 0 0;
     }
 
-    @media screen and (max-width: 480px){
-        margin: 0 15% 0 0;
+    @media screen and (max-width: 378px){
+        margin: 0 8% 0 0;
+        
     }
 `
 
@@ -306,9 +306,12 @@ export const TextWrapper = styled.div`
         max-width: 300px;
     }
     @media screen and (max-width: 768px){
-        padding-left: 0px;
-        margin-left: 0;
+        width:100%;
+        padding-left: 0;
+    margin-left: ${ ({ num }) => (num===2 ? `-10%` : `-4%`)};
     }
+
+   
 `
 
 export const TopLine = styled.h1`
@@ -348,19 +351,19 @@ export const TopLine = styled.h1`
     }
 
     @media screen and (max-width: 1080px){
+        width: 150px;
         font-size: 36px;
         margin: ${({ num }) => (num === 1? `0 0 0 0` :
-        num==='1'? `-60px 0 5% 135px` : '0 0 4.156% 0')};
+        num==='1'? `-60px 0 5% 65%` : '0 0 4.156% 0')};
 
     }
+
+
     @media screen and (max-width: 768px){
-    }
-
-    @media screen and (max-width: 480px){
-        width: 180px;
+        width: 147px;
         margin: ${({ num }) => (num === 1? `0 0 0 0` :
-        num===2 ? `0 0 0 190px` :
-        num==='1'? `-60px 0 5% 135px` : '0 0 4.156% 0')};
+        num===2 ? `0 0 0 64%` :
+        num==='1'? `-60px 0 5% 45%` : '0 0 4.156% 0')};
 
     }
     
@@ -404,7 +407,7 @@ export const Subtitle = styled.h3`
         font-size: 14px;
         text-align: left;
     }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         
         width: 320px;
         text-align: ${({ num }) => (num===2? `right`: `left`)};

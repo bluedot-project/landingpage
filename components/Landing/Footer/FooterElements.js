@@ -26,7 +26,7 @@ export const FooterContainer = styled.div`
     }
     
     @media screen and (max-width: 480px){
-        margin :  0 8.2159% 0 8.2159%;
+        margin: 0;
         height: 600px;
     }
 `
@@ -39,6 +39,7 @@ export const FooterInfoWrapper = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
+        margin :  11.69% 8.2159% 0 8.2159%;
         padding: 0;
     }
     
@@ -136,6 +137,11 @@ margin-inline: 0;
     
 }
 
+
+@media screen and (max-width: 378px){
+    width: 300px;
+    
+}
 `
 
 
@@ -143,6 +149,12 @@ export const FooterInputWrapper = styled.div`
     margin-top: 1.45%;
     display: grid;
     align-items: center;
+
+      
+    @media screen and (max-width: 768px){
+        width: 92%;
+        
+    }
   
    
 `
@@ -374,11 +386,12 @@ color: #686868;
     
 
     @media screen and (max-width: 768px){
+        width:78px;
         font-size: 20px;
         font-weight: 500;
         line-height: 3;
         letter-spacing: -0.8px;
-        margin-inline-start: 10px;
+        margin-inline-start: 10%;
         margin-block: 0px;
     }
 `
@@ -411,7 +424,7 @@ export const VisitH2 = styled.h2`
         font-weight: 500;
         line-height: 3;
         letter-spacing: -0.8px;
-        margin-inline-start: 10px;
+        margin-inline-start: 3%;
         margin-block: 0px;
     }
 `
@@ -438,10 +451,10 @@ color: #999999;
     }
 
     @media screen and (max-width: 480px){
-        margin-inline-start: 10px;
-        margin-inline-end: 19px;
+        width: 250px;
+        margin-inline-start: 10%;
+        margin-inline-end: 0;
         font-size: 14px;
-        line-height: 2.93;
         letter-spacing: -0.56px;
     }
 `
@@ -474,9 +487,11 @@ color: #999999;
     }
 
     @media screen and (max-width: 480px){
-        margin-inline-start: 20px;
-        margin-inline-end: 19px;
-        margin-block: 10px;
+        width: 250px;
+        margin-inline-start: 10%;
+        margin-inline-end: 0;
+        margin-block-start: 1%;
+        margin-block-end: 3%;
 
     }
 

@@ -33,8 +33,8 @@ export const ArtistContainer = styled.div`
     @media screen and (max-width: 1080px){
         height: 2300px;
     }
-    @media screen and (max-width: 480px){
-        margin :  0 8.2159% 0 8.2159%;
+    @media screen and (max-width: 768px){
+        margin :  0 ;
         height: 1552px;
     }
   
@@ -49,7 +49,7 @@ export const Line = styled.div`
         
         margin: 10px 0 21px 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 30px;
         height: 2.5px;
         
@@ -63,6 +63,10 @@ export const ArtistInfoWrapper = styled.div`
     word-break: keep-all;
     text-align: left;
     margin-top: 14.335%;
+    @media screen and (max-width: 768px){
+        margin :  0 8.2159% 0 8.2159%;
+        
+    }
     
 `
 
@@ -80,12 +84,17 @@ export const ArtistCardWrapper = styled.div`
     @media screen and (max-width: 768px){
         max-width: 500px;
         grid-template-columns: 1fr;
+    
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
+        margin: 0 auto;
         margin-top: 5.41%;
         margin-bottom: 12%;
+        
     }
+
+
    
 
 
@@ -114,7 +123,6 @@ export const ArtistWhoWrapper = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        margin-left: 1%;
     }
 `
 
@@ -139,7 +147,7 @@ export const ArtistH1 = styled.h1`
     margin-block-end: 3.35%;
     margin-inline: 0;
    
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 104px;
         height: 34px;
         font-size: 30px;
@@ -169,7 +177,7 @@ margin-block: 0;
 margin-inline: 0;
 
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 250px;
         font-size: 16px;
         line-height: 1.5;
@@ -256,20 +264,14 @@ export const ArtistInfoCard = styled.div`
         
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         background-image: url(${mArtistField});
-        width: 360px;
+        width: 343px;
         height: 147px;
         margin: 0;
         
     }
 
-    @media screen and (max-width: 400px){
-        width: 350px;
-        height: 147px;
-        margin: 0;
-        
-    }
 
     &:hover {
         
@@ -288,7 +290,7 @@ export const InfoNum = styled.img`
     margin: 63.5px 0 0 72.5px;
     color: var(--vivid-blue-color);
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         margin: ${({ num }) => (num ==='2' ? `30px 0 0 38.5px` : `30px 0 0 38.5px`)};
         width: 36px;
         height: 28px;
@@ -324,7 +326,7 @@ export const InfoH2 = styled.h2`
         font-size: 18px;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         font-size: 18px;
         line-height: 0.33;
         letter-spacing: -0.72px;
@@ -361,7 +363,7 @@ export const InfoH3 = styled.h3`
         font-size: 14px;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: ${({ num }) => (num ==='2' ? `280px` : `260px`)};
         margin:${({ num }) => (num ==='2' ? `0 0 39.5px 81.5px` : `0 0 39.5px 65.5px`)};
         font-size: 14px;
@@ -392,11 +394,11 @@ export const ArtistRequiredCard = styled.div`
         margin-top: 5%;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         margin: 0;
-        width: 338px;
+        width:100%;
         height: 186px;
-        padding: 41px 41px 15px;
+        padding: 12.134% 12.134% 4.438%;
         border-radius: 20px;
         margin-bottom: 3.7%;
     }
@@ -430,7 +432,7 @@ export const RequiredH2 = styled.h2`
     margin-inline-start: 15%;
     margin-inline-end: 15%;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         font-size: 20px;
         line-height: 2.05;
         letter-spacing: -0.8px;
@@ -462,7 +464,7 @@ export const RequiredH3 = styled.h3`
     margin-inline-start: 3%;
     margin-inline-end: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 240px;
         font-size: 14px;
         font-style: normal;

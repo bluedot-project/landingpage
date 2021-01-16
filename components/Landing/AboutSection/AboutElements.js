@@ -28,7 +28,7 @@ export const Line = styled.div`
         
         margin: 10px 0 21px 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 30px;
         height: 2.5px;
         
@@ -52,8 +52,8 @@ export const AboutContainer = styled.div`
         height: 1400px;
     }
 
-    @media screen and (max-width: 480px){
-        margin :  0 8.2159% 0 8.2159%;
+    @media screen and (max-width: 768px){
+        margin: 0;
         height: 963px;
     }
 `
@@ -64,7 +64,8 @@ export const AboutInfoWrapper = styled.div`
     text-align: left;
     margin-top: 14.335%;
     
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
+        margin :  0 8.2159% 0 8.2159%;
         margin-top: 4.335%;
     }
     
@@ -91,11 +92,9 @@ export const AboutCardWrapper = styled.div`
         margin-left: 18.55%;
     }
 
-    @media screen and (max-width: 768px){
-        margin-left: 0;
-    }
 
-    @media screen and (max-width: 480px){
+
+    @media screen and (max-width: 768px){
         padding: 0;
         margin :  10.7% 10.2159% 21% 10.2159%;
 
@@ -122,7 +121,7 @@ export const AboutH1 = styled.h1`
     margin-block-end: 3.35%;
     margin-inline: 0;
    
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 104px;
         height: 34px;
         font-size: 30px;
@@ -151,7 +150,7 @@ export const AboutH3 = styled.h3`
     margin-block: 0;
     margin-inline: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 320px;
         font-size: 16px;
         line-height: 1.5;
@@ -181,7 +180,7 @@ export const About2H3 = styled.h3`
     margin-block-end: 0;
     margin-inline: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 330px;
         font-size: 16px;
         line-height: 1.5;
@@ -221,7 +220,7 @@ export const AboutCard = styled.div`
         margin-left: 0;
     }
     
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         background-image: url(${mTextbox});
         width: 359px;
         height: 217px;
@@ -255,7 +254,7 @@ export const CardH2 = styled.h2`
     margin-block: 0;
     margin-inline: 0;
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     width: 250px;
     height: 24px;
     font-size: 20px;
@@ -285,7 +284,7 @@ export const CardH3 = styled.h3`
     margin-block: 0;
     margin-inline: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 230px;
         
         font-size: 14px;
@@ -316,7 +315,7 @@ export const Card2H3 = styled.h3`
     margin-block: 0;
     margin-inline: 0;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         width: 170px;
         width: ${({num}) => (num ==='3' ?`200px` : `170px`)};
         font-size: 14px;
