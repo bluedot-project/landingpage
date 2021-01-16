@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Input} from 'antd';
+import { Form, Input, Button } from 'antd';
 import mBg from '../../../assets/images/mobile-section-4-contact.png';
 
 export const Bg = styled.div`
@@ -8,6 +8,7 @@ export const Bg = styled.div`
         background-image: url(${mBg});
         background-color: #fff;
     }
+    overflow: auto;
 `
 export const FooterContainer = styled.div`
     display: flex;
@@ -16,14 +17,16 @@ export const FooterContainer = styled.div`
     margin-bottom: 10.6%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: scroll;
+        
+    
 
     @media screen and (max-width: 1920px){
         height: 1300px;
     }
 
     @media screen and (max-width: 768px){
-        height: 800px;
+        height: 1400px;
+        
     }
     
     @media screen and (max-width: 480px){
@@ -146,12 +149,12 @@ margin-inline: 0;
 `
 
 
-export const FooterInputWrapper = styled.div`
+export const FooterInputWrapper = styled(Form)`
     margin-top: 1.45%;
     display: grid;
     align-items: center;
+  
 
-      
     @media screen and (max-width: 768px){
         width: 100%;
         
@@ -163,8 +166,8 @@ export const FooterInputWrapper = styled.div`
 export const Row1 = styled.div`
     margin-top: 3.45%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr 1fr;
@@ -214,12 +217,16 @@ export const TextInput = styled(Input)`
         background-color: #fff;
 
         margin-block-end: -5%;
-        margin-inline-end: ${({ id }) => (id==='phoneNumber' ? `0` : `5.102%`)};
+        margin-inline-end: ${({ id }) => (id==='email' ? `0` : `5.102%`)};
         padding: 25px 32px;
 
         @media screen and (max-width: 768px){
+            border-radius: 8px;
+            box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.3);
+            height: 46px;
+            font-size: 14px;
             margin-inline-end: ${({ id }) => (id==='email' || id ==='phoneNumber' ? `0` : `5.102%`)};
-            width: ${({ id }) => (id==='phoneNumber' ? `200%` : `autow`)};
+            width: ${({ id }) => (id==='email' ? `200%` : `autow`)};
             margin-block-end: 5%;
             
         }
@@ -247,8 +254,13 @@ export const TextInput2 = styled(Input)`
         margin-block-end: -2%;
 
         @media screen and (max-width: 768px){
+            border-radius: 8px;
+            box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.3);
+            height: 46px;
+            font-size: 14px;
             margin-inline-end: 0;
             margin-block-end: 2%;
+        }
             
 `
 
@@ -270,27 +282,31 @@ export const TextInput3 = styled(Input)`
         border-radius: 16px;
         box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.3);
         background-color: #fff;
+
+        @media screen and (max-width: 768px){
+            border-radius: 8px;
+            box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.3);
+            height: 190px;
+            font-size: 14px;
+        }
 `
 
 
-export const EmailBtn = styled.div`
+export const EmailBtn = styled(Button)`
     width: 138px;
     height: 76px;
     padding: 20px 42px 24px;
-    object-fit: contain;
     border-radius: 16px;
     box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
     background-color: #1127fe;
+    border: 0;
 
     align-items: center;
   object-fit: contain;
   font-family: Ubuntu;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
   letter-spacing: -0.96px;
   text-align: left;
   color: #fff;
@@ -299,8 +315,16 @@ export const EmailBtn = styled.div`
     margin-inline-start: 0px;
     margin-inline-end: 19px;    
 
-    @media screen and (max-width: 480px){
-        margin-block-start: 30px;
+    @media screen and (max-width: 768px){
+        width: 40px;
+        height: 20px;
+        font-size: 18px;
+        
+        margin-block-start: 8.5%;
+        width: 99px;
+        height: 46px;
+        padding: 8px 29px 13px 30px;
+  
     }
 
     &:hover{
@@ -511,4 +535,19 @@ export const SocialLink = styled.div`
         margin-block-start:10px;
         margin-block-end:20px;
     }
+`
+
+export const ErrMsg =styled.div`
+    color: #1127fe;
+    font-family: NanumSquare;
+    font-size: 20px;
+    position: relative;
+    margin:-10% 0 0 18%;
+    letterSpacing: -0.96px;
+
+    @media screen and (max-width: 768px){
+        font-size: 12px;
+        margin: -25% 0 0 38%;
+    }
+
 `

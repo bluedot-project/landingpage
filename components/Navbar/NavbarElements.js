@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll'
+import {Button} from 'antd';
 
 export const Nav = styled.nav`
     background: #000;
@@ -63,7 +64,7 @@ export const NavLinks = styled(LinkS)`
   color: #8e8e8e;
   display: flex;
   align-items: center;
-  padding:${({ id }) => (id==='1' ? `0 `: `0 1rem;`)};
+  padding:${({ id }) => (id==='1' ? `0 `: `0 1rem`)};
   height: 100%;
   cursor: pointer;
 
@@ -76,6 +77,37 @@ export const NavLinks = styled(LinkS)`
         border-bottom: ${({ id }) => (id==='1' ? `0 `: `3px solid #275AEE`)};
     }
 `;
+
+export const PamphletBtn = styled(Button)`
+    height: 40px;
+  font-family: NanumSquareR;
+  font-size: 16px;
+  font-weight: normal;
+
+  margin-left: -113%;
+  padding: 19.2% 55.99%;
+  white-space: nowrap;
+  background: #275AEE;
+  color: #fff;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+
+outline: none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+border-radius: 4px;
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+`
 
 
 

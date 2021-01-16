@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, 
+import { Nav, Logo, NavbarContainer, NavMenu, LeftMenu, RightMenu, NavLinks, PamphletBtn,
     NavContact, MobileIcon, HomeLink, DotVideoLink, FollowLink, SearchLink } from './NavbarElements'
 import logo from '../../assets/images/logo@2x.png';
 import mLogo from '../../assets/images/mobile-logo.png';
@@ -104,14 +104,19 @@ const Navbar = ({ toggle }) => {
                                     <img src={search} alt="search" />
                                 </SearchLink>
                             </Link> */}
-                             <NavContact to="contact"
+                            <Link href="https://www.notion.so/Bluedot-pamphlet-966bc237345a4e7fa823be8291fa77dd">
+                            <PamphletBtn>
+                                Pamphlet
+                            </PamphletBtn>
+                             {/* <NavContact to="contact"
                             smooth={true} 
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}>
                                 Contact
-                            </NavContact>
+                            </NavContact> */}
+                            </Link>
                             {/* <nav
                             style={{  width: '159px', height: '40px', margin: '6px 0 14px 0', cursor: 'pointer'
                                     }}>

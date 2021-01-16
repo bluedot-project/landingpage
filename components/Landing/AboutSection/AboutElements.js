@@ -15,6 +15,8 @@ export const Bg = styled.div`
         background-image: url(${mBg});
         background-color: #fff;
     }
+    overflow: auto;
+
 
 `
 
@@ -42,7 +44,7 @@ export const AboutContainer = styled.div`
     max-width: 1920px;
     display:flex;
     flex-direction: column;
-    overflow: scroll;
+    
     
 
     @media screen and (max-width: 1920px){
@@ -131,7 +133,6 @@ export const AboutH1 = styled.h1`
         width: 104px;
         height: 34px;
         font-size: 30px;
-        line-height: 2.53;
         letter-spacing: -1.8px;
         margin-block-end: 10.35%;
     }
@@ -153,13 +154,10 @@ export const AboutH3 = styled.h3`
     margin-block: 0;
     margin-inline: 0;
 
-    margin-block: 0;
-    margin-inline: 0;
 
     @media screen and (max-width: 768px){
         width: 300px;
         font-size: 16px;
-        line-height: 1.5;
         letter-spacing: -0.16px;
         
     }
@@ -179,9 +177,7 @@ export const About2H3 = styled.h3`
     line-height: 1.67;
     text-align: left;
     color: #3d3d3d;
-    margin-block: 0;
-    margin-inline: 0;
-
+    
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline: 0;
@@ -189,7 +185,6 @@ export const About2H3 = styled.h3`
     @media screen and (max-width: 768px){
         width: 300px;
         font-size: 16px;
-        line-height: 1.5;
         letter-spacing: -0.16px;
     }
 
@@ -257,8 +252,10 @@ export const CardH2 = styled.h2`
     letter-spacing: -1.36px;
     color: #3d3d3d;
 
+
     margin-block: 0;
     margin-inline: 0;
+   
 
 @media screen and (max-width: 768px){
     width: 250px;
@@ -317,6 +314,7 @@ export const Card2H3 = styled.h3`
     font-style: normal;
     text-align: center;
     color: #616161;
+
 
     margin-block: 0;
     margin-inline: 0;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Navbar from './Navbar';
 import HeroSection from './Landing/HeroSection';
@@ -9,11 +9,6 @@ import Footer from './Landing/Footer'
 import {createGlobalStyle} from 'styled-components';
 
 const Global = createGlobalStyle`
-
-    body{
-        margin: 0px;
-        
-    }
 
     @font-face {
         font-family: "Ubuntu", sans-serif;

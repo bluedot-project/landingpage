@@ -15,6 +15,8 @@ export const Bg = styled.div`
         background-image: url(${mBg});
         background-color: #fff;
     }
+    overflow: auto;
+
 `
 
 export const ArtistContainer = styled.div`
@@ -23,7 +25,7 @@ export const ArtistContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: scroll;
+
 
     @media screen and (max-width: 1600px){
         height: 1400px;
@@ -305,6 +307,7 @@ export const InfoH2 = styled.h2`
     position: relative;
     width: 150px;
     height: 22px;
+    
     padding: ${({ num }) => (num ==='2' ? `85.4px 0 0 0` : `80.4px 0 0 0`)};
     margin: ${({ num }) => (num ==='2' ? `0 0 0 -290px` : `0 0 0 -360px`)};
     padding: 92.4px 0 0 0;
