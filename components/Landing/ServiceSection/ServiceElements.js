@@ -11,6 +11,8 @@ export const Bg = styled.div`
     @media screen and (max-width: 480px){
         background-image: url(${mBg});
     }
+    overflow: auto;
+
 
 `
 
@@ -20,7 +22,7 @@ export const ServiceContainer = styled.div`
     margin :  0 13.2299% 0 13.3335%;
     max-width: 1920px;
     flex-direction: column;
-    overflow: scroll;
+
 
     @media screen and (max-width: 1680px){
      height: 2600px;
@@ -104,7 +106,6 @@ export const ServiceH1 = styled.h1`
         width: 104px;
         height: 34px;
         font-size: 30px;
-        line-height: 2.53;
         letter-spacing: -1.8px;
         margin-block-end: 10.35%;
     }
@@ -132,7 +133,6 @@ export const ServiceH3 = styled.h3`
     @media screen and (max-width: 768px){
         width: 290px;
         font-size: 16px;
-        line-height: 1.5;
         letter-spacing: -0.16px;
         
     }
@@ -280,11 +280,10 @@ export const Column2 = styled.div`
     word-break: keep-all;
 
     @media screen and (max-width: 1080px){
-        
         margin-bottom: ${ ({ num }) => (num===1 ? `180px` :
         (num===2 ? `-50px` : 
         (num===3 ? `-120px` : `0`)))};
-    margin-right:  ${ ({ num }) => (num===2 ? `-250px`: `0px` )};
+        margin-right:  ${ ({ num }) => (num===2 ? `-250px`: `0px` )};
     }
 
     @media screen and (max-width: 768px){
@@ -361,7 +360,8 @@ export const TopLine = styled.h1`
         font-size: 48px;
         height: 60px;
         margin-bottom: 30px;
-        margin-left: ${ ({ num }) => (num===2 ? `175px` : `0`)};
+        margin-left: ${ ({ num }) => (num===2 ? `175px` :
+        num==='1'? `30%` : `0`)};
     }
 
     @media screen and (max-width: 1080px){
@@ -426,7 +426,6 @@ export const Subtitle = styled.h3`
         width: 300px;
         text-align: ${({ num }) => (num===2? `right`: `left`)};
         margin-left: ${({ num }) => (num===2? `20px` : `0`)};
-        line-height: 1.71;
         letter-spacing: -0.56px;
     }
 `

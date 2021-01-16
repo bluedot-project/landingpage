@@ -1,11 +1,10 @@
 import React, { useCallback, useState } from 'react'
-import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3, Line, Bg, SocialLink,
+import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3, Line, Bg, SocialLink, ErrMsg,
     FooterInputWrapper, FooterContactWrapper, Contact1, TextInput, TextInput2, TextInput3,
     Row1, Row2, Row3, Contact2, ShareH2, VisitH2, ShareH3, VisitH3, EmailBtn} from './FooterElements'
 import youtube from '../../../assets/images/img-youtube.png'
 import tistory from '../../../assets/images/img-tstroy.png'
 import insta from '../../../assets/images/img-instar.png'
-import url from '../../../assets/images/img-url.png'
 import Link from 'next/link';
 
 const Footer = () => {
@@ -15,6 +14,8 @@ const Footer = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+
+    const [submitted, setSubmitted] = useState('false');
 
     const onChangeName = (e) => {
         setName(e.target.value);
@@ -38,25 +39,68 @@ const Footer = () => {
 
         return emailRegex.test(email);
     }
-    const onEmailValid = () => {
+
+    const isNumber = phoneNumber => {
+        const numberRegex = /^\d{3}-\d{3,4}-\d{4}$/;
+
+        return numberRegex.test(phoneNumber);
+    }
+    const onFormValid = () => {
 
         if(!isEmail(email)){
-            setErr("이메일 형식으로 입력해주세요");
+            setErr("이메일을 정확히 입력해주세요");
+            return false;
+        }else if(!isNumber(phoneNumber)){
+            setErr("번호를 제대로 입력해주세요.");
             return false;
         }
         return true;
     }
-    
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        if(!onEmailValid()){
-            console.log("email error");
-        }else{
-            console.log(email);
+    const onSubmit = () => {
+
+        const variable ={
+            email : email,
+            name : name, 
+            message : description,
+            phoneNumber: phoneNumber,
+            title : title,
+        }
+
+        if(!onFormValid()){
+            console.log("error");
+        }
+    
+        else{
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(variable)
+
+            }).then((res) => {
+                if(res.status === 200){
+                    setSubmitted(true);
+                    console.log("true", res.status);
+                    window.location.reload();
+                }
+
+            })
+            setEmail("");
+            setName("");
+            setPhoneNumber("");
+            setTitle("");
+            setDescription("");
+            
         }
         
-        setEmail("");
+        
+    }
+
+    const refreshPage = () => {
+            
     }
 
     return (
@@ -72,7 +116,7 @@ const Footer = () => {
                     <Line />
                     <FooterH3>블루닷과 함께 하고싶으신 아티스트/ 크리에이터분 또는 궁금한 점이 있으면 여기를 통해 소통해주세요.</FooterH3>
                 
-                    <FooterInputWrapper >
+                    <FooterInputWrapper onFinish={onSubmit}>
                         <Row1>
                             <TextInput 
                                 id="name"
@@ -80,32 +124,36 @@ const Footer = () => {
                                 type="name"
                                 value={name}
                                 onChange={onChangeName}
+                                required
                             />
-
+                            <TextInput 
+                                id="phoneNumber"
+                                placeholder="연락처('-'포함)"
+                                type="phoneNumber"
+                                value={phoneNumber}
+                                onChange={onChangePhoneNumber}
+                                required
+                            />
                             <TextInput 
                                 id="email"
                                 placeholder="이메일"
                                 type="email"
                                 value={email}
                                 onChange={onChangeEmail}
+                                required
                             />
                             
-                            <TextInput 
-                                id="phoneNumber"
-                                placeholder="전화번호"
-                                type="phoneNumber"
-                                value={phoneNumber}
-                                onChange={onChangePhoneNumber}
-                            />
+                           
                         </Row1>
 
                         <Row2>
                         <TextInput2
                             id="title"
                             placeholder="제목"
-                            type="email"
+                            type="title"
                             value={title}
                             onChange={onChangeTitle}
+                            required
                         />
                         </Row2>
                         
@@ -116,28 +164,18 @@ const Footer = () => {
                             type="description"
                             value={description}
                             onChange={onChangeDescription}
+                            required
                         />
                         </Row3>
                         
 
                       
-                    <EmailBtn onClick={onSubmit} >
+                    <EmailBtn type="primary" htmlType="submit" onClick={refreshPage}>
                                 Send
                     </EmailBtn>
 
-                        {/* {err && <div 
-                                style={{ color:'#1127fe',  
-                                    fontFamily: 'NanumSquareOTFR', 
-                                    fontSize: '20px',
-                                    position: 'absolute', 
-                                    margin:'150px 0 0 8%',
-                                    lineHeight: '1.71',
-                                    letterSpacing: '-0.96px'}}>{err}</div>} */}
-                        
-
-
-                        
-                           
+                        {err && <ErrMsg >{err}</ErrMsg>}
+            
                         
                     </FooterInputWrapper>
 
@@ -152,10 +190,10 @@ const Footer = () => {
                         <VisitH3>블루닷의 유튜브,블로그, SNS를 방문해보세요</VisitH3>
 
                         <SocialLink >
-                        <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
+                            <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
                                 <img src={youtube} 
                                     style={{ marginRight:'6px', cursor: 'pointer'}}/>
-                             </Link>           
+                            </Link>           
 
                             <Link href="https://bluedot.tistory.com/" class="tistory">
                                 <img src={tistory}
