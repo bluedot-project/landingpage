@@ -402,21 +402,16 @@ export const Subtitle = styled.h3`
     
     
     @media screen and (max-width: 1400px){
-        font-size: 14px;
         width: 440px;
     }
 
     @media screen and (max-width: 1080px){
+        font-size: 14px;
         width: 200px;
     }
-
+    
     @media screen and (max-width: 768px){
-        width: 340px;
         padding:0;
-        font-size: 14px;
-    }
-    @media screen and (max-width: 768px){
-        
         width: 300px;
         text-align: ${({ num }) => (num===2? `right`: `left`)};
         margin-left: ${({ num }) => (num===2? `20px` : `0`)};

@@ -10,6 +10,10 @@ import {createGlobalStyle} from 'styled-components';
 
 const Global = createGlobalStyle`
 
+    body {
+        margin: 0;
+    }
+    
     @font-face {
         font-family: "Ubuntu", sans-serif;
         font-weight: 300, 400, 500, 700;
