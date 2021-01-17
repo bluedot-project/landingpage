@@ -30,7 +30,7 @@ export const FooterContainer = styled.div`
     
     @media screen and (max-width: 480px){
         margin: 0;
-        height: 1000px;
+        height: 960px;
     }
 `
 export const FooterInfoWrapper = styled.div`
@@ -83,9 +83,8 @@ export const FooterContactWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        margin-top: 5.6%;
+        margin: 11.69% 8.2159% 0 8.2159%;
     }
-
     
     
     
@@ -403,7 +402,7 @@ font-weight: normal;
 font-stretch: normal;
 font-style: normal;
 letter-spacing: -1.6px;
-text-align: center;
+text-align: left;
 color: #686868;
 margin:0;
 
@@ -419,11 +418,12 @@ margin:0;
 
     @media screen and (max-width: 768px){
         width:78px;
+        height:23px;
         font-size: 20px;
         font-weight: 500;
         letter-spacing: -0.8px;
-        margin-inline-start: 10%;
-        margin-block: 0px;
+        margin: 0;
+
     }
 `
 
@@ -436,7 +436,7 @@ export const VisitH2 = styled.h2`
     font-stretch: normal;
     font-style: normal;
     letter-spacing: -1.6px;
-    text-align: center;
+    text-align: left;
     color: #686868;
     margin:0;
 
@@ -452,9 +452,9 @@ export const VisitH2 = styled.h2`
     @media screen and (max-width: 768px){
         font-size: 20px;
         font-weight: 500;
+        height:23px;
         letter-spacing: -0.8px;
-        margin-inline-start: 3%;
-        margin-block: 0px;
+        margin: 0;
     }
 `
 export const ShareH3 = styled.h2`
@@ -468,7 +468,7 @@ font-stretch: normal;
 font-style: normal;
 line-height: 2.56;
 letter-spacing: -0.64px;
-text-align: center;
+text-align: left;
 color: #999999;
 
     margin-block: 15px;
@@ -478,14 +478,10 @@ color: #999999;
   
     @media screen and (max-width: 768px){
         font-size: 14px;
-        margin-block: 0;
+        margin: 0;
+        width: 250px;
     }
 
-    @media screen and (max-width: 480px){
-        width: 250px;
-        margin-inline-start: 3%;
-        margin-inline-end: 0;
-    }
 `
 
 export const VisitH3 = styled.h2`
@@ -499,7 +495,7 @@ font-stretch: normal;
 font-style: normal;
 line-height: 2.56;
 letter-spacing: -0.64px;
-text-align: center;
+text-align: left;
 color: #999999;
 
     margin-block: 4%;
@@ -508,27 +504,22 @@ color: #999999;
     
     @media screen and (max-width: 768px){
         font-size: 14px;
-        width: 220px;
+        width: 200px;
         letter-spacing: -0.56px;
-        margin-block: 0;
+        margin: 0;
     }
 
-    @media screen and (max-width: 480px){
-        margin-inline-start: 5.1%;
-        margin-inline-end: 0;
-
-    }
 
 `
 
 
 export const SocialLink = styled.div`
     display: flex;
-    width:220px;
+    width: 220px;
     @media screen and (max-width: 768px){
-        width:120px;
+        width: 120px;
         margin-inline-start: 0%;
-        margin-block-start: -1.2%;
+        margin-block-start: -1.1%;
     }
 `
 
