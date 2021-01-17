@@ -60,8 +60,6 @@ export const AboutContainer = styled.div`
     }
 
     @media screen and (max-width: 414px){
-        margin: 0;
-        // height: 1163px;
         height: 100%;
     }
 `
@@ -148,7 +146,6 @@ export const AboutH3 = styled.h3`
 
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.67;
     text-align: left;
     color: #3d3d3d;
     margin-block: 0;
@@ -174,10 +171,10 @@ export const About2H3 = styled.h3`
 
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.67;
     text-align: left;
     color: #3d3d3d;
-    
+    margin: 0;
+
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline: 0;

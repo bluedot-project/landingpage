@@ -393,7 +393,7 @@ export const Subtitle = styled.h3`
     font-style: normal;
     text-align: ${({ num }) => (num===2? `right`: `left`)};
     color: var(--greyish-brown);
-
+    margin: 0;
     margin-block: 0;
     margin-inline:0;
     padding-right: ${({ num }) => (num===2? `55px` : `0`)};
@@ -409,7 +409,7 @@ export const Subtitle = styled.h3`
         font-size: 14px;
         width: 200px;
     }
-    
+
     @media screen and (max-width: 768px){
         padding:0;
         width: 300px;

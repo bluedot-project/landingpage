@@ -482,6 +482,7 @@ color: #999999;
   
     @media screen and (max-width: 768px){
         font-size: 14px;
+        margin-block: 0;
     }
 
     @media screen and (max-width: 480px){
@@ -513,10 +514,11 @@ color: #999999;
         font-size: 14px;
         width: 220px;
         letter-spacing: -0.56px;
+        margin-block: 0;
     }
 
     @media screen and (max-width: 480px){
-        margin-inline-start: 1%;
+        margin-inline-start: 5.1%;
         margin-inline-end: 0;
 
     }
@@ -526,10 +528,11 @@ color: #999999;
 
 export const SocialLink = styled.div`
     display: flex;
+    width:220px;
     @media screen and (max-width: 768px){
-        width:220px;
-        margin-inline-start: 2%;
-        margin-block-end:20px;
+        width:120px;
+        margin-inline-start: 0%;
+        margin-block-start: -1.2%;
     }
 `
 
