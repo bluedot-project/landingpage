@@ -2,7 +2,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components';
 
-
 export default class MyDocument extends Document{
     static async getInitialProps(ctx){
         const sheet = new ServerStyleSheet();
@@ -37,7 +36,6 @@ export default class MyDocument extends Document{
                 <Head>
                     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"/>
                     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-                    <link rel="shortcut icon" href="/favicon.ico" />
                 </Head>
                 <body>
                     <Main />
