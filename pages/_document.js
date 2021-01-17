@@ -37,6 +37,9 @@ export default class MyDocument extends Document{
                     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"/>
                     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
                     <link rel="shortcut icon" href="/favicon.ico" />
+                    <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png" />
+                    
                 </Head>
                 <body>
                     <Main />
