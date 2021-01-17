@@ -397,16 +397,15 @@ export const Contact2 = styled.div`
 export const ShareH2 = styled.h2`
 width: 131px;
 height: 45px;
-object-fit: contain;
 font-family: Ubuntu;
 font-size: 40px;
 font-weight: normal;
 font-stretch: normal;
 font-style: normal;
-line-height: 1.5;
 letter-spacing: -1.6px;
 text-align: center;
 color: #686868;
+margin:0;
 
     margin-block: 0;
     margin-inline-start: 100px;
@@ -422,7 +421,6 @@ color: #686868;
         width:78px;
         font-size: 20px;
         font-weight: 500;
-        line-height: 3;
         letter-spacing: -0.8px;
         margin-inline-start: 10%;
         margin-block: 0px;
@@ -432,16 +430,15 @@ color: #686868;
 export const VisitH2 = styled.h2`
     width:78px;
     height: 45px;
-    object-fit: contain;
     font-family: Ubuntu;
     font-size: 40px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
     letter-spacing: -1.6px;
     text-align: center;
     color: #686868;
+    margin:0;
 
     margin-block: 0;
     margin-inline-start: 0px;
@@ -455,7 +452,6 @@ export const VisitH2 = styled.h2`
     @media screen and (max-width: 768px){
         font-size: 20px;
         font-weight: 500;
-        line-height: 3;
         letter-spacing: -0.8px;
         margin-inline-start: 3%;
         margin-block: 0px;
