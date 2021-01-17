@@ -4,14 +4,13 @@ const bodyParser = require('body-parser')
 
 const mailer = require('./mail/mailer');
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV !== 'production';
+const prod = process.env.NODE_ENV === 'production';
 
-console.log(dev);
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
 
-if(process.env.NODE_ENV !== 'production'){
   app.prepare().then(() => {
       const server = express()
     
@@ -36,12 +35,11 @@ if(process.env.NODE_ENV !== 'production'){
         return handle(req, res)
       })
     
-      server.listen(3000, (err) => {
+      server.listen(prod? process.env.PORT : 3000, (err) => {
         if (err) throw err
-        console.log('> Read on http://localhost:3000')
+        console.log(`> Read on ${prod? process.env.PORT : 3000}`)
       })
     })
-}
 
 
 
