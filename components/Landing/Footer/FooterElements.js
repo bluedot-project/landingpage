@@ -12,9 +12,8 @@ export const Bg = styled.div`
 `
 export const FooterContainer = styled.div`
     display: flex;
-    height: 1500px;
+    height: 1360px;
     margin :  0 13.2299% 0 13.3335%;
-    margin-bottom: 10.6%;
     max-width: 1920px;
     flex-direction: column;
         
@@ -25,13 +24,13 @@ export const FooterContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        height: 1400px;
-        
+        height: 1200px;
     }
+
     
     @media screen and (max-width: 480px){
         margin: 0;
-        height: 1300px;
+        height: 1000px;
     }
 `
 export const FooterInfoWrapper = styled.div`
@@ -82,6 +81,12 @@ export const FooterContactWrapper = styled.div`
         max-width: 500px;
         margin-top: 20.6%;
     }
+
+    @media screen and (max-width: 768px){
+        margin-top: 5.6%;
+    }
+
+    
     
     
 `
@@ -476,7 +481,7 @@ color: #999999;
     margin-inline-end: 0px;
 
     @media screen and (max-width: 1080px){
-        margin-block: 10px;
+        margin-block-end: 10px;
     }
 
     @media screen and (max-width: 480px){
@@ -508,10 +513,9 @@ color: #999999;
     
     @media screen and (max-width: 768px){
         width: 328px;
-        margin-block: 20px;
+        margin-block-end: 10px;
 
         font-size: 14px;
-        line-height: 2.93;
         letter-spacing: -0.56px;
     }
 
