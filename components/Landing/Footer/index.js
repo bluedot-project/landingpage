@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import { FooterContainer, FooterInfoWrapper, FooterH1, FooterH3, Line, Bg, SocialLink, ErrMsg,
-    FooterInputWrapper, FooterContactWrapper, Contact1, TextInput, TextInput2, TextInput3,
+    FooterInputWrapper, FooterContactWrapper, Contact1, TextInput, TextInput2, TextInput3, SocialImg,
     Row1, Row2, Row3, Contact2, ShareH2, VisitH2, ShareH3, VisitH3, EmailBtn} from './FooterElements'
 import youtube from '../../../assets/images/img-youtube.png'
 import tistory from '../../../assets/images/img-tstroy.png'
@@ -187,23 +187,24 @@ const Footer = () => {
 
                     <Contact1>
                         <VisitH2>visit</VisitH2>
-                        <VisitH3>블루닷의 유튜브,블로그, SNS를 방문해보세요</VisitH3>
+
+                        <div style={{display: 'flex'}}>
+                        <VisitH3>블루닷의 다른 소식도 들어보세요</VisitH3>
 
                         <SocialLink >
                             <Link href="https://www.youtube.com/channel/UCTVRD06NSlyXlo41Dbz2JEQ" class="youtube">
-                                <img src={youtube} 
-                                    style={{ marginRight:'6px', cursor: 'pointer'}}/>
+                                <SocialImg src={youtube} />
                             </Link>           
 
                             <Link href="https://bluedot.tistory.com/" class="tistory">
-                                <img src={tistory}
-                                    style={{ marginRight:'6px', cursor: 'pointer'}}/>
+                                <SocialImg src={tistory} />
                             </Link>
 
                             <Link href="https://www.instagram.com/bluedot_korea/" class="instagram">
-                                <img src={insta} style={{ cursor: 'pointer'}}/>
+                                <SocialImg id="insta" src={insta} />
                             </Link>
                             </SocialLink>
+                        </div>
                         
                             
                     </Contact1>

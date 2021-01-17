@@ -354,12 +354,11 @@ export const Contact1 = styled.div`
     }
 
     @media screen and (max-width: 1080px){
+        width:380px;
         margin-left: 0;
     }
     @media screen and (max-width: 768px){
-        width:380px;
         display: grid;
-        margin-bottom: 10px;
     }
 
     @media screen and (max-width: 480px){
@@ -476,13 +475,11 @@ letter-spacing: -0.64px;
 text-align: center;
 color: #999999;
 
-    margin-block: 0;
+    margin-block: 15px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 
-    @media screen and (max-width: 1080px){
-        margin-block-end: 10px;
-    }
+  
     @media screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -491,8 +488,6 @@ color: #999999;
         width: 250px;
         margin-inline-start: 3%;
         margin-inline-end: 0;
-        margin-block-start: 1%;
-        margin-block-end: 3%;
     }
 `
 
@@ -510,24 +505,19 @@ letter-spacing: -0.64px;
 text-align: center;
 color: #999999;
 
-    margin-block: 0;
+    margin-block: 4%;
     margin-inline-start: 0px;
-    margin-inline-end: 19px; 
+    margin-inline-end: 0; 
     
     @media screen and (max-width: 768px){
-        width: 328px;
-        margin-block-end: 10px;
-
         font-size: 14px;
+        width: 220px;
         letter-spacing: -0.56px;
     }
 
     @media screen and (max-width: 480px){
-        width: 250px;
-        margin-inline-start: 10%;
+        margin-inline-start: 1%;
         margin-inline-end: 0;
-        margin-block-start: 1%;
-        margin-block-end: 3%;
 
     }
 
@@ -538,10 +528,23 @@ export const SocialLink = styled.div`
     display: flex;
     @media screen and (max-width: 768px){
         width:220px;
-        margin-inline-start: 85px;
-        margin-block-start:10px;
+        margin-inline-start: 2%;
         margin-block-end:20px;
     }
+`
+
+export const SocialImg = styled.img`
+    cursor: pointer;
+    margin-inline: 0;
+        margin-block: 0;
+
+    @media screen and (max-width: 480px){
+        margin-right: 0;
+        width: 36px;
+        height: 36px;
+        
+    }
+
 `
 
 export const ErrMsg =styled.div`

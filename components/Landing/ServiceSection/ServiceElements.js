@@ -336,7 +336,6 @@ export const TopLine = styled.h1`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.73;
     letter-spacing: -3.12px;
     text-align: left;
     color: #000;
@@ -392,7 +391,6 @@ export const Subtitle = styled.h3`
     letter-spacing: -0.82px;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.67;
     text-align: ${({ num }) => (num===2? `right`: `left`)};
     color: var(--greyish-brown);
 
@@ -401,9 +399,7 @@ export const Subtitle = styled.h3`
     padding-right: ${({ num }) => (num===2? `55px` : `0`)};
 
     
-    @media screen and (max-width: 1680px){
-        font-size : 16px
-    }
+    
     
     @media screen and (max-width: 1400px){
         font-size: 14px;
@@ -411,7 +407,6 @@ export const Subtitle = styled.h3`
     }
 
     @media screen and (max-width: 1080px){
-        font-size: 10px;
         width: 200px;
     }
 
@@ -419,7 +414,6 @@ export const Subtitle = styled.h3`
         width: 340px;
         padding:0;
         font-size: 14px;
-        text-align: left;
     }
     @media screen and (max-width: 768px){
         
