@@ -41,7 +41,7 @@ export default class MyDocument extends Document{
                     <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png" />
 
                     <meta property="og:type" content="website" />
-                    <meta property="og:url" content="http://13.125.206.184/" />
+                    <meta property="og:url" content="https://bluedot.im/" />
                     <meta property="og:title" content="아티스트 브랜딩 콘텐츠 커뮤니티 플랫폼 | 블루닷 Bludeot (2021) " />
                     <meta property="og:image" content="/bdot_logo2.png" />
                     <meta property="og:description" content="팬 소통과 수익 창출을 함께 하는 새로운 아티스트 퍼스널브랜딩 커뮤니티" />
