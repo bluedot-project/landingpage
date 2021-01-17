@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend" : "node server.js",
-    "client" : "next",
-    "dev": "concurrently \"npm run backend\" \"npm run client\"",
+    "dev": "node server.js",
     "build": "cross-env ANALYZE=true NODE_ENV=production next build",
-    "start": "cross-env NODE_ENV=production next start -p 80 "
+    "start": "cross-env NODE_ENV=production node server.js -p 80 "
   },
   "author": "loosie",
   "license": "ISC",
@@ -17,6 +15,7 @@
     "antd": "^4.10.0",
     "babel-plugin-styled-components": "^1.12.0",
     "cross-env": "^7.0.3",
+    "express": "^4.17.1",
     "next": "^9.5.5",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",
