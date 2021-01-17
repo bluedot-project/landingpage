@@ -148,6 +148,7 @@ export const AboutH3 = styled.h3`
     font-style: normal;
     text-align: left;
     color: #3d3d3d;
+    margin: 0;
     margin-block: 0;
     margin-inline: 0;
 
