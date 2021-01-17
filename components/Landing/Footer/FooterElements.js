@@ -483,13 +483,16 @@ color: #999999;
     @media screen and (max-width: 1080px){
         margin-block-end: 10px;
     }
+    @media screen and (max-width: 768px){
+        font-size: 14px;
+    }
 
     @media screen and (max-width: 480px){
         width: 250px;
-        margin-inline-start: 10%;
+        margin-inline-start: 3%;
         margin-inline-end: 0;
-        font-size: 14px;
-        letter-spacing: -0.56px;
+        margin-block-start: 1%;
+        margin-block-end: 3%;
     }
 `
 

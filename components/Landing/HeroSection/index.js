@@ -78,6 +78,10 @@ const CtaBtn = styled.div`
     }
 
     @media screen and (max-width: 480px){
+        width: 142px;
+        height: 46px;
+        padding: 10px 8px 10px 8px;
+        font-size: 16px;
         margin-block-start: 32px;
     }
 
