@@ -53,3 +53,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.ant-btn-primary {
+  background: #000;
+}

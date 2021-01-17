@@ -85,7 +85,7 @@ export const PamphletBtn = styled(Button)`
   font-weight: normal;
 
   margin-left: -113%;
-  padding: 19.2% 55.99%;
+  padding: 8.2% 55.99%;
   white-space: nowrap;
   background: #275AEE;
   color: #fff;

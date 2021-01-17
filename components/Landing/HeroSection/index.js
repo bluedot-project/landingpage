@@ -115,7 +115,6 @@ const HeroContent = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        // margin: 0 5.699% 0 5.77%;
         margin: 0;
     }
 
@@ -159,8 +158,6 @@ const SloganH1 = styled.h1`
         letter-spacing: -2.16px;
         text-align: center;
 
-        // margin-inline-start: 14.23%;
-        // margin-inline-end:  13.427%;
         margin-inline: 0;
     }
 `
