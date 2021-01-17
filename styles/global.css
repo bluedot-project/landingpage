@@ -59,3 +59,7 @@ body {
 .ant-btn-primary {
   background: #000;
 }
+
+::selection {
+  background: #000;
+}
