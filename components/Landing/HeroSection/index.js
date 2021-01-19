@@ -6,12 +6,15 @@ import mBg from '../../../assets/images/mobile-top-bg.png'
 import Link from 'next/link';
 
 
-export const HeroWrapper = styled.section`
+export const HeroWrapper = styled.div`
     background-image: url(${bg});
-    backgoound-size: cover;
-    background-position: 35% 30.125%;
+    background-size: cover;
+    background-position: center center;
+    
+    width: 100vw;
+    height: auto;
+    background-position: center;
     background-repeat: no-repeat;
-    background-color: #fff;
 
     @media screen and (max-width: 480px){
         background-image: url(${mBg});
@@ -179,13 +182,16 @@ const HeroSection = () => {
                    {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
                   
             
-                {/* </Bg> */}
+                {/* </Bg>  */}
                     <HeroContent>
                         <SloganH1>
-                            Paint Your Own Dot
+                            1대1 소통
                         </SloganH1>
                         <SloganH1>
-                            On The World
+                            퍼스널 브랜딩
+                        </SloganH1>
+                        <SloganH1>
+                            수익 창출
                         </SloganH1>
 
                         <Link href="https://www.notion.so/Bluedot-pamphlet-966bc237345a4e7fa823be8291fa77dd">
@@ -193,7 +199,7 @@ const HeroSection = () => {
                                 팜플렛 보러가기
                             </CtaBtn>
                         </Link>
-                    </HeroContent>
+                    </HeroContent> 
                 </HeroContainer>
             </HeroWrapper>
         </>

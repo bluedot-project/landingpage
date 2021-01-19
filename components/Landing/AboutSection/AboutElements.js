@@ -6,7 +6,7 @@ import mBg from '../../../assets/images/mobile-section-1-about.png';
 
 export const Bg = styled.div`
     background-image: url(${bg});
-    backgooun-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #f6f6f6;
@@ -15,7 +15,7 @@ export const Bg = styled.div`
         background-image: url(${mBg});
         background-color: #fff;
     }
-    overflow: auto;
+    overflow: hidden;
 
 
 `

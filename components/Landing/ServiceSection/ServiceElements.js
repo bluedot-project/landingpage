@@ -4,14 +4,14 @@ import mBg from '../../../assets/images/mobile-section-2-service.png';
 
 export const Bg = styled.div`
     background-image: url(${bg});
-    backgooun-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     @media screen and (max-width: 480px){
         background-image: url(${mBg});
     }
-    overflow: auto;
+    overflow: hidden;
 
 
 `

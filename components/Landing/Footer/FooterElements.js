@@ -6,9 +6,9 @@ export const Bg = styled.div`
 
     @media screen and (max-width: 480px){
         background-image: url(${mBg});
+        background-size: cover;
         background-color: #fff;
     }
-    overflow: auto;
 `
 export const FooterContainer = styled.div`
     display: flex;
