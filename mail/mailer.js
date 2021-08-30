@@ -3,11 +3,11 @@ const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'bluedot900214@gmail.com',
-    pass: 'fhkkipagaycpydgj',
+    pass: '-',
   },
   tls: {
     rejectUnauthorized: false
-}
+  }
 })
 const send = ({ email, name, phoneNumber, title, text }) => {
   const from = email;
@@ -15,7 +15,7 @@ const send = ({ email, name, phoneNumber, title, text }) => {
     from,
     to: "bluedot900214@gmail.com",
     subject: `${title} : 랜딩페이지 Contact를 통한 메세지 ${from}`,
-    text : `<p> 이름/아티스트명: ${name} <p> </br>
+    text: `<p> 이름/아티스트명: ${name} <p> </br>
             <p> 내용: ${text} <p> </br>
             <p> 연락처: ${phoneNumber} <p>`,
     html: `<p> 이름/아티스트명: ${name} <p> </br>
