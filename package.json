@@ -7,6 +7,7 @@
     "front": "next",
     "dev": "node server.js",
     "build": "cross-env ANALYZE=true NODE_ENV=production next build",
+    "deploy": "cross-env ANALYZE=true NODE_ENV=production next build && next export",
     "start": "cross-env NODE_ENV=production PORT=80 node server.js "
   },
   "author": "loosie",
