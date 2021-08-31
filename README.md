@@ -1,6 +1,10 @@
-# 블루닷 (Bluedot)
-**아티스트/크리에이터** 브랜딩 콘텐츠 커뮤니티 서비스 랜딩페이지입니다.
-- https://bdot.netlify.app/
+# 블루닷 (Bluedot) 
+ <img src="https://img.shields.io/badge/build-success-success">  
+ 
+**아티스트/크리에이터** 브랜딩 콘텐츠 커뮤니티 서비스 랜딩페이지입니다. 
+
+반응형 웹페이지로 제작되었습니다. `1920px` `1080px` `768px` `480px`  
+https://bdot.netlify.app/  
 
 <br>
 
@@ -18,13 +22,14 @@
 <br>
 
 ## Stack 
-- React `16.14.0`, Next.js `9.5.5`
-- styled-components `5.2.1`, antd `4.10.0`
-  
+<img src="https://img.shields.io/badge/React-16.14.0-green">  <img src="https://img.shields.io/badge/Next.js-9.5.5-blueviolet">  <img src="https://img.shields.io/badge/antd-4.10.0-yellow">  <img src="https://img.shields.io/badge/styled--components-5.2.1-yellowgreen">  
+- React, Next.js
+- styled-components, antd
+
 <br>
 
 
-## 해외 유사한 서비스 성공 사례
+## 유사한 해외 서비스 사례
 - [Cameo](https://www.cameo.com/)
 - [TagMango](https://tagmango.com/)
 - [Patreon](https://www.patreon.com/)
